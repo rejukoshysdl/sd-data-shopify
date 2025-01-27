@@ -29,4 +29,4 @@ jobs:
     # Step 4: Run the conversion Python script
     - name: Run convertJSONToExcel script
       run: |
-        python3 ./utils/convertJSONToExcel.py  # Adjust path if necessary
+        python3 ./../utils/convertJSONToExcel.py  # Adjust path if necessary
