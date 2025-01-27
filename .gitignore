@@ -5,6 +5,5 @@ developer_export/
 output_json/
 output_excel/
 final-matrixify-export/
-.github/
 *.log
 *.tmp
