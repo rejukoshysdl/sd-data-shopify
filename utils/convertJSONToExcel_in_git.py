@@ -13,11 +13,19 @@ def json_to_excel(json_dir, output_excel_file):
     :param json_dir: Directory containing the JSON files
     :param output_excel_file: Path to save the resulting Excel file
     """
+    # Print the directory path for debugging
+    print(f"Searching for JSON files in directory: {os.path.abspath(json_dir)}")
+    
     # Get all JSON files in the directory
-    json_files = glob.glob(os.path.join(json_dir, '*.json'))
+    json_files = glob.glob(os.path.join(json_dir, '**', '*.json'), recursive=True)  # Include subdirectories
     
     # Print the files being processed for debugging
     print(f"JSON files to process: {json_files}")
+    
+    # Check if any JSON files were found
+    if not json_files:
+        print("No JSON files found in the specified directory.")
+        return
     
     # Create an Excel writer object
     with pd.ExcelWriter(output_excel_file, engine='xlsxwriter') as writer:
@@ -57,9 +65,6 @@ json_to_excel(json_directory, output_excel_file)
 
 # Ensure GITHUB_TOKEN is set up (GitHub Actions provides this automatically)
 github_token = os.getenv('GITHUB_TOKEN')
-
-# Print the GitHub token for debugging (remove in production)
-print(f"GITHUB_TOKEN: {github_token}")
 
 # Git commands to commit and push the generated Excel file to GitHub
 try:
