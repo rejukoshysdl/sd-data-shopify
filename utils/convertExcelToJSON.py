@@ -51,6 +51,14 @@ for sheet in sheet_names:
     
     # Replace NaN values with an empty string
     df = df.fillna("")
+
+   
+  # Iterate over each column to check if its data is a float and format if necessary
+    # Format any column with numeric data, preserving the comma separator for thousands
+    for col in df.columns:
+        if df[col].dtype == 'float64':  # Check if the column has float type data
+            df[col] = df[col].apply(lambda x: f"{x:,.2f}" if pd.notna(x) else x)  # Format float with commas and 2 decimal places
+    
     
     # Convert each sheet to a list of dictionaries (JSON format)
     json_files[sheet] = df.to_dict(orient='records')
@@ -65,4 +73,10 @@ for sheet, json_data in json_files.items():
     with open(output_file, 'w') as f:
         json.dump(json_data, f, indent=4)
 
-print(f"JSON files saved to {output_dir}")
+# Create the completed marker file
+completed_file = os.path.join(output_dir, "convert.json.completed")
+with open(completed_file, 'w') as f:
+    f.write("Conversion complete.")
+
+print(f"JSON files saved to {output_dir} and conversion marker created.")
+
