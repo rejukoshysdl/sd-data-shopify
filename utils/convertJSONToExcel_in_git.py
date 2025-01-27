@@ -63,7 +63,7 @@ try:
     push_command = [
         'git', 'push', 
         f'https://{github_token}@github.com/{os.getenv("GITHUB_REPOSITORY")}.git', 
-        'main'  # Adjust branch if needed
+        'main'  # Adjust branch if needed 
     ]
     subprocess.run(push_command, check=True)
 
