@@ -34,7 +34,7 @@ def json_to_excel(json_dir, output_excel_file):
     print(f"Excel file has been created at: {output_excel_file}")
 
 # Define the directory containing the JSON files
-json_directory = 'local_output_json_files'  # Replace with your directory containing JSON files
+json_directory = '../output_json'  # Replace with your directory containing JSON files
 
 # Define the output folder
 output_folder = '../output_excel'  # Folder where the Excel file will be saved

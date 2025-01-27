@@ -46,7 +46,12 @@ for sheet in sheet_names:
     if exclude_sheet(sheet, excluded_sheets):
         continue
     
+    # Read the sheet into a DataFrame
     df = pd.read_excel(xls, sheet_name=sheet)
+    
+    # Replace NaN values with an empty string
+    df = df.fillna("")
+    
     # Convert each sheet to a list of dictionaries (JSON format)
     json_files[sheet] = df.to_dict(orient='records')
 
