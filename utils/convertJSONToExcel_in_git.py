@@ -50,7 +50,7 @@ def json_to_excel(json_dir, output_excel_file):
     print(f"Excel file has been created at: {output_excel_file}")
 
 # Define the directory containing the JSON files
-json_directory = '../repo-shopify-data'  # Replace with your directory containing JSON files
+json_directory = os.path.join(os.getcwd(), 'repo-shopify-data')  # Absolute path
 
 # Define the output folder
 output_folder = './final-matrixify-export'  # Folder where the Excel file will be saved
