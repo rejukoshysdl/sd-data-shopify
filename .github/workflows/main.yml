@@ -3,10 +3,9 @@ name: Run convertExcelToJSON and Push Excel File
 on:
   push:
     branches:
-      - int  # Trigger when changes are pushed to the 'main' branch
-    paths:
-      - '**/final-matrixify-export/**'  # Only run the action when changes are made to files under final-matrixify-export folder
-
+      - main  # Trigger when changes are pushed to the 'main' branch
+      - int  # Trigger the workflow for the 'int' branch
+      
 jobs:
   run-conversion-and-push:
     runs-on: ubuntu-latest  # Running on Ubuntu OS
