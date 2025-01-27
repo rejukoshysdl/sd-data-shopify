@@ -24,7 +24,7 @@ jobs:
     # Step 3: Install dependencies (if any, like pandas, openpyxl, etc.)
     - name: Install dependencies
       run: |
-          pip install pandas openpyxl  # Directly install necessary libraries without requirements.txt
+          pip install pandas openpyxl xlsxwriter # Directly install necessary libraries without requirements.txt
 
     # Step 4: Run the conversion Python script
     - name: Run convertJSONToExcel script
