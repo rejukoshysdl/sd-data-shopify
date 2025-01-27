@@ -2,7 +2,7 @@
     {
         "ID": "8,801,567,277,315",
         "Handle": "the-draft-snowboard",
-        "Command": "MERGE",
+        "Command": "DELETE",
         "Title": "The Draft Snowboard",
         "Body HTML": "",
         "Vendor": "Snowboard Vendor",
