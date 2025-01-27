@@ -16,6 +16,9 @@ def json_to_excel(json_dir, output_excel_file):
     # Get all JSON files in the directory
     json_files = glob.glob(os.path.join(json_dir, '*.json'))
     
+    # Print the files being processed for debugging
+    print(f"JSON files to process: {json_files}")
+    
     # Create an Excel writer object
     with pd.ExcelWriter(output_excel_file, engine='xlsxwriter') as writer:
         for json_file in json_files:
@@ -25,6 +28,10 @@ def json_to_excel(json_dir, output_excel_file):
             # Load the JSON data
             with open(json_file, 'r') as f:
                 json_data = json.load(f)
+            
+            # Print out the first few records of the JSON data for debugging
+            print(f"Processing JSON file: {json_file}")
+            print(f"Loaded JSON data (first 5 records): {json_data[:5]}")  # Print first 5 items
             
             # Convert JSON data to a DataFrame
             df = pd.DataFrame(json_data)
@@ -51,6 +58,9 @@ json_to_excel(json_directory, output_excel_file)
 # Ensure GITHUB_TOKEN is set up (GitHub Actions provides this automatically)
 github_token = os.getenv('GITHUB_TOKEN')
 
+# Print the GitHub token for debugging (remove in production)
+print(f"GITHUB_TOKEN: {github_token}")
+
 # Git commands to commit and push the generated Excel file to GitHub
 try:
     # Add the file to staging
@@ -68,7 +78,6 @@ try:
     subprocess.run(push_command, check=True)
 
     print(f"Excel file pushed to GitHub successfully.")
-
 
 except subprocess.CalledProcessError as e:
     print(f"Error occurred during Git operations: {e}")
