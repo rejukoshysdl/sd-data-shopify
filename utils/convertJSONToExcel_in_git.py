@@ -48,6 +48,9 @@ output_excel_file = os.path.join(output_folder, f'Export_{current_time}.xlsx')  
 # Call the function to convert JSON to Excel
 json_to_excel(json_directory, output_excel_file)
 
+# Ensure GITHUB_TOKEN is set up (GitHub Actions provides this automatically)
+github_token = os.getenv('GITHUB_TOKEN')
+
 # Git commands to commit and push the generated Excel file to GitHub
 try:
     # Add the file to staging
@@ -56,10 +59,16 @@ try:
     # Commit the file with a message
     subprocess.run(['git', 'commit', '-m', f'Add Excel file {output_excel_file}'], check=True)
     
-    # Push the changes to the remote repository (replace 'main' with your branch if needed)
-    subprocess.run(['git', 'push', 'origin', 'main'], check=True)
+    # Push the changes to the remote repository using GITHUB_TOKEN for authentication
+    push_command = [
+        'git', 'push', 
+        f'https://{github_token}@github.com/{os.getenv("GITHUB_REPOSITORY")}.git', 
+        'main'  # Adjust branch if needed
+    ]
+    subprocess.run(push_command, check=True)
 
     print(f"Excel file pushed to GitHub successfully.")
+
 
 except subprocess.CalledProcessError as e:
     print(f"Error occurred during Git operations: {e}")
