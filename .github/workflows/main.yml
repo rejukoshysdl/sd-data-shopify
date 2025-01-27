@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main  # Trigger when changes are pushed to the 'main' branch
-      - int  # Trigger the workflow for the 'int' branch
+      - int  # Trigger the workflow for the 'int' branch .
       
 jobs:
   run-conversion-and-push:
