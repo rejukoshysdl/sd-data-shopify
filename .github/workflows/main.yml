@@ -3,7 +3,7 @@ name: Run convertExcelToJSON and Push Excel File
 on:
   push:
     branches:
-      - main  # Trigger when changes are pushed to the 'main' branch
+      - int  # Trigger when changes are pushed to the 'main' branch
     paths:
       - '**/final-matrixify-export/**'  # Only run the action when changes are made to files under final-matrixify-export folder
 
