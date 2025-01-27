@@ -27,6 +27,6 @@ jobs:
           pip install pandas openpyxl  # Directly install necessary libraries without requirements.txt
 
     # Step 4: Run the conversion Python script
-    - name: Run convertExcelToJSON script
+    - name: Run convertJSONToExcel script
       run: |
-        python3 ./utils/convertExcelToJSON.py  # Adjust path if necessary
+        python3 ./utils/convertJSONToExcel.py  # Adjust path if necessary
