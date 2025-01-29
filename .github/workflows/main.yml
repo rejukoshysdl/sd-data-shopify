@@ -3,10 +3,9 @@ name: Run convertExcelToJSON and Push Excel File
 on:
   push:
     branches:
-      - int  # Trigger when changes are pushed to the 'main' branch
-    paths:
-      - '**/final-matrixify-export/**'  # Only run the action when changes are made to files under final-matrixify-export folder
-
+      - main  # Trigger when changes are pushed to the 'main' branch
+      - int  # Trigger the workflow for the 'int' branch .
+      
 jobs:
   run-conversion-and-push:
     runs-on: ubuntu-latest  # Running on Ubuntu OS
@@ -15,6 +14,14 @@ jobs:
     # Step 1: Checkout repository to access the code
     - name: Checkout repository
       uses: actions/checkout@v2
+      with:
+       ref: ${{ github.head_ref }}
+
+    - name: Set Git user info
+      run: |
+        git config --global user.name "MB USER"
+        git config --global user.email "reju.koshy@squaredatalabs.com"  # Set default user email for commits
+
 
     # Step 2: Set up Python environment
     - name: Set up Python 3.13
@@ -25,9 +32,9 @@ jobs:
     # Step 3: Install dependencies (if any, like pandas, openpyxl, etc.)
     - name: Install dependencies
       run: |
-        pip install -r requirements.txt  # Ensure your requirements.txt file lists the necessary libraries
+          pip install pandas openpyxl xlsxwriter # Directly install necessary libraries without requirements.txt
 
     # Step 4: Run the conversion Python script
-    - name: Run convertExcelToJSON script
+    - name: Run convertJSONToExcel script
       run: |
-        python3 ./utils/convertExcelToJSON.py  # Adjust path if necessary
+        python3 ./utils/convertJSONToExcel_in_git.py  # Adjust path if necessary
