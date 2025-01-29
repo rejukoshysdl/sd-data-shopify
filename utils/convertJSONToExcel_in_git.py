@@ -13,8 +13,19 @@ def json_to_excel(json_dir, output_excel_file):
     :param json_dir: Directory containing the JSON files
     :param output_excel_file: Path to save the resulting Excel file
     """
+    # Print the directory path for debugging
+    print(f"Searching for JSON files in directory: {os.path.abspath(json_dir)}")
+    
     # Get all JSON files in the directory
-    json_files = glob.glob(os.path.join(json_dir, '*.json'))
+    json_files = glob.glob(os.path.join(json_dir, '**', '*.json'), recursive=True)  # Include subdirectories
+    
+    # Print the files being processed for debugging
+    print(f"JSON files to process: {json_files}")
+    
+    # Check if any JSON files were found
+    if not json_files:
+        print("No JSON files found in the specified directory.")
+        return
     
     # Create an Excel writer object
     with pd.ExcelWriter(output_excel_file, engine='xlsxwriter') as writer:
@@ -26,6 +37,10 @@ def json_to_excel(json_dir, output_excel_file):
             with open(json_file, 'r') as f:
                 json_data = json.load(f)
             
+            # Print out the first few records of the JSON data for debugging
+            print(f"Processing JSON file: {json_file}")
+            print(f"Loaded JSON data (first 5 records): {json_data[:5]}")  # Print first 5 items
+            
             # Convert JSON data to a DataFrame
             df = pd.DataFrame(json_data)
             
@@ -35,10 +50,10 @@ def json_to_excel(json_dir, output_excel_file):
     print(f"Excel file has been created at: {output_excel_file}")
 
 # Define the directory containing the JSON files
-json_directory = '../output_json'  # Replace with your directory containing JSON files
+json_directory = os.path.join(os.getcwd(), 'repo-shopify-data')  # Absolute path
 
 # Define the output folder
-output_folder = '../final-matrixify-export'  # Folder where the Excel file will be saved
+output_folder = './final-matrixify-export'  # Folder where the Excel file will be saved
 os.makedirs(output_folder, exist_ok=True)  # Create the folder if it doesn't exist
 
 # Get the current date and time to format the file name
@@ -48,6 +63,9 @@ output_excel_file = os.path.join(output_folder, f'Export_{current_time}.xlsx')  
 # Call the function to convert JSON to Excel
 json_to_excel(json_directory, output_excel_file)
 
+# Ensure GITHUB_TOKEN is set up (GitHub Actions provides this automatically)
+github_token = os.getenv('GITHUB_TOKEN')
+
 # Git commands to commit and push the generated Excel file to GitHub
 try:
     # Add the file to staging
@@ -56,8 +74,13 @@ try:
     # Commit the file with a message
     subprocess.run(['git', 'commit', '-m', f'Add Excel file {output_excel_file}'], check=True)
     
-    # Push the changes to the remote repository (replace 'main' with your branch if needed)
-    subprocess.run(['git', 'push', 'origin', 'main'], check=True)
+    # Push the changes to the remote repository using GITHUB_TOKEN for authentication
+    push_command = [
+        'git', 'push', 
+        f'https://{github_token}@github.com/{os.getenv("GITHUB_REPOSITORY")}.git', 
+        'main'  # Adjust branch if needed 
+    ]
+    subprocess.run(push_command, check=True)
 
     print(f"Excel file pushed to GitHub successfully.")
 
