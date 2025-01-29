@@ -2,7 +2,7 @@
 
 # Execute the first Python script
 echo "Executing convertExcelToJSON.py..."
-python3.13 convertExcelToJSON.py
+python3.13 convertExcelToJSON_local.py
 
 # Wait for the completion marker file to be created
 OUTPUT_DIR="../output_json"  # The directory where the completed file will be located
