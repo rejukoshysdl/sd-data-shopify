@@ -27,6 +27,6 @@ jobs:
         pip install -r requirements.txt  # Ensure your requirements.txt file lists the necessary libraries
 
     # Step 4: Run the conversion Python script
-    - name: Run convertExcelToJSON script
+    - name: Run convertJSONToExcel script
       run: |
-        python3 ./utils/convertExcelToJSON.py  # Adjust path if necessary
+        python3 ./utils/convertJSONToExcel.py  # Adjust path if necessary
