@@ -2,7 +2,7 @@
     {
         "ID": "8,801,567,277,315",
         "Handle": "the-draft-snowboard",
-        "Command": "DELETE",
+        "Command": "MERGE",
         "Title": "The Draft Snowboard-test",
         "Body HTML": "",
         "Vendor": "Snowboard Vendor",
@@ -167,7 +167,7 @@
     {
         "ID": "8,801,567,277,315",
         "Handle": "the-draft-snowboard-testsdl",
-        "Command": "MERGE",
+        "Command": "DELETE",
         "Title": "The Draft Snowboard-test",
         "Body HTML": "",
         "Vendor": "Snowboard Vendor",
