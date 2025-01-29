@@ -13,8 +13,19 @@ def json_to_excel(json_dir, output_excel_file):
     :param json_dir: Directory containing the JSON files
     :param output_excel_file: Path to save the resulting Excel file
     """
+    # Print the directory path for debugging
+    print(f"Searching for JSON files in directory: {os.path.abspath(json_dir)}")
+    
     # Get all JSON files in the directory
-    json_files = glob.glob(os.path.join(json_dir, '*.json'))
+    json_files = glob.glob(os.path.join(json_dir, '**', '*.json'), recursive=True)  # Include subdirectories
+    
+    # Print the files being processed for debugging
+    print(f"JSON files to process: {json_files}")
+    
+    # Check if any JSON files were found
+    if not json_files:
+        print("No JSON files found in the specified directory.")
+        return
     
     # Create an Excel writer object
     with pd.ExcelWriter(output_excel_file, engine='xlsxwriter') as writer:
@@ -26,6 +37,10 @@ def json_to_excel(json_dir, output_excel_file):
             with open(json_file, 'r') as f:
                 json_data = json.load(f)
             
+            # Print out the first few records of the JSON data for debugging
+            print(f"Processing JSON file: {json_file}")
+            print(f"Loaded JSON data (first 5 records): {json_data[:5]}")  # Print first 5 items
+            
             # Convert JSON data to a DataFrame
             df = pd.DataFrame(json_data)
             
@@ -35,7 +50,7 @@ def json_to_excel(json_dir, output_excel_file):
     print(f"Excel file has been created at: {output_excel_file}")
 
 # Define the directory containing the JSON files
-json_directory = '../output_json'  # Replace with your directory containing JSON files
+json_directory = os.path.join(os.getcwd(), 'repo-shopify-data')  # Absolute path
 
 # Define the output folder
 output_folder = './final-matrixify-export'  # Folder where the Excel file will be saved
@@ -68,7 +83,6 @@ try:
     subprocess.run(push_command, check=True)
 
     print(f"Excel file pushed to GitHub successfully.")
-
 
 except subprocess.CalledProcessError as e:
     print(f"Error occurred during Git operations: {e}")

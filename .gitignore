@@ -1,9 +1,1 @@
-# Ignore the developer_export folder
-developer_export/
 
-# Optionally ignore other directories or files you don't want to track
-output_json/
-output_excel/
-final-matrixify-export/
-*.log
-*.tmp
