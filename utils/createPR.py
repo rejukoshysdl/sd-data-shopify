@@ -16,7 +16,7 @@ for output_json_path in output_json_files:
     file_name = os.path.basename(output_json_path)
     repo_json_path = os.path.join(repo_json_dir, file_name)
 
-    # Copy the file from the output_json directory to the repo_json directory
+    # Copy the file from the output_json directory to the repo_json directory.
     try:
         shutil.copy(output_json_path, repo_json_path)  # This will copy the file to the destination
         print(f"Successfully copied {file_name} to {repo_json_path}")
