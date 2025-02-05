@@ -7,7 +7,7 @@
     },
     {
         "ID": "504,430,592,281",
-        "Path": "/haircare-changed",
+        "Path": "/haircare",
         "Command": "MERGE",
         "Target": "/pages/lp-core-ageproofhair"
     },
