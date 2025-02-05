@@ -41,4 +41,5 @@ jobs:
     # Step 4: Run the conversion Python script
     - name: Run convertJSONToExcel script
       run: |
+        source venv/bin/activate
         python3 ./utils/convertJSONToExcel_in_git.py  # Adjust path if necessary
