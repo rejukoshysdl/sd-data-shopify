@@ -55,10 +55,3 @@ jobs:
       run: |
         source venv/bin/activate  # Ensure virtual environment is active
         python3 ./utils/convertJSONToExcel_in_git.py  # Adjust path if necessary
-
-    # Step 7: Commit and push the generated Excel file
-    - name: Commit and push Excel file
-      run: |
-        git add ./final-matrixify-export/*.xlsx
-        git commit -m "Add Excel file generated from JSON data"
-        git push origin ${{ github.ref }}
