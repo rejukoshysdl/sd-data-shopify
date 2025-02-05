@@ -32,7 +32,12 @@ jobs:
     # Step 3: Install dependencies (if any, like pandas, openpyxl, etc.)
     - name: Install dependencies
       run: |
-          pip install pandas openpyxl xlsxwriter # Directly install necessary libraries without requirements.txt
+        # Create a virtual environment if it doesn't exist
+        if [ ! -d "venv" ]; then
+          python3 -m venv venv  # Create virtual environment
+        fi
+        source venv/bin/activate  # Activate the virtual environment
+        pip install pandas openpyxl xlsxwriter  # Install dependencies only if needed
 
     # Step 4: Run the conversion Python script
     - name: Run convertJSONToExcel script
