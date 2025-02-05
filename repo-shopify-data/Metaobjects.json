@@ -8,7 +8,7 @@
         "Updated At": "2024-12-02 22:15:08 -0800",
         "Definition: Handle": "shopify--product-certifications-standards",
         "Definition: Name": "Product certifications & standards",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1",
         "Field": "label",
         "Value": "SPF protection"
@@ -36,7 +36,7 @@
         "Updated At": "2024-12-02 22:15:04 -0800",
         "Definition: Handle": "shopify--skin-care-effect",
         "Definition: Name": "Skin care effect",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "3",
         "Field": "label",
         "Value": "Cleansing"
@@ -64,7 +64,7 @@
         "Updated At": "2025-01-03 14:01:30 -0800",
         "Definition: Handle": "shopify--skin-care-effect",
         "Definition: Name": "Skin care effect",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "5",
         "Field": "label",
         "Value": "Smoothing"
@@ -92,7 +92,7 @@
         "Updated At": "2025-01-03 14:01:30 -0800",
         "Definition: Handle": "shopify--skin-care-effect",
         "Definition: Name": "Skin care effect",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "7",
         "Field": "label",
         "Value": "Firming"
@@ -120,7 +120,7 @@
         "Updated At": "2025-01-03 14:01:30 -0800",
         "Definition: Handle": "shopify--skin-care-effect",
         "Definition: Name": "Skin care effect",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "9",
         "Field": "label",
         "Value": "Anti-aging"
@@ -148,7 +148,7 @@
         "Updated At": "2024-12-02 22:15:09 -0800",
         "Definition: Handle": "shopify--skin-care-effect",
         "Definition: Name": "Skin care effect",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "11",
         "Field": "label",
         "Value": "Hydrating"
@@ -176,7 +176,7 @@
         "Updated At": "2024-12-02 22:15:05 -0800",
         "Definition: Handle": "shopify--skin-care-effect",
         "Definition: Name": "Skin care effect",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "13",
         "Field": "label",
         "Value": "Softening"
@@ -204,7 +204,7 @@
         "Updated At": "2024-12-02 22:15:06 -0800",
         "Definition: Handle": "shopify--suitable-for-skin-type",
         "Definition: Name": "Suitable for skin type",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "15",
         "Field": "label",
         "Value": "All skin types"
@@ -232,7 +232,7 @@
         "Updated At": "2024-12-02 22:15:04 -0800",
         "Definition: Handle": "shopify--suitable-for-skin-type",
         "Definition: Name": "Suitable for skin type",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "17",
         "Field": "label",
         "Value": "Normal"
@@ -260,7 +260,7 @@
         "Updated At": "2024-12-02 22:15:08 -0800",
         "Definition: Handle": "shopify--suitable-for-skin-type",
         "Definition: Name": "Suitable for skin type",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "19",
         "Field": "label",
         "Value": "Sensitive"
@@ -288,7 +288,7 @@
         "Updated At": "2024-12-02 22:15:03 -0800",
         "Definition: Handle": "shopify--suitable-for-skin-type",
         "Definition: Name": "Suitable for skin type",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "21",
         "Field": "label",
         "Value": "Dry"
@@ -316,7 +316,7 @@
         "Updated At": "2024-12-02 22:15:03 -0800",
         "Definition: Handle": "shopify--suitable-for-skin-type",
         "Definition: Name": "Suitable for skin type",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "23",
         "Field": "label",
         "Value": "Mature"
@@ -344,7 +344,7 @@
         "Updated At": "2024-12-02 22:15:06 -0800",
         "Definition: Handle": "shopify--suitable-for-skin-type",
         "Definition: Name": "Suitable for skin type",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "25",
         "Field": "label",
         "Value": "Very dry"
@@ -372,7 +372,7 @@
         "Updated At": "2024-12-02 22:15:03 -0800",
         "Definition: Handle": "shopify--suitable-for-skin-type",
         "Definition: Name": "Suitable for skin type",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "27",
         "Field": "label",
         "Value": "Oily"
@@ -400,7 +400,7 @@
         "Updated At": "2024-12-02 22:15:06 -0800",
         "Definition: Handle": "shopify--suitable-for-skin-type",
         "Definition: Name": "Suitable for skin type",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "29",
         "Field": "label",
         "Value": "Aging"
@@ -428,7 +428,7 @@
         "Updated At": "2024-12-02 22:15:04 -0800",
         "Definition: Handle": "shopify--suitable-for-skin-type",
         "Definition: Name": "Suitable for skin type",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "31",
         "Field": "label",
         "Value": "Combination"
@@ -456,7 +456,7 @@
         "Updated At": "2024-12-02 22:15:09 -0800",
         "Definition: Handle": "shopify--product-form",
         "Definition: Name": "Product form",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "33",
         "Field": "label",
         "Value": "Cream"
@@ -484,7 +484,7 @@
         "Updated At": "2025-01-03 14:01:30 -0800",
         "Definition: Handle": "shopify--product-form",
         "Definition: Name": "Product form",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "35",
         "Field": "label",
         "Value": "Serum"
@@ -512,7 +512,7 @@
         "Updated At": "2024-12-03 08:05:17 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "37",
         "Field": "quantity",
         "Value": "1"
@@ -540,7 +540,7 @@
         "Updated At": "2024-12-03 07:53:53 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "39",
         "Field": "quantity",
         "Value": "1"
@@ -568,7 +568,7 @@
         "Updated At": "2024-12-03 08:03:32 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "41",
         "Field": "quantity",
         "Value": "1"
@@ -596,7 +596,7 @@
         "Updated At": "2024-12-03 08:13:04 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "43",
         "Field": "quantity",
         "Value": "1"
@@ -624,7 +624,7 @@
         "Updated At": "2024-12-03 08:27:10 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "45",
         "Field": "quantity",
         "Value": "1"
@@ -652,7 +652,7 @@
         "Updated At": "2024-12-03 08:01:14 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "47",
         "Field": "quantity",
         "Value": "1"
@@ -680,7 +680,7 @@
         "Updated At": "2024-12-03 08:17:11 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "49",
         "Field": "quantity",
         "Value": "1"
@@ -708,7 +708,7 @@
         "Updated At": "2024-12-03 08:02:57 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "51",
         "Field": "quantity",
         "Value": "1"
@@ -736,7 +736,7 @@
         "Updated At": "2024-12-03 08:29:49 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "53",
         "Field": "quantity",
         "Value": "1"
@@ -764,7 +764,7 @@
         "Updated At": "2024-12-03 08:01:43 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "55",
         "Field": "quantity",
         "Value": "1"
@@ -792,7 +792,7 @@
         "Updated At": "2024-12-03 07:56:31 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "57",
         "Field": "quantity",
         "Value": "1"
@@ -820,7 +820,7 @@
         "Updated At": "2025-01-06 08:08:59 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "59",
         "Field": "quantity",
         "Value": "1"
@@ -848,7 +848,7 @@
         "Updated At": "2024-12-03 06:38:48 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "61",
         "Field": "quantity",
         "Value": "1"
@@ -876,7 +876,7 @@
         "Updated At": "2024-12-03 07:53:22 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "63",
         "Field": "quantity",
         "Value": "1"
@@ -904,7 +904,7 @@
         "Updated At": "2024-12-03 07:54:52 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "65",
         "Field": "quantity",
         "Value": "1"
@@ -932,7 +932,7 @@
         "Updated At": "2024-12-03 08:04:42 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "67",
         "Field": "quantity",
         "Value": "1"
@@ -960,7 +960,7 @@
         "Updated At": "2024-12-03 08:19:26 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "69",
         "Field": "quantity",
         "Value": "1"
@@ -988,7 +988,7 @@
         "Updated At": "2024-12-03 08:11:13 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "71",
         "Field": "quantity",
         "Value": "1"
@@ -1016,7 +1016,7 @@
         "Updated At": "2024-12-03 08:22:50 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "73",
         "Field": "quantity",
         "Value": "1"
@@ -1044,7 +1044,7 @@
         "Updated At": "2024-12-03 07:49:15 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "75",
         "Field": "quantity",
         "Value": "1"
@@ -1072,7 +1072,7 @@
         "Updated At": "2024-12-03 08:26:17 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "77",
         "Field": "quantity",
         "Value": "1"
@@ -1100,7 +1100,7 @@
         "Updated At": "2024-12-03 08:12:26 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "79",
         "Field": "quantity",
         "Value": "1"
@@ -1128,7 +1128,7 @@
         "Updated At": "2024-12-03 07:51:00 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "81",
         "Field": "quantity",
         "Value": "1"
@@ -1156,7 +1156,7 @@
         "Updated At": "2024-12-03 08:27:42 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "83",
         "Field": "quantity",
         "Value": "1"
@@ -1184,7 +1184,7 @@
         "Updated At": "2024-12-03 08:15:50 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "85",
         "Field": "quantity",
         "Value": "2"
@@ -1212,7 +1212,7 @@
         "Updated At": "2024-12-03 08:28:17 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "87",
         "Field": "quantity",
         "Value": "1"
@@ -1240,7 +1240,7 @@
         "Updated At": "2024-12-03 08:11:49 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "89",
         "Field": "quantity",
         "Value": "1"
@@ -1268,7 +1268,7 @@
         "Updated At": "2024-12-03 08:18:16 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "91",
         "Field": "quantity",
         "Value": "1"
@@ -1296,7 +1296,7 @@
         "Updated At": "2024-12-03 08:21:54 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "93",
         "Field": "quantity",
         "Value": "1"
@@ -1324,7 +1324,7 @@
         "Updated At": "2024-12-03 08:25:31 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "95",
         "Field": "quantity",
         "Value": "1"
@@ -1352,7 +1352,7 @@
         "Updated At": "2024-12-27 15:46:31 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "97",
         "Field": "quantity",
         "Value": "1"
@@ -1380,7 +1380,7 @@
         "Updated At": "2024-12-03 08:20:35 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "99",
         "Field": "quantity",
         "Value": "1"
@@ -1408,7 +1408,7 @@
         "Updated At": "2024-12-03 08:26:45 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "101",
         "Field": "quantity",
         "Value": "1"
@@ -1436,7 +1436,7 @@
         "Updated At": "2024-12-03 06:38:24 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "103",
         "Field": "quantity",
         "Value": "1"
@@ -1464,7 +1464,7 @@
         "Updated At": "2024-12-03 08:02:16 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "105",
         "Field": "quantity",
         "Value": "1"
@@ -1492,7 +1492,7 @@
         "Updated At": "2024-12-03 08:24:31 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "107",
         "Field": "quantity",
         "Value": "1"
@@ -1520,7 +1520,7 @@
         "Updated At": "2024-12-03 06:37:41 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "109",
         "Field": "quantity",
         "Value": "1"
@@ -1548,7 +1548,7 @@
         "Updated At": "2024-12-03 08:25:00 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "111",
         "Field": "quantity",
         "Value": "1"
@@ -1576,7 +1576,7 @@
         "Updated At": "2025-01-09 18:27:25 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "113",
         "Field": "quantity",
         "Value": "1"
@@ -1604,7 +1604,7 @@
         "Updated At": "2024-12-03 07:54:20 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "115",
         "Field": "quantity",
         "Value": "1"
@@ -1632,7 +1632,7 @@
         "Updated At": "2024-12-03 21:15:31 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "117",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -1674,7 +1674,7 @@
         "Updated At": "2024-12-03 08:30:11 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "120",
         "Field": "quantity",
         "Value": "1"
@@ -1702,7 +1702,7 @@
         "Updated At": "2024-12-03 21:36:33 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "122",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -1744,7 +1744,7 @@
         "Updated At": "2024-12-03 21:38:25 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "125",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -1786,7 +1786,7 @@
         "Updated At": "2024-12-27 16:48:35 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "128",
         "Field": "quantity",
         "Value": "1"
@@ -1814,7 +1814,7 @@
         "Updated At": "2024-12-03 22:35:09 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "130",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -1856,7 +1856,7 @@
         "Updated At": "2024-12-03 08:15:10 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "133",
         "Field": "quantity",
         "Value": "1"
@@ -1884,7 +1884,7 @@
         "Updated At": "2025-01-06 08:07:09 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "135",
         "Field": "quantity",
         "Value": "1"
@@ -1912,7 +1912,7 @@
         "Updated At": "2024-12-03 07:57:23 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "137",
         "Field": "quantity",
         "Value": "1"
@@ -1940,7 +1940,7 @@
         "Updated At": "2024-12-03 22:34:28 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "139",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -1982,7 +1982,7 @@
         "Updated At": "2024-12-03 22:37:23 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "142",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -2024,7 +2024,7 @@
         "Updated At": "2024-12-27 15:49:57 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "145",
         "Field": "quantity",
         "Value": "1"
@@ -2052,7 +2052,7 @@
         "Updated At": "2024-12-03 21:17:36 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "147",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -2094,7 +2094,7 @@
         "Updated At": "2024-12-03 21:11:36 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "150",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -2136,7 +2136,7 @@
         "Updated At": "2024-12-03 21:13:57 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "153",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -2178,7 +2178,7 @@
         "Updated At": "2024-12-03 22:12:03 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "156",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -2220,7 +2220,7 @@
         "Updated At": "2025-01-06 08:20:44 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "159",
         "Field": "quantity",
         "Value": "1"
@@ -2248,7 +2248,7 @@
         "Updated At": "2024-12-03 08:23:37 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "161",
         "Field": "quantity",
         "Value": "1"
@@ -2276,7 +2276,7 @@
         "Updated At": "2024-12-03 08:05:47 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "163",
         "Field": "quantity",
         "Value": "2"
@@ -2304,7 +2304,7 @@
         "Updated At": "2024-12-03 22:38:00 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "165",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -2346,7 +2346,7 @@
         "Updated At": "2024-12-03 21:09:49 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "168",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -2388,7 +2388,7 @@
         "Updated At": "2024-12-03 21:35:41 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "171",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -2430,7 +2430,7 @@
         "Updated At": "2024-12-03 21:22:10 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "174",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -2472,7 +2472,7 @@
         "Updated At": "2024-12-03 22:11:30 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "177",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -2514,7 +2514,7 @@
         "Updated At": "2024-12-03 21:16:09 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "180",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -2556,7 +2556,7 @@
         "Updated At": "2024-12-03 08:30:42 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "183",
         "Field": "quantity",
         "Value": "1"
@@ -2584,7 +2584,7 @@
         "Updated At": "2024-12-03 21:31:08 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "185",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -2626,7 +2626,7 @@
         "Updated At": "2024-12-03 21:16:56 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "188",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -2668,7 +2668,7 @@
         "Updated At": "2024-12-03 07:49:58 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "191",
         "Field": "quantity",
         "Value": "1"
@@ -2696,7 +2696,7 @@
         "Updated At": "2024-12-03 22:38:38 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "193",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -2738,7 +2738,7 @@
         "Updated At": "2025-01-06 08:22:02 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "196",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -2780,7 +2780,7 @@
         "Updated At": "2024-12-03 21:18:15 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "199",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -2822,7 +2822,7 @@
         "Updated At": "2024-12-03 21:20:37 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "202",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -2864,7 +2864,7 @@
         "Updated At": "2024-12-18 05:19:40 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "205",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -2906,7 +2906,7 @@
         "Updated At": "2024-12-03 07:50:27 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "208",
         "Field": "quantity",
         "Value": "1"
@@ -2934,7 +2934,7 @@
         "Updated At": "2025-01-23 12:43:04 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "210",
         "Field": "quantity",
         "Value": "1"
@@ -2962,7 +2962,7 @@
         "Updated At": "2024-12-03 07:57:57 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "212",
         "Field": "quantity",
         "Value": "1"
@@ -2990,7 +2990,7 @@
         "Updated At": "2024-12-03 22:07:29 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "214",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -3032,7 +3032,7 @@
         "Updated At": "2024-12-03 21:32:13 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "217",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -3074,7 +3074,7 @@
         "Updated At": "2024-12-03 08:28:47 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "220",
         "Field": "quantity",
         "Value": "1"
@@ -3102,7 +3102,7 @@
         "Updated At": "2024-12-03 22:40:05 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "222",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -3144,7 +3144,7 @@
         "Updated At": "2024-12-03 21:21:28 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "225",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -3186,7 +3186,7 @@
         "Updated At": "2024-12-03 21:26:49 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "228",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -3228,7 +3228,7 @@
         "Updated At": "2024-12-03 21:22:52 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "231",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -3270,7 +3270,7 @@
         "Updated At": "2024-12-03 22:08:50 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "234",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -3312,7 +3312,7 @@
         "Updated At": "2024-12-03 22:36:34 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "237",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -3354,7 +3354,7 @@
         "Updated At": "2024-12-03 21:07:34 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "240",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -3396,7 +3396,7 @@
         "Updated At": "2024-12-03 21:32:53 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "243",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -3438,7 +3438,7 @@
         "Updated At": "2024-12-03 21:10:52 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "246",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -3480,7 +3480,7 @@
         "Updated At": "2024-12-03 22:39:30 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "249",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -3522,7 +3522,7 @@
         "Updated At": "2024-12-03 08:31:39 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "252",
         "Field": "quantity",
         "Value": "1"
@@ -3550,7 +3550,7 @@
         "Updated At": "2024-12-03 08:06:20 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "254",
         "Field": "quantity",
         "Value": "1"
@@ -3578,7 +3578,7 @@
         "Updated At": "2025-01-09 03:41:59 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "256",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -3620,7 +3620,7 @@
         "Updated At": "2024-12-03 21:39:22 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "259",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -3662,7 +3662,7 @@
         "Updated At": "2024-12-03 22:35:58 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "262",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -3704,7 +3704,7 @@
         "Updated At": "2024-12-03 21:18:53 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "265",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -3746,7 +3746,7 @@
         "Updated At": "2024-12-03 21:05:20 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "268",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -3788,7 +3788,7 @@
         "Updated At": "2024-12-03 08:14:16 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "271",
         "Field": "quantity",
         "Value": "1"
@@ -3816,7 +3816,7 @@
         "Updated At": "2024-12-03 22:06:49 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "273",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -3858,7 +3858,7 @@
         "Updated At": "2024-12-03 21:34:43 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "276",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -3900,7 +3900,7 @@
         "Updated At": "2024-12-03 21:30:24 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "279",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -3942,7 +3942,7 @@
         "Updated At": "2024-12-27 15:54:20 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "282",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -3984,7 +3984,7 @@
         "Updated At": "2024-12-27 16:06:06 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "285",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -4026,7 +4026,7 @@
         "Updated At": "2024-12-27 16:17:41 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "288",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -4068,7 +4068,7 @@
         "Updated At": "2024-12-03 21:09:03 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "291",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -4110,7 +4110,7 @@
         "Updated At": "2025-01-06 08:19:13 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "294",
         "Field": "quantity",
         "Value": "1"
@@ -4138,7 +4138,7 @@
         "Updated At": "2024-12-03 21:33:33 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "296",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -4180,7 +4180,7 @@
         "Updated At": "2024-12-03 22:10:57 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "299",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -4222,7 +4222,7 @@
         "Updated At": "2024-12-03 22:05:30 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "302",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -4264,7 +4264,7 @@
         "Updated At": "2024-12-03 21:28:51 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "305",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -4306,7 +4306,7 @@
         "Updated At": "2024-12-03 08:04:04 -0800",
         "Definition: Handle": "entry_bundle_components",
         "Definition: Name": "Entry Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "308",
         "Field": "quantity",
         "Value": "1"
@@ -4334,7 +4334,7 @@
         "Updated At": "2024-12-03 21:19:57 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "310",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -4376,7 +4376,7 @@
         "Updated At": "2024-12-03 21:10:20 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "313",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -4418,7 +4418,7 @@
         "Updated At": "2024-12-27 16:07:37 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "316",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -4460,7 +4460,7 @@
         "Updated At": "2024-12-03 21:06:59 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "319",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -4502,7 +4502,7 @@
         "Updated At": "2024-12-03 21:08:24 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "322",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -4544,7 +4544,7 @@
         "Updated At": "2024-12-03 22:06:15 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "325",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -4586,7 +4586,7 @@
         "Updated At": "2024-12-03 21:37:19 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "328",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -4628,7 +4628,7 @@
         "Updated At": "2024-12-03 22:08:10 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "331",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -4670,7 +4670,7 @@
         "Updated At": "2025-01-09 18:37:10 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "334",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -4712,7 +4712,7 @@
         "Updated At": "2024-12-03 21:06:17 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "337",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -4754,7 +4754,7 @@
         "Updated At": "2024-12-03 22:09:29 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "340",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -4796,7 +4796,7 @@
         "Updated At": "2024-12-03 21:29:35 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "343",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -4838,7 +4838,7 @@
         "Updated At": "2024-12-03 22:10:08 -0800",
         "Definition: Handle": "replenishment_bundle_components",
         "Definition: Name": "Replenishment Bundle Components",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "346",
         "Field": "collection",
         "Value": "custom-dynamic-bundle"
@@ -4880,7 +4880,7 @@
         "Updated At": "2024-12-03 01:54:22 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "349",
         "Field": "postupsell_type",
         "Value": "SWAP"
@@ -4922,7 +4922,7 @@
         "Updated At": "2024-12-03 01:55:59 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "352",
         "Field": "postupsell_type",
         "Value": "SWAP"
@@ -4964,7 +4964,7 @@
         "Updated At": "2024-12-18 00:01:10 -0800",
         "Definition: Handle": "pricebook",
         "Definition: Name": "Pricebook",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "355",
         "Field": "pricebook",
         "Value": "MBHair-34-54PB"
@@ -4978,7 +4978,7 @@
         "Updated At": "2024-12-19 21:41:48 -0800",
         "Definition: Handle": "pricebook",
         "Definition: Name": "Pricebook",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "356",
         "Field": "pricebook",
         "Value": "MB849-79Hair34-54PB"
@@ -4992,7 +4992,7 @@
         "Updated At": "2025-01-03 10:17:43 -0800",
         "Definition: Handle": "pricebook",
         "Definition: Name": "Pricebook",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "357",
         "Field": "pricebook",
         "Value": "MB859-89Hair34-54PB"
@@ -5006,7 +5006,7 @@
         "Updated At": "2024-12-03 00:34:08 -0800",
         "Definition: Handle": "pricebook",
         "Definition: Name": "Pricebook",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "358",
         "Field": "pricebook",
         "Value": "MB7-49-79-15-PB"
@@ -5020,7 +5020,7 @@
         "Updated At": "2024-12-03 00:34:33 -0800",
         "Definition: Handle": "pricebook",
         "Definition: Name": "Pricebook",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "359",
         "Field": "pricebook",
         "Value": "MB8-Subscribe&Save-2024-Pricing-15PCT-Off"
@@ -5034,7 +5034,7 @@
         "Updated At": "2024-12-03 01:56:34 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "360",
         "Field": "postupsell_type",
         "Value": "SWAP"
@@ -5076,7 +5076,7 @@
         "Updated At": "2024-12-03 01:59:27 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "363",
         "Field": "postupsell_type",
         "Value": "SWAP"
@@ -5118,7 +5118,7 @@
         "Updated At": "2024-12-03 01:57:59 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "366",
         "Field": "postupsell_type",
         "Value": "SWAP"
@@ -5160,7 +5160,7 @@
         "Updated At": "2024-12-03 02:00:36 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "369",
         "Field": "postupsell_type",
         "Value": "SWAP"
@@ -5202,7 +5202,7 @@
         "Updated At": "2024-12-03 02:01:49 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "372",
         "Field": "postupsell_type",
         "Value": "SWAP"
@@ -5244,7 +5244,7 @@
         "Updated At": "2024-12-03 01:55:25 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "375",
         "Field": "postupsell_type",
         "Value": "SWAP"
@@ -5286,7 +5286,7 @@
         "Updated At": "2024-12-03 01:57:08 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "378",
         "Field": "postupsell_type",
         "Value": "SWAP"
@@ -5328,7 +5328,7 @@
         "Updated At": "2024-12-03 02:02:27 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "381",
         "Field": "postupsell_type",
         "Value": "SWAP"
@@ -5370,7 +5370,7 @@
         "Updated At": "2024-12-03 01:54:55 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "384",
         "Field": "postupsell_type",
         "Value": "SWAP"
@@ -5412,7 +5412,7 @@
         "Updated At": "2024-12-03 02:03:00 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "387",
         "Field": "postupsell_type",
         "Value": "SWAP"
@@ -5454,7 +5454,7 @@
         "Updated At": "2024-12-03 02:01:09 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "390",
         "Field": "postupsell_type",
         "Value": "SWAP"
@@ -5496,7 +5496,7 @@
         "Updated At": "2024-12-03 02:00:01 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "393",
         "Field": "postupsell_type",
         "Value": "SWAP"
@@ -5538,7 +5538,7 @@
         "Updated At": "2024-12-12 00:31:00 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "396",
         "Field": "postupsell_type",
         "Value": "ADD"
@@ -5580,7 +5580,7 @@
         "Updated At": "2024-12-12 00:46:50 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "399",
         "Field": "postupsell_type",
         "Value": "ADD"
@@ -5622,7 +5622,7 @@
         "Updated At": "2024-12-12 00:46:12 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "402",
         "Field": "postupsell_type",
         "Value": "ADD"
@@ -5664,7 +5664,7 @@
         "Updated At": "2024-12-12 00:45:13 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "405",
         "Field": "postupsell_type",
         "Value": "ADD"
@@ -5706,7 +5706,7 @@
         "Updated At": "2024-12-12 00:44:17 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "408",
         "Field": "postupsell_type",
         "Value": "ADD"
@@ -5748,7 +5748,7 @@
         "Updated At": "2024-12-12 00:32:10 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "411",
         "Field": "postupsell_type",
         "Value": "ADD"
@@ -5790,7 +5790,7 @@
         "Updated At": "2024-12-12 00:41:04 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "414",
         "Field": "postupsell_type",
         "Value": "ADD"
@@ -5832,7 +5832,7 @@
         "Updated At": "2024-12-03 01:51:51 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "417",
         "Field": "image",
         "Value": "MB_KeyIngredient_RiceExtract.jpg"
@@ -5874,7 +5874,7 @@
         "Updated At": "2024-12-19 22:04:38 -0800",
         "Definition: Handle": "post_upsell_ui_rendering",
         "Definition: Name": "PostUpsell UI RENDERING",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "420",
         "Field": "postupsell_offer_description",
         "Value": "4-piece haircare system - PPU"
@@ -5986,7 +5986,7 @@
         "Updated At": "2024-12-03 01:38:13 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "428",
         "Field": "image",
         "Value": "MB_KeyIngredient_PapayaEnzymes.jpg"
@@ -6028,7 +6028,7 @@
         "Updated At": "2024-12-03 01:33:47 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "431",
         "Field": "image",
         "Value": "MB_Allantoin_Ingredient_1471524091_030624.jpg"
@@ -6070,7 +6070,7 @@
         "Updated At": "2024-12-03 02:03:43 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "434",
         "Field": "image",
         "Value": "MB_KeyIngredient_BotanicalExtracts_c48d09bb-ae5a-4000-8935-c191074891c4.jpg"
@@ -6112,7 +6112,7 @@
         "Updated At": "2024-12-03 02:10:12 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "437",
         "Field": "image",
         "Value": "MB_KeyIngredient_SoyProtein.jpg"
@@ -6154,7 +6154,7 @@
         "Updated At": "2024-12-03 01:58:24 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "440",
         "Field": "image",
         "Value": "MB_Niacinamide_Ingredient_1353761985_060324.jpg"
@@ -6196,7 +6196,7 @@
         "Updated At": "2024-12-03 02:07:36 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "443",
         "Field": "image",
         "Value": "MB_KeyIngredient_OatExtract.jpg"
@@ -6238,7 +6238,7 @@
         "Updated At": "2024-12-03 01:56:43 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "446",
         "Field": "image",
         "Value": "MB_Niacinamide_Ingredient_1353761985_060324.jpg"
@@ -6280,7 +6280,7 @@
         "Updated At": "2024-12-03 01:30:21 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "449",
         "Field": "image",
         "Value": "MB_KeyIngredient_Panthenol.jpg"
@@ -6322,7 +6322,7 @@
         "Updated At": "2024-12-03 01:35:43 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "452",
         "Field": "image",
         "Value": "MB_KeyIngredient_SheaButter.jpg"
@@ -6364,7 +6364,7 @@
         "Updated At": "2024-12-03 02:01:36 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "455",
         "Field": "image",
         "Value": "MB_Hyaluronic_Acid_Ingredient.jpg"
@@ -6406,7 +6406,7 @@
         "Updated At": "2024-12-03 02:10:51 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "458",
         "Field": "image",
         "Value": "MB_KeyIngredient_VitaminC.jpg"
@@ -6448,7 +6448,7 @@
         "Updated At": "2024-12-03 01:28:09 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "461",
         "Field": "image",
         "Value": "MB_Retinol_Ingredient.jpg"
@@ -6490,7 +6490,7 @@
         "Updated At": "2024-12-03 01:26:38 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "464",
         "Field": "image",
         "Value": "MB_Rose_Water_Ingredient_1498853754_060324.jpg"
@@ -6532,7 +6532,7 @@
         "Updated At": "2024-12-12 00:42:20 -0800",
         "Definition: Handle": "post_upsell_variant_kit",
         "Definition: Name": "Post Upsell Variant Kit",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "467",
         "Field": "postupsell_type",
         "Value": "ADD"
@@ -6574,7 +6574,7 @@
         "Updated At": "2024-12-03 01:52:43 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "470",
         "Field": "image",
         "Value": "MB_Peptides_Ingredient_1368237422_060324.jpg"
@@ -6616,7 +6616,7 @@
         "Updated At": "2024-12-03 02:04:38 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "473",
         "Field": "image",
         "Value": "MB_Peptides_Ingredient_1368237422_060324.jpg"
@@ -6658,7 +6658,7 @@
         "Updated At": "2024-12-03 01:35:02 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "476",
         "Field": "image",
         "Value": "MB_KeyIngredient_WitchHazel.jpg"
@@ -6700,7 +6700,7 @@
         "Updated At": "2024-12-03 02:06:20 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "479",
         "Field": "image",
         "Value": "MB_Omega-3_Ceramide_Ingredient.jpg"
@@ -6742,7 +6742,7 @@
         "Updated At": "2024-12-03 22:14:31 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "482",
         "Field": "icon",
         "Value": "ICON_RECONTOUR_SMOOTH.svg"
@@ -6770,7 +6770,7 @@
         "Updated At": "2024-12-03 02:08:57 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "484",
         "Field": "image",
         "Value": "MB_KeyIngredient_MarineBotanicals.jpg"
@@ -6812,7 +6812,7 @@
         "Updated At": "2024-12-03 01:28:12 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "487",
         "Field": "image",
         "Value": "MB_KeyIngredient_Beeswax.jpg"
@@ -6854,7 +6854,7 @@
         "Updated At": "2024-12-03 23:35:15 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "490",
         "Field": "icon",
         "Value": "ICON_HYDRATE_c7ba0243-55e3-46d6-b10a-f42a9ca941a0.svg"
@@ -6882,7 +6882,7 @@
         "Updated At": "2024-12-03 23:35:40 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "492",
         "Field": "icon",
         "Value": "ICON_RECONTOUR_SMOOTH.svg"
@@ -6910,7 +6910,7 @@
         "Updated At": "2024-12-03 23:33:31 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "494",
         "Field": "icon",
         "Value": "ICON_HYDRATE_c7ba0243-55e3-46d6-b10a-f42a9ca941a0.svg"
@@ -6938,7 +6938,7 @@
         "Updated At": "2024-12-03 01:55:42 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "496",
         "Field": "image",
         "Value": "MB_Bakuchiol_Ingredient_490511746_060324.jpg"
@@ -6980,7 +6980,7 @@
         "Updated At": "2024-12-03 23:18:44 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "499",
         "Field": "icon",
         "Value": "MBH_SAS_ICON_SHINE.svg"
@@ -7008,7 +7008,7 @@
         "Updated At": "2024-12-03 01:54:48 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "501",
         "Field": "image",
         "Value": "MB_Kojic_Acid_Ingredient_1435694321_060324.jpg"
@@ -7050,7 +7050,7 @@
         "Updated At": "2024-12-03 02:03:34 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "504",
         "Field": "image",
         "Value": "MB_KeyIngredient_SPF.jpg"
@@ -7092,7 +7092,7 @@
         "Updated At": "2024-12-03 01:31:08 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "507",
         "Field": "image",
         "Value": "MB_Plant_Based_Alternative_to_Keratin__Ingredient.jpg"
@@ -7134,7 +7134,7 @@
         "Updated At": "2024-12-03 23:21:35 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "510",
         "Field": "icon",
         "Value": "MB8-icon-FIRM-TIGHTEN.svg"
@@ -7162,7 +7162,7 @@
         "Updated At": "2024-12-03 23:28:09 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "512",
         "Field": "icon",
         "Value": "ICON_PLUMP_FIRM_LIFT.svg"
@@ -7190,7 +7190,7 @@
         "Updated At": "2024-12-03 23:34:50 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "514",
         "Field": "icon",
         "Value": "ICON_HYDRATE_c7ba0243-55e3-46d6-b10a-f42a9ca941a0.svg"
@@ -7218,7 +7218,7 @@
         "Updated At": "2024-12-03 22:50:47 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "516",
         "Field": "icon",
         "Value": "ICON_RECONTOUR_SMOOTH.svg"
@@ -7246,7 +7246,7 @@
         "Updated At": "2024-12-03 23:36:03 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "518",
         "Field": "icon",
         "Value": "ICON_FIRM_TIGHTEN.svg"
@@ -7274,7 +7274,7 @@
         "Updated At": "2024-12-03 22:56:57 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "520",
         "Field": "icon",
         "Value": "MBH_icon_elasticity.svg"
@@ -7302,7 +7302,7 @@
         "Updated At": "2024-12-03 22:56:41 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "522",
         "Field": "icon",
         "Value": "ICON_PLUMP_FIRM_LIFT.svg"
@@ -7330,7 +7330,7 @@
         "Updated At": "2024-12-03 23:20:40 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "524",
         "Field": "icon",
         "Value": "ICON_SKIN_ELASTICITY.svg"
@@ -7358,7 +7358,7 @@
         "Updated At": "2024-12-03 23:17:00 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "526",
         "Field": "icon",
         "Value": "ICON_DIMINISH_DARK_CIRCLES_b38775df-7ada-435f-94e0-04ee99162e5d.svg"
@@ -7386,7 +7386,7 @@
         "Updated At": "2024-12-03 23:18:45 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "528",
         "Field": "icon",
         "Value": "ICON_HYDRATE_c7ba0243-55e3-46d6-b10a-f42a9ca941a0.svg"
@@ -7414,7 +7414,7 @@
         "Updated At": "2024-12-03 23:34:25 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "530",
         "Field": "icon",
         "Value": "ICON_RADIANCE_5b80ebc1-8a3f-4b0d-8ff5-871cde342b8d.svg"
@@ -7442,7 +7442,7 @@
         "Updated At": "2024-12-03 22:59:06 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "532",
         "Field": "icon",
         "Value": "ICON_SKIN_ELASTICITY.svg"
@@ -7470,7 +7470,7 @@
         "Updated At": "2024-12-03 23:29:46 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "534",
         "Field": "icon",
         "Value": "ICON_MINIMIZE_PORES.svg"
@@ -7498,7 +7498,7 @@
         "Updated At": "2024-12-03 22:10:22 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "536",
         "Field": "icon",
         "Value": "icon-Hydrates-strengthens.svg"
@@ -7526,7 +7526,7 @@
         "Updated At": "2024-12-03 02:08:56 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "538",
         "Field": "image",
         "Value": "MB_Plant_Based_Surfactant_Ingredient.jpg"
@@ -7568,7 +7568,7 @@
         "Updated At": "2024-12-03 23:20:05 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "541",
         "Field": "icon",
         "Value": "MBH_ICON_HEALTHY_SCALP.svg"
@@ -7596,7 +7596,7 @@
         "Updated At": "2024-12-03 01:22:23 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "543",
         "Field": "image",
         "Value": "MB_KeyIngredient_MelonSuperAntioxidants.jpg"
@@ -7638,7 +7638,7 @@
         "Updated At": "2024-12-03 01:33:22 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "546",
         "Field": "image",
         "Value": "MB_KeyIngredient_MelonLeafStemCellTechnology.jpg"
@@ -7680,7 +7680,7 @@
         "Updated At": "2024-12-03 22:46:25 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "549",
         "Field": "icon",
         "Value": "MB8-icon-FIRM-TIGHTEN.svg"
@@ -7708,7 +7708,7 @@
         "Updated At": "2024-12-03 01:27:26 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "551",
         "Field": "image",
         "Value": "MB_KeyIngredient_Hibiscus.jpg"
@@ -7750,7 +7750,7 @@
         "Updated At": "2024-12-03 22:58:16 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "554",
         "Field": "icon",
         "Value": "MB8-icon-RESURFACE.svg"
@@ -7778,7 +7778,7 @@
         "Updated At": "2024-12-03 23:17:35 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "556",
         "Field": "icon",
         "Value": "ICON_RADIANCE_5b80ebc1-8a3f-4b0d-8ff5-871cde342b8d.svg"
@@ -7806,7 +7806,7 @@
         "Updated At": "2024-12-03 23:33:05 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "558",
         "Field": "icon",
         "Value": "MB8-icon-EVEN-SKIN-TONE-RETEXTURE.svg"
@@ -7834,7 +7834,7 @@
         "Updated At": "2024-12-03 23:28:43 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "560",
         "Field": "icon",
         "Value": "ICON_HYDRATE_c7ba0243-55e3-46d6-b10a-f42a9ca941a0.svg"
@@ -7862,7 +7862,7 @@
         "Updated At": "2024-12-03 22:55:35 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "562",
         "Field": "icon",
         "Value": "icon-heatprotection.svg"
@@ -7890,7 +7890,7 @@
         "Updated At": "2024-12-03 01:32:27 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "564",
         "Field": "image",
         "Value": "MB_Peptides_Ingredient.jpg"
@@ -7932,7 +7932,7 @@
         "Updated At": "2024-12-03 23:18:08 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "567",
         "Field": "icon",
         "Value": "ICON_RADIANCE_5b80ebc1-8a3f-4b0d-8ff5-871cde342b8d.svg"
@@ -7960,7 +7960,7 @@
         "Updated At": "2024-12-03 23:33:03 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "569",
         "Field": "icon",
         "Value": "ICON_RADIANCE_5b80ebc1-8a3f-4b0d-8ff5-871cde342b8d.svg"
@@ -7988,7 +7988,7 @@
         "Updated At": "2024-12-03 23:31:18 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "571",
         "Field": "icon",
         "Value": "ICON_WITHOUT_IRRITATION.svg"
@@ -8016,7 +8016,7 @@
         "Updated At": "2024-12-03 23:33:57 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "573",
         "Field": "icon",
         "Value": "ICON_RECONTOUR_SMOOTH.svg"
@@ -8044,7 +8044,7 @@
         "Updated At": "2024-12-03 22:11:28 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "575",
         "Field": "icon",
         "Value": "ICON_WITHOUT_IRRITATION.svg"
@@ -8072,7 +8072,7 @@
         "Updated At": "2024-12-03 22:12:20 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "577",
         "Field": "icon",
         "Value": "MB8-icon-RESURFACE.svg"
@@ -8100,7 +8100,7 @@
         "Updated At": "2024-12-03 22:50:13 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "579",
         "Field": "icon",
         "Value": "ICON_RADIANCE_5b80ebc1-8a3f-4b0d-8ff5-871cde342b8d.svg"
@@ -8128,7 +8128,7 @@
         "Updated At": "2024-12-03 22:44:38 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "581",
         "Field": "icon",
         "Value": "icon-Hydrates-strengthens.svg"
@@ -8156,7 +8156,7 @@
         "Updated At": "2024-12-03 01:29:18 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "583",
         "Field": "image",
         "Value": "MB_KeyIngredient_HydrosomeH2O.jpg"
@@ -8198,7 +8198,7 @@
         "Updated At": "2024-12-03 23:24:45 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "586",
         "Field": "icon",
         "Value": "MB8-icon-FIRM-TIGHTEN.svg"
@@ -8226,7 +8226,7 @@
         "Updated At": "2024-12-03 23:22:13 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "588",
         "Field": "icon",
         "Value": "MB8-icon-RADIANCE-VIBRANCE.svg"
@@ -8254,7 +8254,7 @@
         "Updated At": "2024-12-03 23:27:30 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "590",
         "Field": "icon",
         "Value": "ICON_RADIANCE_5b80ebc1-8a3f-4b0d-8ff5-871cde342b8d.svg"
@@ -8282,7 +8282,7 @@
         "Updated At": "2024-12-03 23:36:08 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "592",
         "Field": "icon",
         "Value": "MB8-icon-EVEN-SKIN-TONE-RETEXTURE.svg"
@@ -8310,7 +8310,7 @@
         "Updated At": "2024-12-03 23:25:37 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "594",
         "Field": "icon",
         "Value": "ICON_DISSOLVES_OIL.svg"
@@ -8338,7 +8338,7 @@
         "Updated At": "2024-12-03 23:30:47 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "596",
         "Field": "icon",
         "Value": "ICON_PH_BALANCE.svg"
@@ -8366,7 +8366,7 @@
         "Updated At": "2024-12-03 01:31:02 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "598",
         "Field": "image",
         "Value": "MB_KeyIngredient_AminoAcids.jpg"
@@ -8408,7 +8408,7 @@
         "Updated At": "2024-12-03 22:53:49 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "601",
         "Field": "icon",
         "Value": "MBH_ICON_COMPACT_bebce411-d6f4-4e8c-9057-7eebd0c213a9.svg"
@@ -8436,7 +8436,7 @@
         "Updated At": "2024-12-03 02:08:13 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "603",
         "Field": "image",
         "Value": "MB_KeyIngredient_SolubleCollagen.jpg"
@@ -8478,7 +8478,7 @@
         "Updated At": "2024-12-03 23:21:18 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "606",
         "Field": "icon",
         "Value": "MB_ICON_RESURFACE.svg"
@@ -8506,7 +8506,7 @@
         "Updated At": "2024-12-03 22:13:41 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "608",
         "Field": "icon",
         "Value": "ICON_MINIMIZE_PORES.svg"
@@ -8534,7 +8534,7 @@
         "Updated At": "2024-12-03 22:53:20 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "610",
         "Field": "icon",
         "Value": "ICON_RADIANCE_5b80ebc1-8a3f-4b0d-8ff5-871cde342b8d.svg"
@@ -8562,7 +8562,7 @@
         "Updated At": "2024-12-03 01:36:39 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "612",
         "Field": "image",
         "Value": "MB_KeyIngredient_GlycolicAcid.jpg"
@@ -8604,7 +8604,7 @@
         "Updated At": "2024-12-03 23:26:16 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "615",
         "Field": "icon",
         "Value": "ICON_RADIANCE_5b80ebc1-8a3f-4b0d-8ff5-871cde342b8d.svg"
@@ -8632,7 +8632,7 @@
         "Updated At": "2024-12-03 23:16:26 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "617",
         "Field": "icon",
         "Value": "MBH_icon_elasticity.svg"
@@ -8660,7 +8660,7 @@
         "Updated At": "2024-12-03 23:01:14 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "619",
         "Field": "icon",
         "Value": "ICON_HYDRATE_c7ba0243-55e3-46d6-b10a-f42a9ca941a0.svg"
@@ -8688,7 +8688,7 @@
         "Updated At": "2024-12-03 23:22:41 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "621",
         "Field": "icon",
         "Value": "ICON_PLUMP_FIRM_LIFT.svg"
@@ -8716,7 +8716,7 @@
         "Updated At": "2024-12-03 23:20:05 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "623",
         "Field": "icon",
         "Value": "ICON_HYDRATE_c7ba0243-55e3-46d6-b10a-f42a9ca941a0.svg"
@@ -8744,7 +8744,7 @@
         "Updated At": "2024-12-03 23:29:19 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "625",
         "Field": "icon",
         "Value": "icon-Hydrates-strengthens.svg"
@@ -8772,7 +8772,7 @@
         "Updated At": "2024-12-03 23:23:21 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "627",
         "Field": "icon",
         "Value": "ICON_RECONTOUR_SMOOTH.svg"
@@ -8800,7 +8800,7 @@
         "Updated At": "2024-12-03 23:25:41 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "629",
         "Field": "icon",
         "Value": "ICON_HYDRATE_c7ba0243-55e3-46d6-b10a-f42a9ca941a0.svg"
@@ -8828,7 +8828,7 @@
         "Updated At": "2024-12-03 23:24:53 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "631",
         "Field": "icon",
         "Value": "ICON_HYDRATE_c7ba0243-55e3-46d6-b10a-f42a9ca941a0.svg"
@@ -8856,7 +8856,7 @@
         "Updated At": "2024-12-03 01:57:26 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "633",
         "Field": "image",
         "Value": "MB_Squalane_Ingredient_1405546390_060324.jpg"
@@ -8898,7 +8898,7 @@
         "Updated At": "2024-12-03 23:29:25 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "636",
         "Field": "icon",
         "Value": "icon-frizz.svg"
@@ -8926,7 +8926,7 @@
         "Updated At": "2024-12-03 02:10:28 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "638",
         "Field": "image",
         "Value": "MB_KeyIngredient_SPF.jpg"
@@ -8968,7 +8968,7 @@
         "Updated At": "2024-12-03 22:56:16 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "641",
         "Field": "icon",
         "Value": "MBH_SAS_ICON_SHINE.svg"
@@ -8996,7 +8996,7 @@
         "Updated At": "2024-12-03 23:14:59 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "643",
         "Field": "icon",
         "Value": "ICON_HYDRATE_c7ba0243-55e3-46d6-b10a-f42a9ca941a0.svg"
@@ -9024,7 +9024,7 @@
         "Updated At": "2024-12-03 23:21:55 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "645",
         "Field": "icon",
         "Value": "ICON_EVEN_SKIN_TONE_RETEXTURE.svg"
@@ -9052,7 +9052,7 @@
         "Updated At": "2024-12-03 23:30:49 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "647",
         "Field": "icon",
         "Value": "icon-hydration.svg"
@@ -9080,7 +9080,7 @@
         "Updated At": "2024-12-03 01:44:13 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "649",
         "Field": "image",
         "Value": "MB_KeyIngredient_LacticAcid.jpg"
@@ -9122,7 +9122,7 @@
         "Updated At": "2024-12-03 01:49:25 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "652",
         "Field": "image",
         "Value": "MB_Licorice_Extract_Ingredient_1471524091_030624.jpg"
@@ -9164,7 +9164,7 @@
         "Updated At": "2024-12-03 22:54:32 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "655",
         "Field": "icon",
         "Value": "icon-hydration.svg"
@@ -9192,7 +9192,7 @@
         "Updated At": "2024-12-03 22:55:35 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "657",
         "Field": "icon",
         "Value": "ICON_RADIANCE_5b80ebc1-8a3f-4b0d-8ff5-871cde342b8d.svg"
@@ -9220,7 +9220,7 @@
         "Updated At": "2024-12-03 23:20:36 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "659",
         "Field": "icon",
         "Value": "ICON_ENVIRONMENTAL_PROTECTION.svg"
@@ -9248,7 +9248,7 @@
         "Updated At": "2024-12-03 23:31:42 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "661",
         "Field": "icon",
         "Value": "MB8-icon-RESURFACE.svg"
@@ -9276,7 +9276,7 @@
         "Updated At": "2024-12-03 23:32:36 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "663",
         "Field": "icon",
         "Value": "ICON_ENVIRONMENTAL_PROTECTION.svg"
@@ -9304,7 +9304,7 @@
         "Updated At": "2024-12-03 23:36:34 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "665",
         "Field": "icon",
         "Value": "ICON_SYSTEM.svg"
@@ -9332,7 +9332,7 @@
         "Updated At": "2024-12-03 22:12:51 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "667",
         "Field": "icon",
         "Value": "icon-Hydrates-strengthens.svg"
@@ -9360,7 +9360,7 @@
         "Updated At": "2024-12-03 22:15:03 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "669",
         "Field": "icon",
         "Value": "MB8-icon-RADIANCE-VIBRANCE.svg"
@@ -9388,7 +9388,7 @@
         "Updated At": "2025-01-13 05:57:42 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "671",
         "Field": "icon",
         "Value": "MB_ICON_MASSAGE.svg"
@@ -9416,7 +9416,7 @@
         "Updated At": "2024-12-03 23:19:36 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "673",
         "Field": "icon",
         "Value": "MBH_ICON_STRENGTH.svg"
@@ -9444,7 +9444,7 @@
         "Updated At": "2024-12-03 23:23:00 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "675",
         "Field": "icon",
         "Value": "MB8-icon-EVEN-SKIN-TONE-RETEXTURE.svg"
@@ -9472,7 +9472,7 @@
         "Updated At": "2024-12-03 23:26:51 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "677",
         "Field": "icon",
         "Value": "ICON_FIRM_TIGHTEN.svg"
@@ -9500,7 +9500,7 @@
         "Updated At": "2024-12-03 02:02:39 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "679",
         "Field": "image",
         "Value": "MB_KeyIngredient_AAMPLFY.jpg"
@@ -9542,7 +9542,7 @@
         "Updated At": "2024-12-03 23:24:15 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "682",
         "Field": "icon",
         "Value": "ICON_RADIANCE_5b80ebc1-8a3f-4b0d-8ff5-871cde342b8d.svg"
@@ -9570,7 +9570,7 @@
         "Updated At": "2024-12-03 22:57:53 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "684",
         "Field": "icon",
         "Value": "ICON_ENVIRONMENTAL_PROTECTION.svg"
@@ -9598,7 +9598,7 @@
         "Updated At": "2024-12-03 01:31:46 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "686",
         "Field": "image",
         "Value": "MB_KeyIngredient_WheatProtein.jpg"
@@ -9640,7 +9640,7 @@
         "Updated At": "2024-12-03 22:45:27 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "689",
         "Field": "icon",
         "Value": "MB8-icon-EVEN-SKIN-TONE-RETEXTURE.svg"
@@ -9668,7 +9668,7 @@
         "Updated At": "2024-12-03 23:07:51 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "691",
         "Field": "icon",
         "Value": "ICON_RADIANCE_5b80ebc1-8a3f-4b0d-8ff5-871cde342b8d.svg"
@@ -9696,7 +9696,7 @@
         "Updated At": "2024-12-03 23:32:08 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "693",
         "Field": "icon",
         "Value": "ICON_HYDRATE_c7ba0243-55e3-46d6-b10a-f42a9ca941a0.svg"
@@ -9724,7 +9724,7 @@
         "Updated At": "2024-12-03 22:52:34 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "695",
         "Field": "icon",
         "Value": "ICON_HYDRATE_c7ba0243-55e3-46d6-b10a-f42a9ca941a0.svg"
@@ -9752,7 +9752,7 @@
         "Updated At": "2024-12-03 22:54:45 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "697",
         "Field": "icon",
         "Value": "ICON_RENEWED.svg"
@@ -9780,7 +9780,7 @@
         "Updated At": "2024-12-03 23:30:09 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "699",
         "Field": "icon",
         "Value": "MB8-icon-RADIANCE-VIBRANCE.svg"
@@ -9808,7 +9808,7 @@
         "Updated At": "2024-12-03 23:30:10 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "701",
         "Field": "icon",
         "Value": "icon-heatprotection.svg"
@@ -9836,7 +9836,7 @@
         "Updated At": "2024-12-03 23:24:11 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "703",
         "Field": "icon",
         "Value": "ICON_HYDRATE_c7ba0243-55e3-46d6-b10a-f42a9ca941a0.svg"
@@ -9864,7 +9864,7 @@
         "Updated At": "2024-12-03 23:43:03 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "705",
         "Field": "icon",
         "Value": "MB_ICON_RESURFACE.svg"
@@ -9892,7 +9892,7 @@
         "Updated At": "2024-12-03 01:28:51 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "707",
         "Field": "image",
         "Value": "MB_KeyIngredient_VegetableProtein.jpg"
@@ -9934,7 +9934,7 @@
         "Updated At": "2025-01-13 05:58:09 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "710",
         "Field": "icon",
         "Value": "MB_ICON_REDLIGHT.svg"
@@ -9962,7 +9962,7 @@
         "Updated At": "2024-12-03 22:48:50 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "712",
         "Field": "icon",
         "Value": "MBH_ICON_6_SHADES.svg"
@@ -9990,7 +9990,7 @@
         "Updated At": "2024-12-03 23:31:24 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "714",
         "Field": "icon",
         "Value": "icon-reinvigorates.svg"
@@ -10018,7 +10018,7 @@
         "Updated At": "2024-12-03 02:07:33 -0800",
         "Definition: Handle": "key_ingredients",
         "Definition: Name": "Key Ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "716",
         "Field": "image",
         "Value": "MB_Galactaric_Acid_Ingredient.jpg"
@@ -10060,7 +10060,7 @@
         "Updated At": "2024-12-03 23:16:20 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "719",
         "Field": "icon",
         "Value": "MB_ICON_RESURFACE.svg"
@@ -10088,7 +10088,7 @@
         "Updated At": "2024-12-11 02:49:53 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "721",
         "Field": "icon",
         "Value": "MB_ICON_RESURFACE.svg"
@@ -10116,7 +10116,7 @@
         "Updated At": "2024-12-03 22:57:39 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "723",
         "Field": "icon",
         "Value": "ICON_RADIANCE_5b80ebc1-8a3f-4b0d-8ff5-871cde342b8d.svg"
@@ -10144,7 +10144,7 @@
         "Updated At": "2024-12-03 01:17:24 -0800",
         "Definition: Handle": "included_free_gifts",
         "Definition: Name": "Included Free Gifts",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "725",
         "Field": "product_variant",
         "Value": "root-touch-up.Black"
@@ -10172,7 +10172,7 @@
         "Updated At": "2024-12-03 01:46:42 -0800",
         "Definition: Handle": "included_free_gifts",
         "Definition: Name": "Included Free Gifts",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "727",
         "Field": "product_variant",
         "Value": "root-touch-up.Auburn"
@@ -10200,7 +10200,7 @@
         "Updated At": "2024-12-03 01:47:11 -0800",
         "Definition: Handle": "included_free_gifts",
         "Definition: Name": "Included Free Gifts",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "729",
         "Field": "product_variant",
         "Value": "root-touch-up.Dark Brunette"
@@ -10228,7 +10228,7 @@
         "Updated At": "2024-12-03 01:47:37 -0800",
         "Definition: Handle": "included_free_gifts",
         "Definition: Name": "Included Free Gifts",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "731",
         "Field": "product_variant",
         "Value": "root-touch-up.Medium Brunette"
@@ -10256,7 +10256,7 @@
         "Updated At": "2024-12-03 01:48:01 -0800",
         "Definition: Handle": "included_free_gifts",
         "Definition: Name": "Included Free Gifts",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "733",
         "Field": "product_variant",
         "Value": "root-touch-up.Dark Blond / Light Brunette"
@@ -10284,7 +10284,7 @@
         "Updated At": "2024-12-03 01:49:19 -0800",
         "Definition: Handle": "included_free_gifts",
         "Definition: Name": "Included Free Gifts",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "735",
         "Field": "product_variant",
         "Value": "root-touch-up.Blond"
@@ -10312,7 +10312,7 @@
         "Updated At": "2024-12-03 01:49:48 -0800",
         "Definition: Handle": "included_free_gifts",
         "Definition: Name": "Included Free Gifts",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "737",
         "Field": "product_variant",
         "Value": "detangling-hair-brush.Default Title"
@@ -10340,7 +10340,7 @@
         "Updated At": "2024-12-03 01:50:33 -0800",
         "Definition: Handle": "included_free_gifts",
         "Definition: Name": "Included Free Gifts",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "739",
         "Field": "product_variant",
         "Value": "4-piece-deluxe-age-proof-haircare-system.Default Title"
@@ -10368,7 +10368,7 @@
         "Updated At": "2024-12-03 01:51:03 -0800",
         "Definition: Handle": "included_free_gifts",
         "Definition: Name": "Included Free Gifts",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "741",
         "Field": "product_variant",
         "Value": "travel-favorites.Default Title"
@@ -10396,7 +10396,7 @@
         "Updated At": "2024-12-03 01:51:32 -0800",
         "Definition: Handle": "included_free_gifts",
         "Definition: Name": "Included Free Gifts",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "743",
         "Field": "product_variant",
         "Value": "super-brightening-duo.Default Title"
@@ -10424,7 +10424,7 @@
         "Updated At": "2024-12-05 05:24:11 -0800",
         "Definition: Handle": "included_free_gifts",
         "Definition: Name": "Included Free Gifts",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "745",
         "Field": "product_variant",
         "Value": "vitamin-c-bi-phase-brightening-oil.Default Title"
@@ -10452,7 +10452,7 @@
         "Updated At": "2024-12-05 05:25:19 -0800",
         "Definition: Handle": "included_free_gifts",
         "Definition: Name": "Included Free Gifts",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "747",
         "Field": "product_variant",
         "Value": "revive-and-brighten-eye-masque.Default Title"
@@ -10480,7 +10480,7 @@
         "Updated At": "2024-12-08 21:29:20 -0800",
         "Definition: Handle": "included_free_gifts",
         "Definition: Name": "Included Free Gifts",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "749",
         "Field": "product_variant",
         "Value": "strengthening-shampoo-intro-size.Default Title"
@@ -10508,7 +10508,7 @@
         "Updated At": "2024-12-08 21:30:00 -0800",
         "Definition: Handle": "included_free_gifts",
         "Definition: Name": "Included Free Gifts",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "751",
         "Field": "product_variant",
         "Value": "smooth-shiny-conditioner-intro-size.Default Title"
@@ -10536,7 +10536,7 @@
         "Updated At": "2024-12-08 21:30:41 -0800",
         "Definition: Handle": "included_free_gifts",
         "Definition: Name": "Included Free Gifts",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "753",
         "Field": "product_variant",
         "Value": "restorative-scalp-treatment-intro-size.Default Title"
@@ -10564,7 +10564,7 @@
         "Updated At": "2024-12-08 21:34:09 -0800",
         "Definition: Handle": "included_free_gifts",
         "Definition: Name": "Included Free Gifts",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "755",
         "Field": "product_variant",
         "Value": "styling-and-protecting-spray-intro-size.Default Title"
@@ -10592,7 +10592,7 @@
         "Updated At": "2024-12-11 23:15:30 -0800",
         "Definition: Handle": "included_free_gifts",
         "Definition: Name": "Included Free Gifts",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "757",
         "Field": "product_variant",
         "Value": "mt-mb7-30d-serum-2-fl-oz-pump-20-410-n-a-cap-pump-spray.Default Title"
@@ -10620,7 +10620,7 @@
         "Updated At": "2024-12-11 23:18:51 -0800",
         "Definition: Handle": "included_free_gifts",
         "Definition: Name": "Included Free Gifts",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "759",
         "Field": "product_variant",
         "Value": "mt-aptar-euro-mist-standard-actuator-high-viscosity-20-410-smooth-sidewalls-cap-pump-spray.Default Title"
@@ -10648,7 +10648,7 @@
         "Updated At": "2024-12-11 23:19:25 -0800",
         "Definition: Handle": "included_free_gifts",
         "Definition: Name": "Included Free Gifts",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "761",
         "Field": "product_variant",
         "Value": "mt-mb7-30d-shampoo-conditioner-5-fl-oz-pump-24-410-n-a-cap-pump-spray.Default Title"
@@ -10676,7 +10676,7 @@
         "Updated At": "2025-01-06 08:06:12 -0800",
         "Definition: Handle": "included_free_gifts",
         "Definition: Name": "Included Free Gifts",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "763",
         "Field": "product_variant",
         "Value": "skin-renewing-facial-tool.Default Title"
@@ -10704,7 +10704,7 @@
         "Updated At": "2025-01-06 08:06:44 -0800",
         "Definition: Handle": "included_free_gifts",
         "Definition: Name": "Included Free Gifts",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "765",
         "Field": "product_variant",
         "Value": "wrinkle-smoothing-capsules-20-ct.Default Title"
@@ -10732,7 +10732,7 @@
         "Updated At": "2024-12-03 22:50:10 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "767",
         "Field": "icon",
         "Value": "MBH_ICON_RTU.svg"
@@ -10760,7 +10760,7 @@
         "Updated At": "2024-12-03 22:51:30 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "769",
         "Field": "icon",
         "Value": "MB8-icon-EVEN-SKIN-TONE-RETEXTURE.svg"
@@ -10788,7 +10788,7 @@
         "Updated At": "2024-12-03 23:06:02 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "771",
         "Field": "icon",
         "Value": "ICON_EVEN_SKIN_TONE_RETEXTURE.svg"
@@ -10816,7 +10816,7 @@
         "Updated At": "2024-12-03 23:32:06 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "773",
         "Field": "icon",
         "Value": "ICON_EVEN_SKIN_TONE_RETEXTURE.svg"
@@ -10844,7 +10844,7 @@
         "Updated At": "2024-12-03 23:15:51 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "775",
         "Field": "icon",
         "Value": "MBH_SAS_ICON_VOLUME.svg"
@@ -10872,7 +10872,7 @@
         "Updated At": "2024-12-03 23:28:42 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "777",
         "Field": "icon",
         "Value": "ICON_PH_BALANCE.svg"
@@ -10900,7 +10900,7 @@
         "Updated At": "2024-12-03 23:19:24 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "779",
         "Field": "icon",
         "Value": "ICON_AMPM_352f4642-68c0-4755-92fa-aa04b1efa5e6.svg"
@@ -10928,7 +10928,7 @@
         "Updated At": "2024-12-03 23:19:08 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "781",
         "Field": "icon",
         "Value": "MBH_ICON_HEALTHY_HAIR.svg"
@@ -10956,7 +10956,7 @@
         "Updated At": "2024-12-03 23:15:22 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "783",
         "Field": "icon",
         "Value": "MBH_ICON_REDUCES_SHEDDING.svg"
@@ -10984,7 +10984,7 @@
         "Updated At": "2025-01-13 05:56:43 -0800",
         "Definition: Handle": "benefit_icon_and_description",
         "Definition: Name": "Benefit Icon and Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "785",
         "Field": "icon",
         "Value": "MB_ICON_HEAT.svg"
@@ -11012,7 +11012,7 @@
         "Updated At": "2024-12-03 03:44:18 -0800",
         "Definition: Handle": "sas_target_icons",
         "Definition: Name": "SAS Target icons",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "787",
         "Field": "section_name",
         "Value": "Benefits - 2PC Haircare system"
@@ -11096,7 +11096,7 @@
         "Updated At": "2024-12-03 03:56:20 -0800",
         "Definition: Handle": "sas_target_icons",
         "Definition: Name": "SAS Target icons",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "793",
         "Field": "section_name",
         "Value": "TARGETS EYES, FACE & NECK"
@@ -11180,7 +11180,7 @@
         "Updated At": "2024-12-03 03:57:20 -0800",
         "Definition: Handle": "sas_target_icons",
         "Definition: Name": "SAS Target icons",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "799",
         "Field": "section_name",
         "Value": "TARGETS EYES & FACE"
@@ -11253,7 +11253,7 @@
         "Top Row": "",
         "Row #": "804",
         "Field": "image_tag_lines_es",
-        "Value": "[\"Visibly firms  &amp; lifts skin\",\"Minimizes look of  fine lines &amp; wrinkles\"]"
+        "Value": "[\"Visibly firms  & lifts skin\",\"Minimizes look of  fine lines & wrinkles\"]"
     },
     {
         "ID": "103,088,029,977",
@@ -11264,7 +11264,7 @@
         "Updated At": "2024-12-09 04:29:52 -0800",
         "Definition: Handle": "whats_included_section",
         "Definition: Name": "Whats included section",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "805",
         "Field": "section_display_name",
         "Value": "Skin Softening Gentle Cleanser (Intro Size)"
@@ -11418,7 +11418,7 @@
         "Updated At": "2024-12-15 22:04:09 -0800",
         "Definition: Handle": "whats_included_section",
         "Definition: Name": "Whats included section",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "816",
         "Field": "section_display_name",
         "Value": "Youth Activating Melon Serum Advanced Formula (Intro Size)"
@@ -11572,7 +11572,7 @@
         "Updated At": "2025-01-08 23:41:37 -0800",
         "Definition: Handle": "whats_included_section",
         "Definition: Name": "Whats included section",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "827",
         "Field": "section_display_name",
         "Value": "ANTI-AGING DAY CR\u00c8ME Broad Spectrum SPF 30 - Intro size"
@@ -11726,7 +11726,7 @@
         "Updated At": "2024-12-09 04:30:18 -0800",
         "Definition: Handle": "whats_included_section",
         "Definition: Name": "Whats included section",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "838",
         "Field": "section_display_name",
         "Value": "LIFTING EYE CR\u00c8ME"
@@ -11880,7 +11880,7 @@
         "Updated At": "2024-12-09 04:30:40 -0800",
         "Definition: Handle": "whats_included_section",
         "Definition: Name": "Whats included section",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "849",
         "Field": "section_display_name",
         "Value": "Smooth & Shiny Conditioner"
@@ -12034,7 +12034,7 @@
         "Updated At": "2024-12-09 04:31:44 -0800",
         "Definition: Handle": "whats_included_section",
         "Definition: Name": "Whats included section",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "860",
         "Field": "section_display_name",
         "Value": "Restorative Scalp Treatment"
@@ -12188,7 +12188,7 @@
         "Updated At": "2024-12-09 04:30:29 -0800",
         "Definition: Handle": "whats_included_section",
         "Definition: Name": "Whats included section",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "871",
         "Field": "section_display_name",
         "Value": "Strengthening Shampoo"
@@ -12342,7 +12342,7 @@
         "Updated At": "2024-12-09 04:31:42 -0800",
         "Definition: Handle": "whats_included_section",
         "Definition: Name": "Whats included section",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "882",
         "Field": "section_display_name",
         "Value": "Skin Brightening D\u00e9collet\u00e9 and Neck Treatment"
@@ -12496,7 +12496,7 @@
         "Updated At": "2024-12-15 21:39:08 -0800",
         "Definition: Handle": "whats_included_section",
         "Definition: Name": "Whats included section",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "893",
         "Field": "section_display_name",
         "Value": "Styling and Protecting Spray"
@@ -12650,7 +12650,7 @@
         "Updated At": "2024-12-15 21:41:14 -0800",
         "Definition: Handle": "whats_included_section",
         "Definition: Name": "Whats included section",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "904",
         "Field": "section_display_name",
         "Value": "Anti-Aging Day Cr\u00e8me Broad Spectrum SPF 30 Sunscreen"
@@ -12804,7 +12804,7 @@
         "Updated At": "2025-01-12 22:53:03 -0800",
         "Definition: Handle": "whats_included_section",
         "Definition: Name": "Whats included section",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "915",
         "Field": "section_display_name",
         "Value": " Age Recovery Night Cr\u00e8me with Retinol Advanced Formula (Intro Size)"
@@ -12958,7 +12958,7 @@
         "Updated At": "2024-12-09 04:31:56 -0800",
         "Definition: Handle": "whats_included_section",
         "Definition: Name": "Whats included section",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "926",
         "Field": "section_display_name",
         "Value": "GLOWING SERUM"
@@ -13112,7 +13112,7 @@
         "Updated At": "2024-12-03 03:53:56 -0800",
         "Definition: Handle": "sas_target_icons",
         "Definition: Name": "SAS Target icons",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "937",
         "Field": "section_name",
         "Value": "Benefits - 4 pc haircare system"
@@ -13196,7 +13196,7 @@
         "Updated At": "2024-12-03 03:41:29 -0800",
         "Definition: Handle": "promo_ribbon",
         "Definition: Name": "Promo Ribbon",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "943",
         "Field": "promo_content",
         "Value": "<strong>25% Off</strong> Your Introductory Deluxe System"
@@ -13308,7 +13308,7 @@
         "Updated At": "2024-12-03 03:35:06 -0800",
         "Definition: Handle": "promo_ribbon",
         "Definition: Name": "Promo Ribbon",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "951",
         "Field": "promo_content",
         "Value": "<strong>25% OFF</strong> DE DESCUENTO EN TU DELUXE SYSTEM DE INICIACI\u00d3N"
@@ -13420,7 +13420,7 @@
         "Updated At": "2024-12-03 03:40:26 -0800",
         "Definition: Handle": "promo_ribbon",
         "Definition: Name": "Promo Ribbon",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "959",
         "Field": "promo_content",
         "Value": "CLAIM YOUR OFFER BEFORE IT EXPIRES"
@@ -13532,7 +13532,7 @@
         "Updated At": "2024-12-03 03:48:37 -0800",
         "Definition: Handle": "subscribe_save_content",
         "Definition: Name": "Subscribe Save Content",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "967",
         "Field": "entry_display_name",
         "Value": "Subscribe and save - 7-Piece Deluxe Face & Neck Skincare System"
@@ -13574,7 +13574,7 @@
         "Updated At": "2024-12-03 03:49:24 -0800",
         "Definition: Handle": "subscribe_save_content",
         "Definition: Name": "Subscribe Save Content",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "970",
         "Field": "entry_display_name",
         "Value": "Subscribe and save -  Strengthening Shampoo"
@@ -13616,7 +13616,7 @@
         "Updated At": "2024-12-03 03:46:12 -0800",
         "Definition: Handle": "subscribe_save_content",
         "Definition: Name": "Subscribe Save Content",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "973",
         "Field": "entry_display_name",
         "Value": "Subscribe and Save - Singles"
@@ -13658,7 +13658,7 @@
         "Updated At": "2024-12-03 03:47:40 -0800",
         "Definition: Handle": "subscribe_save_content",
         "Definition: Name": "Subscribe Save Content",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "976",
         "Field": "entry_display_name",
         "Value": "Subscribe and Save - 5-Piece Essentials Skincare System"
@@ -13700,7 +13700,7 @@
         "Updated At": "2024-12-03 03:51:07 -0800",
         "Definition: Handle": "pdp_what_include_product_item",
         "Definition: Name": "pdp what include product item",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "979",
         "Field": "ingredients_list_heading",
         "Value": "Youth Activating Melon Serum Advanced Formula"
@@ -13770,7 +13770,7 @@
         "Updated At": "2024-12-09 04:16:23 -0800",
         "Definition: Handle": "whats_included_section_sas",
         "Definition: Name": "Whats included section SAS",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "984",
         "Field": "section_display_name",
         "Value": "2-Piece Essentials Haircare System"
@@ -14008,7 +14008,7 @@
         "Updated At": "2024-12-03 23:29:18 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,001",
         "Field": "entry_display_name",
         "Value": "Anti-Aging Day Cr\u00e8me - Description"
@@ -14078,7 +14078,7 @@
         "Updated At": "2024-12-03 23:41:00 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,006",
         "Field": "entry_display_name",
         "Value": "Youth Activating Smoothing and Refreshing Eye Serum - Description"
@@ -14148,7 +14148,7 @@
         "Updated At": "2024-12-03 22:58:43 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,011",
         "Field": "entry_display_name",
         "Value": "Firming & Tightening Body Hydration Treatment - Description"
@@ -14218,7 +14218,7 @@
         "Updated At": "2024-12-03 05:08:48 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,016",
         "Field": "entry_display_name",
         "Value": "Restorative Scalp Treatment - Description"
@@ -14288,7 +14288,7 @@
         "Updated At": "2024-12-03 05:04:22 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,021",
         "Field": "entry_display_name",
         "Value": "Styling and Protecting Spray - Description"
@@ -14358,7 +14358,7 @@
         "Updated At": "2024-12-03 23:37:42 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,026",
         "Field": "entry_display_name",
         "Value": "Vitamin C Bi-Phase Brightening Oil - Description"
@@ -14428,7 +14428,7 @@
         "Updated At": "2024-12-03 23:38:22 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,031",
         "Field": "entry_display_name",
         "Value": "Dark Spot Treatment - Description"
@@ -14498,7 +14498,7 @@
         "Updated At": "2024-12-03 23:40:21 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,036",
         "Field": "entry_display_name",
         "Value": "Eye Enhancing Serum - Description"
@@ -14568,7 +14568,7 @@
         "Updated At": "2024-12-03 23:33:42 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,041",
         "Field": "entry_display_name",
         "Value": "Skin Brightening Treatment - Description"
@@ -14638,7 +14638,7 @@
         "Updated At": "2024-12-03 23:41:39 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,046",
         "Field": "entry_display_name",
         "Value": "Firming Serum - Description"
@@ -14708,7 +14708,7 @@
         "Updated At": "2024-12-03 23:55:16 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,051",
         "Field": "entry_display_name",
         "Value": "Glowing Serum - Description"
@@ -14778,7 +14778,7 @@
         "Updated At": "2024-12-03 23:56:51 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,056",
         "Field": "entry_display_name",
         "Value": "2-Piece Essentials Haircare System - The System"
@@ -14848,7 +14848,7 @@
         "Updated At": "2024-12-03 23:31:36 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,061",
         "Field": "entry_display_name",
         "Value": "Vitamin C Brightening Water Cr\u00e8me - Description"
@@ -14918,7 +14918,7 @@
         "Updated At": "2024-12-03 23:42:24 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,066",
         "Field": "entry_display_name",
         "Value": "Ultra Lifting and Filling Treatment - Description"
@@ -14988,7 +14988,7 @@
         "Updated At": "2024-12-03 23:58:01 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,071",
         "Field": "entry_display_name",
         "Value": "4-Piece Deluxe Age-Proof Haircare System - The System"
@@ -15058,7 +15058,7 @@
         "Updated At": "2024-12-03 22:55:33 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,076",
         "Field": "entry_display_name",
         "Value": "Strengthening Shampoo - Description"
@@ -15128,7 +15128,7 @@
         "Updated At": "2024-12-03 23:25:20 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,081",
         "Field": "entry_display_name",
         "Value": "Age Recovery Night Cr\u00e8me - Description"
@@ -15198,7 +15198,7 @@
         "Updated At": "2024-12-03 23:06:07 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,086",
         "Field": "entry_display_name",
         "Value": "Skin Softening Gentle Cleanser - Description"
@@ -15268,7 +15268,7 @@
         "Updated At": "2024-12-03 23:39:34 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,091",
         "Field": "entry_display_name",
         "Value": "Lifting Eye Cr\u00e8me - Description"
@@ -15338,7 +15338,7 @@
         "Updated At": "2024-12-03 22:56:57 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,096",
         "Field": "entry_display_name",
         "Value": "Skin Brightening D\u00e9collet\u00e9 and Neck Treatment - Description"
@@ -15408,7 +15408,7 @@
         "Updated At": "2024-12-03 23:32:48 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,101",
         "Field": "entry_display_name",
         "Value": "Intensive Triple Exfoliating Treatment - Description"
@@ -15478,7 +15478,7 @@
         "Updated At": "2024-12-05 03:34:54 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,106",
         "Field": "entry_display_name",
         "Value": "Youth Activating Melon Serum - Description"
@@ -15548,7 +15548,7 @@
         "Updated At": "2024-12-03 23:34:59 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,111",
         "Field": "entry_display_name",
         "Value": "Skin Renewing Peel - Description"
@@ -15618,7 +15618,7 @@
         "Updated At": "2024-12-03 05:11:35 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,116",
         "Field": "entry_display_name",
         "Value": "Smooth & Shiny Conditioner - Description"
@@ -15688,7 +15688,7 @@
         "Updated At": "2024-12-10 04:55:27 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,121",
         "Field": "entry_name",
         "Value": "Skin Renewing Peel"
@@ -15814,7 +15814,7 @@
         "Updated At": "2024-12-05 22:00:26 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,130",
         "Field": "entry_name",
         "Value": "Step 04 - 7PC Deluxe System - Age Recovery Night Creme"
@@ -15940,7 +15940,7 @@
         "Updated At": "2024-12-09 01:47:01 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,139",
         "Field": "entry_name",
         "Value": "step 01 - 7-Piece Deluxe Face & Neck Skincare System - SKIN SOFTENING GENTLE CLEANSER"
@@ -16066,7 +16066,7 @@
         "Updated At": "2024-12-03 05:02:02 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,148",
         "Field": "entry_display_name",
         "Value": "Root Touch Up - Description"
@@ -16136,7 +16136,7 @@
         "Updated At": "2024-12-06 00:56:14 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,153",
         "Field": "entry_name",
         "Value": "Revive & Brighten Eye Masque"
@@ -16262,7 +16262,7 @@
         "Updated At": "2024-12-06 01:12:12 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,162",
         "Field": "entry_name",
         "Value": "Firming & Tightening Body Hydration Treatment"
@@ -16388,7 +16388,7 @@
         "Updated At": "2024-12-03 23:59:15 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,171",
         "Field": "entry_display_name",
         "Value": "7-Piece Deluxe Face & Neck Skincare System - This System "
@@ -16458,7 +16458,7 @@
         "Updated At": "2024-12-05 21:55:04 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,176",
         "Field": "entry_name",
         "Value": "Step 03 - 5PC Skincare System - LIFTING EYE CR\u00c8ME"
@@ -16584,7 +16584,7 @@
         "Updated At": "2024-12-05 04:01:19 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,185",
         "Field": "entry_name",
         "Value": "Glowing Serum"
@@ -16710,7 +16710,7 @@
         "Updated At": "2024-12-06 01:07:47 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,194",
         "Field": "entry_name",
         "Value": "Age Recovery Night Cr\u00e8me with Retinol Advanced Formula"
@@ -16836,7 +16836,7 @@
         "Updated At": "2024-12-06 00:52:55 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,203",
         "Field": "entry_name",
         "Value": "Youth Activating Smoothing and Refreshing Eye Serum"
@@ -16962,7 +16962,7 @@
         "Updated At": "2024-12-06 01:03:05 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,212",
         "Field": "entry_name",
         "Value": "Intensive Triple Exfoliating Treatment"
@@ -17088,7 +17088,7 @@
         "Updated At": "2024-12-06 00:03:45 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,221",
         "Field": "entry_name",
         "Value": "Firming Serum"
@@ -17214,7 +17214,7 @@
         "Updated At": "2024-12-03 23:36:20 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,230",
         "Field": "entry_display_name",
         "Value": "Wrinkle Smoothing Capsules - Description"
@@ -17284,7 +17284,7 @@
         "Updated At": "2024-12-05 21:59:25 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,235",
         "Field": "entry_name",
         "Value": "Step 05 - 7pc Deluxe System - SKIN BRIGHTENING D\u00c9COLLET\u00c9 AND NECK TREATMENT"
@@ -17410,7 +17410,7 @@
         "Updated At": "2024-12-03 23:21:24 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,244",
         "Field": "entry_display_name",
         "Value": "Pore Refining Toner - Description"
@@ -17480,7 +17480,7 @@
         "Updated At": "2024-12-05 21:54:46 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,249",
         "Field": "entry_name",
         "Value": "Step 01 - 5PC Skincare System - Skin Softening Gentle Cleanser"
@@ -17606,7 +17606,7 @@
         "Updated At": "2024-12-06 01:05:54 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,258",
         "Field": "entry_name",
         "Value": "Hydrating and Soothing Facial Mist"
@@ -17732,7 +17732,7 @@
         "Updated At": "2024-12-06 01:01:59 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,267",
         "Field": "entry_name",
         "Value": "Skin Brightening Treatment"
@@ -17858,7 +17858,7 @@
         "Updated At": "2024-12-05 22:01:16 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,276",
         "Field": "entry_name",
         "Value": "step 01 - 4PC - STRENGTHENING SHAMPOO"
@@ -17984,7 +17984,7 @@
         "Updated At": "2024-12-06 01:15:16 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,285",
         "Field": "entry_name",
         "Value": "Strengthening Shampoo"
@@ -18110,7 +18110,7 @@
         "Updated At": "2024-12-05 21:59:11 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,294",
         "Field": "entry_name",
         "Value": "Step 04 - 7PC Deluxe System - ANTI-AGING DAY CR\u00c8ME BROAD SPECTRUM SPF 30 SUNSCREEN"
@@ -18236,7 +18236,7 @@
         "Updated At": "2024-12-08 22:59:20 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,303",
         "Field": "entry_name",
         "Value": "Smooth & Shiny Conditioner"
@@ -18362,7 +18362,7 @@
         "Updated At": "2024-12-03 23:38:54 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,312",
         "Field": "entry_display_name",
         "Value": "Revive & Brighten Eye Masque - Description"
@@ -18432,7 +18432,7 @@
         "Updated At": "2024-12-05 22:00:06 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,317",
         "Field": "entry_name",
         "Value": "step 03 - Night Routine - 7PC Deluxe Skincare System- LIFTING EYE CR\u00c8ME "
@@ -18558,7 +18558,7 @@
         "Updated At": "2024-12-06 01:19:46 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,326",
         "Field": "entry_name",
         "Value": "Root Touch Up"
@@ -18684,7 +18684,7 @@
         "Updated At": "2024-12-03 23:30:58 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,335",
         "Field": "entry_display_name",
         "Value": "Hydrating and Soothing Facial Mist - Description"
@@ -18754,7 +18754,7 @@
         "Updated At": "2024-12-06 01:06:51 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,340",
         "Field": "entry_name",
         "Value": "Anti-Aging Day Cr\u00e8me Broad Spectrum SPF 30 Sunscreen"
@@ -18880,7 +18880,7 @@
         "Updated At": "2024-12-06 00:58:57 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,349",
         "Field": "entry_name",
         "Value": "Dark Spot Treatment"
@@ -19006,7 +19006,7 @@
         "Updated At": "2024-12-05 21:55:34 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,358",
         "Field": "entry_name",
         "Value": "Step 02 - Night Routine - 5PC Skincare System - YOUTH ACTIVATING MELON SERUM"
@@ -19132,7 +19132,7 @@
         "Updated At": "2024-12-06 01:13:41 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,367",
         "Field": "entry_name",
         "Value": "Skin Brightening D\u00e9collet\u00e9 and Neck Treatment"
@@ -19258,7 +19258,7 @@
         "Updated At": "2024-12-05 04:03:03 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,376",
         "Field": "entry_name",
         "Value": "4-Piece Deluxe Age-Proof Haircare System"
@@ -19384,7 +19384,7 @@
         "Updated At": "2025-01-06 20:30:39 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,385",
         "Field": "entry_display_name",
         "Value": "Skin Renewing Facial Tool - Description"
@@ -19454,7 +19454,7 @@
         "Updated At": "2025-01-06 20:29:35 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,390",
         "Field": "entry_name",
         "Value": "Skin Renewing Facial Tool"
@@ -19580,7 +19580,7 @@
         "Updated At": "2024-12-05 04:02:22 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,399",
         "Field": "entry_name",
         "Value": "Youth Activating Melon Serum"
@@ -19706,7 +19706,7 @@
         "Updated At": "2024-12-05 21:55:43 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,408",
         "Field": "entry_name",
         "Value": "Step 03 - Night Routine - 5PC Skincare System - LIFTING EYE CR\u00c8ME"
@@ -19832,7 +19832,7 @@
         "Updated At": "2024-12-05 21:59:48 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,417",
         "Field": "entry_name",
         "Value": "step 01 - 7PC Deluxe Face & Neck Skincare - SKIN SOFTENING GENTLE CLEANSER"
@@ -19958,7 +19958,7 @@
         "Updated At": "2024-12-05 21:58:54 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,426",
         "Field": "entry_name",
         "Value": "Step 02 - 7PC Deluxe System - Youth Activating Melon Serum"
@@ -20084,7 +20084,7 @@
         "Updated At": "2024-12-03 23:53:37 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,435",
         "Field": "entry_display_name",
         "Value": "Cr\u00e8me de S\u00e9rum - Description"
@@ -20154,7 +20154,7 @@
         "Updated At": "2024-12-05 21:55:15 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,440",
         "Field": "entry_name",
         "Value": "Step 04 - 5PC Skincare system - ANTI-AGING DAY CR\u00c8ME"
@@ -20280,7 +20280,7 @@
         "Updated At": "2024-12-05 22:01:34 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,449",
         "Field": "entry_name",
         "Value": "step 03 - 4PC - RESTORATIVE SCALP TREATMENT"
@@ -20406,7 +20406,7 @@
         "Updated At": "2024-12-05 03:49:14 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,458",
         "Field": "entry_name",
         "Value": "step 02 - 2PC Haircare System - SMOOTH & SHINY CONDITIONER"
@@ -20532,7 +20532,7 @@
         "Updated At": "2024-12-05 22:01:42 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,467",
         "Field": "entry_name",
         "Value": "step 04 - 4PC - STYLING AND PROTECTING SPRAY"
@@ -20658,7 +20658,7 @@
         "Updated At": "2024-12-05 21:52:06 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,476",
         "Field": "entry_name",
         "Value": "step 01 - 2PC Haircare System - STRENGTHENING SHAMPOO"
@@ -20784,7 +20784,7 @@
         "Updated At": "2024-12-06 00:54:12 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,485",
         "Field": "entry_name",
         "Value": "Eye Enhancing Serum"
@@ -20910,7 +20910,7 @@
         "Updated At": "2024-12-09 01:47:34 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,494",
         "Field": "entry_name",
         "Value": "step 03 - 7PC Deluxe Face & Neck Skincare - LIFTING EYE CR\u00c8ME "
@@ -21036,7 +21036,7 @@
         "Updated At": "2024-12-05 03:49:14 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,503",
         "Field": "entry_name",
         "Value": "step 01 - 7PC - STRENGTHENING SHAMPOO"
@@ -21162,7 +21162,7 @@
         "Updated At": "2024-12-06 01:09:18 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,512",
         "Field": "entry_name",
         "Value": "Pore Refining Toner"
@@ -21288,7 +21288,7 @@
         "Updated At": "2024-12-06 01:17:33 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,521",
         "Field": "entry_name",
         "Value": "Restorative Scalp Treatment"
@@ -21414,7 +21414,7 @@
         "Updated At": "2024-12-06 01:04:48 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,530",
         "Field": "entry_name",
         "Value": "Vitamin C Brightening Water Cr\u00e8me"
@@ -21540,7 +21540,7 @@
         "Updated At": "2024-12-05 21:52:16 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,539",
         "Field": "entry_name",
         "Value": "step 02 - 4PC - SMOOTH & SHINY CONDITIONER"
@@ -21666,7 +21666,7 @@
         "Updated At": "2024-12-05 21:55:55 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,548",
         "Field": "entry_name",
         "Value": "Step 04 - Night Routine - 5PC Skincare System - Age Recovery Night Creme"
@@ -21792,7 +21792,7 @@
         "Updated At": "2024-12-06 00:01:56 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,557",
         "Field": "entry_name",
         "Value": "Ultra Lifting and Filling Treatment"
@@ -21918,7 +21918,7 @@
         "Updated At": "2024-12-06 01:18:45 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,566",
         "Field": "entry_name",
         "Value": "Styling and Protecting Spray"
@@ -22044,7 +22044,7 @@
         "Updated At": "2024-12-05 21:55:26 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,575",
         "Field": "entry_name",
         "Value": "Step 01 - Night Routine - 5PC Skincare System - Skin Softening Gentle Cleanser"
@@ -22170,7 +22170,7 @@
         "Updated At": "2024-12-03 23:58:38 -0800",
         "Definition: Handle": "product_bottom_description",
         "Definition: Name": "Product Bottom Description",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,584",
         "Field": "entry_display_name",
         "Value": "5-Piece Essentials Skincare System - This System"
@@ -22240,7 +22240,7 @@
         "Updated At": "2024-12-05 21:59:33 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,589",
         "Field": "entry_name",
         "Value": "Step 06 - 7pc Deluxe System - Glowing Serum"
@@ -22366,7 +22366,7 @@
         "Updated At": "2024-12-05 04:02:40 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,598",
         "Field": "entry_name",
         "Value": "Deluxe Face & Neck Skincare System"
@@ -22492,7 +22492,7 @@
         "Updated At": "2024-12-06 00:00:22 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,607",
         "Field": "entry_name",
         "Value": "Cr\u00e8me de S\u00e9rum"
@@ -22618,7 +22618,7 @@
         "Updated At": "2024-12-06 00:55:11 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,616",
         "Field": "entry_name",
         "Value": "Lifting Eye Cr\u00e8me"
@@ -22744,7 +22744,7 @@
         "Updated At": "2024-12-05 05:14:08 -0800",
         "Definition: Handle": "whats_included_section_sas",
         "Definition: Name": "Whats included section SAS",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,625",
         "Field": "section_display_name",
         "Value": "5-PIECE SKINCARE SYSTEM"
@@ -22982,7 +22982,7 @@
         "Updated At": "2024-12-05 21:59:57 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,642",
         "Field": "entry_name",
         "Value": "Step 02 - Night Routine - 7PC Deluxe System - Youth Activating Melon Serum"
@@ -23108,7 +23108,7 @@
         "Updated At": "2024-12-05 21:54:56 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,651",
         "Field": "entry_name",
         "Value": "Step 02 - 5PC Skincare System - YOUTH ACTIVATING MELON SERUM"
@@ -23234,7 +23234,7 @@
         "Updated At": "2024-12-06 00:58:00 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,660",
         "Field": "entry_name",
         "Value": "Vitamin C Bi-Phase Brightening Oil"
@@ -23360,7 +23360,7 @@
         "Updated At": "2024-12-10 23:50:34 -0800",
         "Definition: Handle": "whats_included_section_sas",
         "Definition: Name": "Whats included section SAS",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,669",
         "Field": "section_display_name",
         "Value": "7-PIECE SKINCARE SYSTEM"
@@ -23598,7 +23598,7 @@
         "Updated At": "2025-01-01 23:03:22 -0800",
         "Definition: Handle": "whats_included_section_sas",
         "Definition: Name": "Whats included section SAS",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,686",
         "Field": "section_display_name",
         "Value": "5-PIECE SKINCARE SYSTEM"
@@ -23836,7 +23836,7 @@
         "Updated At": "2024-12-03 03:35:36 -0800",
         "Definition: Handle": "product_details_spanish",
         "Definition: Name": "Product Details Spanish",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,703",
         "Field": "section_title",
         "Value": "GLOWING SERUM"
@@ -23948,7 +23948,7 @@
         "Updated At": "2024-12-05 23:46:11 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,711",
         "Field": "entry_name",
         "Value": "Skin Softening Gentle Cleanser"
@@ -24074,7 +24074,7 @@
         "Updated At": "2024-12-03 03:38:07 -0800",
         "Definition: Handle": "product_details_spanish",
         "Definition: Name": "Product Details Spanish",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,720",
         "Field": "section_title",
         "Value": "LIFTING EYE CR\u00c8ME"
@@ -24186,7 +24186,7 @@
         "Updated At": "2024-12-03 05:31:01 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,728",
         "Field": "section_title",
         "Value": "Wrinkle Smoothing Capsules"
@@ -24256,7 +24256,7 @@
         "Updated At": "2024-12-06 01:00:03 -0800",
         "Definition: Handle": "how_to_use",
         "Definition: Name": "How To Use",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,733",
         "Field": "entry_name",
         "Value": "Wrinkle Smoothing Capsules"
@@ -24382,7 +24382,7 @@
         "Updated At": "2024-12-03 03:32:31 -0800",
         "Definition: Handle": "product_details_spanish",
         "Definition: Name": "Product Details Spanish",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,742",
         "Field": "section_title",
         "Value": "ANTI-AGING DAY CR\u00c8ME"
@@ -24494,7 +24494,7 @@
         "Updated At": "2024-12-03 05:29:05 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,750",
         "Field": "section_title",
         "Value": "Skin Brightening Treatment"
@@ -24564,7 +24564,7 @@
         "Updated At": "2024-12-03 06:32:56 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,755",
         "Field": "section_title",
         "Value": "Glowing Serum"
@@ -24634,7 +24634,7 @@
         "Updated At": "2024-12-03 04:28:45 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,760",
         "Field": "section_title",
         "Value": "Anti-Aging Day Cr\u00e8me"
@@ -24704,7 +24704,7 @@
         "Updated At": "2024-12-03 06:26:18 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,765",
         "Field": "section_title",
         "Value": "Youth Activating Smoothing and Refreshing Eye Serum"
@@ -24774,7 +24774,7 @@
         "Updated At": "2024-12-03 06:30:53 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,770",
         "Field": "section_title",
         "Value": "Cr\u00e8me de S\u00e9rum"
@@ -24844,7 +24844,7 @@
         "Updated At": "2024-12-03 03:36:11 -0800",
         "Definition: Handle": "product_details_spanish",
         "Definition: Name": "Product Details Spanish",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,775",
         "Field": "section_title",
         "Value": "AGE RECOVERY NIGHT CR\u00c8ME"
@@ -24956,7 +24956,7 @@
         "Updated At": "2024-12-03 04:26:01 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,783",
         "Field": "section_title",
         "Value": "Age Recovery Night Cr\u00e8me with Retinol"
@@ -25026,7 +25026,7 @@
         "Updated At": "2024-12-03 03:39:00 -0800",
         "Definition: Handle": "product_details_spanish",
         "Definition: Name": "Product Details Spanish",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,788",
         "Field": "section_title",
         "Value": "SKIN SOFTENING  CLEANSER"
@@ -25138,7 +25138,7 @@
         "Updated At": "2024-12-03 03:39:39 -0800",
         "Definition: Handle": "product_details_spanish",
         "Definition: Name": "Product Details Spanish",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,796",
         "Field": "section_title",
         "Value": "SKIN BRIGHTENING D\u00c9COLLET\u00c9 AND NECK TREATMENT FPS 15"
@@ -25250,7 +25250,7 @@
         "Updated At": "2024-12-03 03:57:58 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,804",
         "Field": "section_title",
         "Value": "Skin Brightening D\u00e9collet\u00e9 and Neck Treatment"
@@ -25320,7 +25320,7 @@
         "Updated At": "2024-12-03 04:53:47 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,809",
         "Field": "section_title",
         "Value": "Skin Softening Gentle Cleanser"
@@ -25390,7 +25390,7 @@
         "Updated At": "2024-12-03 06:35:15 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,814",
         "Field": "section_title",
         "Value": "Youth Activating Melon Serum - Advanced Formula"
@@ -25460,7 +25460,7 @@
         "Updated At": "2024-12-03 04:35:05 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,819",
         "Field": "section_title",
         "Value": "Vitamin C Brightening Water Cr\u00e8me"
@@ -25530,7 +25530,7 @@
         "Updated At": "2024-12-03 04:01:31 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,824",
         "Field": "section_title",
         "Value": "Pore Refining Toner"
@@ -25600,7 +25600,7 @@
         "Updated At": "2024-12-03 03:34:55 -0800",
         "Definition: Handle": "product_details_spanish",
         "Definition: Name": "Product Details Spanish",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,829",
         "Field": "section_title",
         "Value": "YOUTH ACTIVATING  MELON SERUM"
@@ -25712,7 +25712,7 @@
         "Updated At": "2024-12-29 22:22:46 -0800",
         "Definition: Handle": "whats_included_section_sas",
         "Definition: Name": "Whats included section SAS",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,837",
         "Field": "section_display_name",
         "Value": "4-Piece Age-Proof Haircare System"
@@ -25950,7 +25950,7 @@
         "Updated At": "2025-01-06 20:33:32 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,854",
         "Field": "section_title",
         "Value": "Skin Renewing Facial Tool"
@@ -26020,7 +26020,7 @@
         "Updated At": "2024-12-03 04:19:29 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,859",
         "Field": "section_title",
         "Value": "Styling and Protecting Spray"
@@ -26090,7 +26090,7 @@
         "Updated At": "2024-12-03 04:35:19 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,864",
         "Field": "section_title",
         "Value": "Firming & Tightening Body Hydration Treatment"
@@ -26160,7 +26160,7 @@
         "Updated At": "2024-12-03 04:16:56 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,869",
         "Field": "section_title",
         "Value": "Root Touch Up"
@@ -26230,7 +26230,7 @@
         "Updated At": "2025-01-03 14:01:30 -0800",
         "Definition: Handle": "shopify--constitutive-ingredients",
         "Definition: Name": "Constitutive ingredients",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,874",
         "Field": "label",
         "Value": "Other"
@@ -26258,7 +26258,7 @@
         "Updated At": "2024-12-03 06:28:40 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,876",
         "Field": "section_title",
         "Value": "Ultra Lifting and Filling Treatment"
@@ -26328,7 +26328,7 @@
         "Updated At": "2024-12-03 05:33:54 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,881",
         "Field": "section_title",
         "Value": "Dark Spot Treatment"
@@ -26398,7 +26398,7 @@
         "Updated At": "2024-12-03 06:24:01 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,886",
         "Field": "section_title",
         "Value": "Lifting Eye Cr\u00e8me"
@@ -26468,7 +26468,7 @@
         "Updated At": "2024-12-03 04:32:59 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,891",
         "Field": "section_title",
         "Value": "Hydrating and Soothing Facial Mist"
@@ -26538,7 +26538,7 @@
         "Updated At": "2024-12-09 04:42:19 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,896",
         "Field": "section_title",
         "Value": "Vitamin C Bi-Phase Brightening Oil"
@@ -26608,7 +26608,7 @@
         "Updated At": "2024-12-09 01:42:07 -0800",
         "Definition: Handle": "best_deal_offer_section",
         "Definition: Name": "Best Deal offer section",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,901",
         "Field": "section_display_name",
         "Value": "BUNDLE AND SAVE"
@@ -26681,7 +26681,7 @@
         "Top Row": "",
         "Row #": "1,906",
         "Field": "content",
-        "Value": "<span>$49.95</span> with subscription"
+        "Value": "$49.95"
     },
     {
         "ID": "104,100,167,961",
@@ -26748,7 +26748,7 @@
         "Updated At": "2025-01-13 03:48:41 -0800",
         "Definition: Handle": "best_deal_offer_section",
         "Definition: Name": "Best Deal offer section",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,911",
         "Field": "section_display_name",
         "Value": "FREE!"
@@ -26765,7 +26765,7 @@
         "Top Row": "",
         "Row #": "1,912",
         "Field": "main_heading",
-        "Value": "<strong class=\"top-cont\">FREE!</strong><br> <span class=\"prod-name-skin\">Skin Renewing Facial Tool +<br> Wrinkle Smoothing Capsules</span>"
+        "Value": "<strong class=\"top-cont\">FREE!</strong><br> Skin Renewing Facial Tool +<br> Wrinkle Smoothing Capsules"
     },
     {
         "ID": "110,334,148,889",
@@ -26821,7 +26821,7 @@
         "Top Row": "",
         "Row #": "1,916",
         "Field": "content",
-        "Value": "<span>$49.95</span> with subscription"
+        "Value": "$49.95"
     },
     {
         "ID": "110,334,148,889",
@@ -26888,7 +26888,7 @@
         "Updated At": "2024-12-03 04:06:36 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,921",
         "Field": "section_title",
         "Value": "Skin Renewing Peel"
@@ -26958,7 +26958,7 @@
         "Updated At": "2024-12-10 23:24:30 -0800",
         "Definition: Handle": "best_deal_offer_section",
         "Definition: Name": "Best Deal offer section",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,926",
         "Field": "section_display_name",
         "Value": "BUNDLE AND SAVE-4pc-hair"
@@ -27031,7 +27031,7 @@
         "Top Row": "",
         "Row #": "1,931",
         "Field": "content",
-        "Value": "<span>$41.21</span> with subscription"
+        "Value": "$41.21"
     },
     {
         "ID": "104,432,632,089",
@@ -27098,7 +27098,7 @@
         "Updated At": "2024-12-10 22:42:42 -0800",
         "Definition: Handle": "best_deal_offer_section",
         "Definition: Name": "Best Deal offer section",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,936",
         "Field": "section_display_name",
         "Value": "BUNDLE AND SAVE- 7pc"
@@ -27171,7 +27171,7 @@
         "Top Row": "",
         "Row #": "1,941",
         "Field": "content",
-        "Value": "<span>$59.96</span> with subscription"
+        "Value": "$59.96"
     },
     {
         "ID": "104,429,814,041",
@@ -27238,7 +27238,7 @@
         "Updated At": "2024-12-03 04:21:37 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,946",
         "Field": "section_title",
         "Value": "Restorative Scalp Treatment"
@@ -27308,7 +27308,7 @@
         "Updated At": "2024-12-03 04:11:03 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,951",
         "Field": "section_title",
         "Value": "Eye Enhancing Serum"
@@ -27378,7 +27378,7 @@
         "Updated At": "2024-12-03 04:08:37 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,956",
         "Field": "section_title",
         "Value": "Revive & Brighten Eye Masque"
@@ -27448,7 +27448,7 @@
         "Updated At": "2024-12-03 04:04:03 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,961",
         "Field": "section_title",
         "Value": "Intensive Triple Exfoliating Treatment"
@@ -27518,7 +27518,7 @@
         "Updated At": "2024-12-03 04:27:42 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,966",
         "Field": "section_title",
         "Value": "Strengthening Shampoo"
@@ -27588,7 +27588,7 @@
         "Updated At": "2025-01-01 23:03:06 -0800",
         "Definition: Handle": "whats_included_section_sas",
         "Definition: Name": "Whats included section SAS",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,971",
         "Field": "section_display_name",
         "Value": "7-PIECE SKINCARE SYSTEM"
@@ -27826,7 +27826,7 @@
         "Updated At": "2024-12-03 04:24:38 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,988",
         "Field": "section_title",
         "Value": "Smooth & Shiny Conditioner"
@@ -27896,7 +27896,7 @@
         "Updated At": "2024-12-03 04:13:22 -0800",
         "Definition: Handle": "complete_your_routine",
         "Definition: Name": "Complete Your Routine",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,993",
         "Field": "section_title",
         "Value": "Firming Serum"
@@ -27966,7 +27966,7 @@
         "Updated At": "2024-12-03 04:07:39 -0800",
         "Definition: Handle": "how_to_use_page_content",
         "Definition: Name": "How to use Page Content",
-        "Top Row": 1.0,
+        "Top Row": true,
         "Row #": "1,998",
         "Field": "section_title",
         "Value": "How to use Page "
