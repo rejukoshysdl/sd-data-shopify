@@ -30,7 +30,7 @@ if len(xlsx_files) != 1:
 # Use the found .xlsx file
 file_path = xlsx_files[0]
 
-# Load the Excel file
+# Load the Excel file with strict data types
 xls = pd.ExcelFile(file_path)
 
 # Get sheet names
@@ -47,17 +47,20 @@ for sheet in sheet_names:
         continue
     
     # Read the sheet into a DataFrame
-    df = pd.read_excel(xls, sheet_name=sheet)
+    df = pd.read_excel(xls, sheet_name=sheet, dtype=str)  # Read all columns as strings to avoid automatic type conversion
     
     # Replace NaN values with an empty string
     df = df.fillna("")
     
     # Iterate over each column to check if its data is a float or int and format if necessary
     for col in df.columns:
-        # Check if the column contains numeric data (either float or int)
-        if pd.api.types.is_numeric_dtype(df[col]):
-            # Format numbers: Apply comma separator and check if there's a decimal part
-            df[col] = df[col].apply(lambda x: f"{x:,.0f}" if x == int(x) else f"{x:,.2f}" if pd.notna(x) else x)
+        # If the column is boolean, convert to TRUE/FALSE
+        if df[col].dtype == 'bool':
+            df[col] = df[col].replace({True: 'TRUE', False: 'FALSE'})
+        
+        # If the column contains numeric data, format with commas, but preserve as string
+        elif pd.api.types.is_numeric_dtype(df[col]):
+            df[col] = df[col].apply(lambda x: f"{int(x):,}" if pd.notna(x) and x == int(x) else f"{x:,.2f}")
     
     # Convert each sheet to a list of dictionaries (JSON format)
     json_files[sheet] = df.to_dict(orient='records')
