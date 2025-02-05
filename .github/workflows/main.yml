@@ -34,13 +34,7 @@ jobs:
       run: |
           pip install pandas openpyxl xlsxwriter # Directly install necessary libraries without requirements.txt
 
-    # Step 4: Print the current branch name for debugging
-    - name: Prints the current branch name
-      run: echo "${GITHUB_BRANCH##*/}"
-      env:
-        GITHUB_BRANCH: ${{ github.ref }}  # Extract the branch name from the full ref
-
-    # Step 5: Run the conversion Python script
+    # Step 4: Run the conversion Python script
     - name: Run convertJSONToExcel script
       run: |
         python3 ./utils/convertJSONToExcel_in_git.py  # Adjust path if necessary
