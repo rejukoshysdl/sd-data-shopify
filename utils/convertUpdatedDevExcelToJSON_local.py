@@ -18,14 +18,14 @@ def exclude_sheet(sheet_name, excluded_sheets):
 current_dir = os.getcwd()
 
 # Define the path to the `developer_export` folder
-developer_export_dir = os.path.join(current_dir, '../developer_export')
+developer_export_dir = os.path.join(current_dir, '../developer_updated_matrixify_export')
 
 # Find all .xlsx files in the developer_export directory
 xlsx_files = glob.glob(os.path.join(developer_export_dir, '*.xlsx'))
 
 # Check if there is exactly one .xlsx file in the directory
 if len(xlsx_files) != 1:
-    raise ValueError("There should be exactly one .xlsx file in the developer_export directory.")
+    raise ValueError("There should be exactly one .xlsx file in the developer_updated_matrixify_export directory.")
 
 # Use the found .xlsx file
 file_path = xlsx_files[0]

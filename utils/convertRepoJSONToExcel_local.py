@@ -4,7 +4,7 @@ import os
 import glob
 from datetime import datetime
 
-# Function to convert JSON files back to Excel sheets
+# Function to convert repository JSON files back to Excel sheets for developer import
 def json_to_excel(json_dir, output_excel_file):
     """
     Convert JSON files from a directory into an Excel file with each JSON file as a separate sheet.
