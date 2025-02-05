@@ -1,7 +1,7 @@
-import pandas as pd
 import json
 import os
 import glob
+import pandas as pd
 from datetime import datetime
 import subprocess
 
@@ -66,6 +66,13 @@ json_to_excel(json_directory, output_excel_file)
 # Ensure GITHUB_TOKEN is set up (GitHub Actions provides this automatically)
 github_token = os.getenv('GITHUB_TOKEN')
 
+# Determine the branch to push based on environment
+branch_name = os.getenv('BRANCH_NAME', 'main')  # Default to 'main', can be set to 'int' or 'integration' as needed
+
+# Print the GitHub token and branch for debugging (remove in production)
+print(f"GITHUB_TOKEN: {github_token}")
+print(f"Using branch: {branch_name}")
+
 # Git commands to commit and push the generated Excel file to GitHub
 try:
     # Add the file to staging
@@ -78,7 +85,7 @@ try:
     push_command = [
         'git', 'push', 
         f'https://{github_token}@github.com/{os.getenv("GITHUB_REPOSITORY")}.git', 
-        'main'  # Adjust branch if needed 
+        branch_name  # Use the dynamic branch name
     ]
     subprocess.run(push_command, check=True)
 
