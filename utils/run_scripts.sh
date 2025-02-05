@@ -13,8 +13,8 @@ else
 fi
 
 # Execute the first Python script
-echo "Executing convertExcelToJSON.py..."
-python3.13 convertExcelToJSON_local.py
+echo "Executing convertUpdatedDevExcelToJSON_local.py..."
+python3.13 convertUpdatedDevExcelToJSON_local.py
 
 
 echo "Waiting for conversion to complete..."
