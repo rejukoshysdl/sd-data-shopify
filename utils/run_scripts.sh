@@ -1,12 +1,21 @@
-#!/bin/bash
+#!/bin/bash 
+
+# Wait for the completion marker file to be created
+OUTPUT_DIR="../output_json"  # The directory where the completed file will be located
+COMPLETED_FILE="$OUTPUT_DIR/convert.json.completed"  # Path to the completion file
+ 
+# Delete the directory if it exists
+if [ -d "$OUTPUT_DIR" ]; then
+    echo "Deleting the directory: $OUTPUT_DIR"
+    rm -rf "$OUTPUT_DIR"  # Remove the directory and its contents
+else
+    echo "Directory $OUTPUT_DIR does not exist, skipping deletion."
+fi
 
 # Execute the first Python script
 echo "Executing convertExcelToJSON.py..."
 python3.13 convertExcelToJSON_local.py
 
-# Wait for the completion marker file to be created
-OUTPUT_DIR="../output_json"  # The directory where the completed file will be located
-COMPLETED_FILE="$OUTPUT_DIR/convert.json.completed"  # Path to the completion file
 
 echo "Waiting for conversion to complete..."
 

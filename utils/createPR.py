@@ -1,41 +1,24 @@
 import json
 import os
+import glob
+import shutil  # This will be used for file copying
 
-# Paths to the input JSON files and output file
-output_json_path = '../output_json/products.json'  # File generated from the script
-repo_json_path = '../repo-shopify-data/products.json'  # Source of truth file
+# Paths to the output and repo directories
+output_json_dir = '../output_json'  # Directory containing the JSON files generated from the script
+repo_json_dir = '../repo-shopify-data'  # Source of truth directory
 
-# Load the output JSON file (from the newly exported data)
-with open(output_json_path, 'r') as output_file:
-    output_json = json.load(output_file)
+# Get all JSON files in the output directory
+output_json_files = glob.glob(os.path.join(output_json_dir, '*.json'))
 
-# Load the repo JSON file (the source of truth)
-with open(repo_json_path, 'r') as repo_file:
-    repo_json = json.load(repo_file)
+# Process each JSON file
+for output_json_path in output_json_files:
+    # Derive the corresponding repo file path from the output path
+    file_name = os.path.basename(output_json_path)
+    repo_json_path = os.path.join(repo_json_dir, file_name)
 
-# Create a dictionary for faster lookup by Handle from the output JSON
-output_dict = {product['Handle']: product for product in output_json}
-repo_dict = {product['Handle']: product for product in repo_json}
-
-# List to store the final merged products
-merged_products = []
-
-# 1. Loop through products in output_json and merge them into repo_json
-for product in output_json:
-    # Replace the corresponding product in repo_json based on the Handle
-    repo_dict[product['Handle']] = product
-
-# 2. Loop through products in repo_json and mark those that are not in output_json for deletion
-for product_handle, product in repo_dict.items():
-    if product_handle not in output_dict:
-        # If product is not in the output JSON, mark it for deletion
-        product['Command'] = 'DELETE'
-    
-    # Add to the merged products list
-    merged_products.append(product)
-
-# Save the merged data back to repo-shopify-data/products.json
-with open(repo_json_path, 'w') as output_file:
-    json.dump(merged_products, output_file, indent=4)
-
-print(f"Products successfully merged and saved to {repo_json_path}")
+    # Copy the file from the output_json directory to the repo_json directory
+    try:
+        shutil.copy(output_json_path, repo_json_path)  # This will copy the file to the destination
+        print(f"Successfully copied {file_name} to {repo_json_path}")
+    except Exception as e:
+        print(f"Error copying {file_name} to {repo_json_path}: {e}")
