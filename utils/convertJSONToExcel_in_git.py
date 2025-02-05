@@ -66,8 +66,8 @@ json_to_excel(json_directory, output_excel_file)
 # Ensure GITHUB_TOKEN is set up (GitHub Actions provides this automatically)
 github_token = os.getenv('GITHUB_TOKEN')
 
-# Determine the branch to push based on environment
-branch_name = os.getenv('BRANCH_NAME', 'main')  # Default to 'main', can be set to 'int' or 'integration' as needed
+# Get the current branch from the GitHub environment (either 'main' or 'int')
+branch_name = os.getenv('GITHUB_REF_NAME', 'main')  # Default to 'main' if not set (from GitHub Actions)
 
 # Print the GitHub token and branch for debugging (remove in production)
 print(f"GITHUB_TOKEN: {github_token}")
