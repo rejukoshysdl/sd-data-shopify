@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - main  # Trigger when changes are pushed to the 'main' branch
-      - int  # Trigger the workflow for the 'int' branch .
-      
+      - int  # Trigger the workflow for the 'int' branch
+
 jobs:
   run-conversion-and-push:
     runs-on: ubuntu-latest  # Running on Ubuntu OS
@@ -15,26 +15,43 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
       with:
-       ref: ${{ github.ref }}
+        ref: ${{ github.ref }}
 
+    # Step 2: Set Git user info
     - name: Set Git user info
       run: |
         git config --global user.name "MB USER"
         git config --global user.email "reju.koshy@squaredatalabs.com"  # Set default user email for commits
 
-
-    # Step 2: Set up Python environment
+    # Step 3: Set up Python environment
     - name: Set up Python 3.13
       uses: actions/setup-python@v2
       with:
         python-version: '3.13'  # Specify the Python version to match your script
 
-    # Step 3: Install dependencies (if any, like pandas, openpyxl, etc.)
+    # Step 4: Cache Python dependencies
+    - name: Cache Python dependencies
+      uses: actions/cache@v2
+      with:
+        path: |
+          ~/.cache/pip
+          venv/
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/*.py') }}  # Cache dependencies based on Python file changes
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
+    # Step 5: Install dependencies (only if not cached)
     - name: Install dependencies
       run: |
-          pip install pandas openpyxl xlsxwriter # Directly install necessary libraries without requirements.txt
+        if [ ! -d "venv" ]; then
+          python3 -m venv venv  # Create virtual environment if it doesn't exist
+        fi
+        source venv/bin/activate  # Activate the virtual environment
+        pip install --upgrade pip  # Upgrade pip to the latest version
+        pip install pandas openpyxl xlsxwriter  # Install dependencies if not cached
 
-    # Step 4: Run the conversion Python script
+    # Step 6: Run the conversion Python script
     - name: Run convertJSONToExcel script
       run: |
+        source venv/bin/activate  # Ensure virtual environment is active
         python3 ./utils/convertJSONToExcel_in_git.py  # Adjust path if necessary

@@ -1,6 +1,6 @@
 [
     {
-        "ID": "143,529,181,465",
+        "ID": "143529181465",
         "Handle": "faq-haircare",
         "Command": "MERGE",
         "Title": "faq-haircare",
@@ -8,7 +8,7 @@
         "Body HTML": "",
         "Created At": "2024-12-04 00:57:53 -0800",
         "Updated At": "2024-12-04 00:57:53 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-04 00:57:53 -0800",
         "Template Suffix": "faq-haircare",
         "Metafield: title_tag [string]": "",
@@ -25,7 +25,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,529,247,001",
+        "ID": "143529247001",
         "Handle": "do-not-sell-or-share-my-personal-information",
         "Command": "MERGE",
         "Title": "Do not sell or share my personal information",
@@ -33,7 +33,7 @@
         "Body HTML": "<link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.css\"> <meta charset=\"utf-8\">\n<p>As described in our Privacy Policy, we collect personal information from your interactions with us and our website, including through cookies and similar technologies. We may also share this personal information with third parties, including advertising partners. We do this in order to show you ads on other websites that are more relevant to your interests and for other reasons outlined in our privacy policy.</p>\n<p>Sharing of personal information for targeted advertising based on your interaction on different websites may be considered \"sales\", \"sharing\", or \"targeted advertising\" under certain U.S. state privacy laws. Depending on where you live, you may have the right to opt out of these activities. If you would like to exercise this opt-out right, please follow the instructions below.</p>\n<p>If you visit our website with the Global Privacy Control opt-out preference signal enabled, depending on where you are, we will treat this as a request to opt-out of activity that may be considered a \u201csale\u201d or \u201csharing\u201d of personal information or other uses that may be considered targeted advertising for the device and browser you used to visit our website.</p>\n<div data-error=\"A problem occurred, try submitting your email again>\" data-success=\"Opted-out successfully\" data-email-label=\"Email\" data-form-description='If you would like to opt out of activity that may be considered a \"sale\" or \"share,\" or \"targeted advertising\", please submit your email.' data-not-applicable='To opt out of the \"sale\" or \"sharing\" of your personal information collected using cookies and other device-based identifiers as described above, you must be browsing from one of the applicable US states referred to above.' id=\"pc--optOutFormContainer\">\n<script src=\"https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.js\" defer></script> <script src=\"https://js.hcaptcha.com/1/api.js?onload=optOutOnLoad\" defer></script>\n</div>",
         "Created At": "2024-12-04 00:58:37 -0800",
         "Updated At": "2024-12-04 00:58:37 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-04 00:58:37 -0800",
         "Template Suffix": "",
         "Metafield: title_tag [string]": "",
@@ -50,7 +50,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,529,017,625",
+        "ID": "143529017625",
         "Handle": "our-story",
         "Command": "MERGE",
         "Title": "Our Story",
@@ -58,7 +58,7 @@
         "Body HTML": "",
         "Created At": "2024-12-04 00:55:33 -0800",
         "Updated At": "2024-12-19 02:48:59 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-04 00:55:33 -0800",
         "Template Suffix": "our-story",
         "Metafield: title_tag [string]": "Our Story | Meaningful Beauty",
@@ -75,7 +75,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "144,930,406,681",
+        "ID": "144930406681",
         "Handle": "preupsell-sas-skin",
         "Command": "MERGE",
         "Title": "preupsell-sas-skin",
@@ -83,7 +83,7 @@
         "Body HTML": "",
         "Created At": "2025-01-06 04:38:47 -0800",
         "Updated At": "2025-01-20 09:38:49 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2025-01-06 04:38:47 -0800",
         "Template Suffix": "preupsell-sas-skin",
         "Metafield: title_tag [string]": "Sites-Meaningful Beauty-Site",
@@ -100,7 +100,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,529,050,393",
+        "ID": "143529050393",
         "Handle": "accessibility",
         "Command": "MERGE",
         "Title": "accessibility",
@@ -108,7 +108,7 @@
         "Body HTML": "<section class=\"accessibility-info\" id=\"accessibility\">\n    <div class=\"acc-inner-content\">\n    <div class=\"acc-terms-link\" id=\"terms-container\"><a href=\"/es/pages/accessibility\" class=\"acc-link\">En Espa\u00f1ol</a></div>\n    <div class=\"acc-main-title\">\n    <h2>Accessibility Statement</h2>\n    </div>\n    <div class=\"acc-desc-data\">\n    <p>Updated: April 2024.</p>\n    <h4>General</h4>\n    <p>Meaningful Beauty LLC strives to ensure that its services are accessible to people with disabilities. Meaningful Beauty LLC has invested a significant amount of resources to help ensure that its website is made easier to use and more accessible for people with disabilities, with the strong belief that every person has the right to live with dignity, equality, comfort and independence.</p>\n    <h4>Accessibility on Meaningfulbeauty.com</h4>\n    <p>Meaningfulbeauty.com makes available the UserWay Website Accessibility Widget that is powered by a dedicated accessibility server. The software allows Meaningfulbeauty.com to improve its compliance with the Web Content Accessibility Guidelines (WCAG 2.1).</p>\n    <h4>Enabling the Accessibility Menu</h4>\n    <p>The Meaningfulbeauty.com accessibility menu can be enabled either by hitting the tab key when the page first loads or by clicking the accessibility menu icon that appears on the corner of the page. After triggering the accessibility menu, please wait a moment for the accessibility menu to load in its entirety.</p>\n    <h4>Disclaimer</h4>\n    <p>Meaningful Beauty LLC continues its efforts to constantly improve the accessibility of its site and services in the belief that it is our collective moral obligation to allow seamless, accessible and unhindered use also for those of us with disabilities. <br><br> In an ongoing effort to continually improve and remediate accessibility issues, we also regularly scan Meaningfulbeauty.com with UserWay's <a href=\"https://UserWay.org/scanner\" title=\"Free Website Accessibility Scanner\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://userway.org/scanner\" aria-label=\"Accessibility Scanner - open in a new tab\" data-uw-rm-ext-link=\"\" style=\"transition: all;\" target=\"_blank\" uw-rm-external-link-id=\"https://userway.org/scanner$accessibilityscanner\">Accessibility Scanner</a> to identify and fix every possible accessibility barrier on our site. <br><br> Despite our efforts to make all pages and content on Meaningfulbeauty.com fully accessible, some content may not have yet been fully adapted to the strictest accessibility standards. This may be a result of not having found or identified the most appropriate technological solution.</p>\n    <h4>Here For You</h4>\n    <p>If you are experiencing difficulty with any content on Meaningfulbeauty.com or require assistance with any part of our site, please contact us during normal business hours as detailed below and we will be happy to assist.</p>\n    <h4>Contact Us</h4>\n    <p>If you wish to report an accessibility issue, have any questions or need assistance, please contact Meaningful Beauty LLC Customer Support as follows:<br><br> Email: <a href=\"mailto:CorporateEscalationTeam@meaningfulbeauty.com\" style=\"font-size: .97em;\">CorporateEscalationTeam@meaningfulbeauty.com</a><br> Phone: 877-424-1117</p>\n    </div>\n    <div class=\"go-to-top\"><a href=\"#terms-container\" class=\"scroll-top\">Back to Top</a></div>\n    </div>\n    </section>\n    <script>\n    $(document).ready(function() {\n    $('.go-to-top .scroll-top').on('click', function(e) {\n        e.preventDefault(); \n        const targetPosition = $('#terms-container').offset().top - 50; \n        $('html, body').animate({\n            scrollTop: targetPosition\n        }, 800); \n    });\n});\n    </script>",
         "Created At": "2024-12-04 00:56:13 -0800",
         "Updated At": "2025-01-20 09:40:38 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-04 00:56:13 -0800",
         "Template Suffix": "",
         "Metafield: title_tag [string]": "Accessibility Statement",
@@ -125,7 +125,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,529,083,161",
+        "ID": "143529083161",
         "Handle": "code-of-conduct",
         "Command": "MERGE",
         "Title": "code-of-conduct",
@@ -133,7 +133,7 @@
         "Body HTML": "<p>code of conduct page</p>",
         "Created At": "2024-12-04 00:56:56 -0800",
         "Updated At": "2025-01-13 01:42:04 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-04 00:56:56 -0800",
         "Template Suffix": "code-of-conduct",
         "Metafield: title_tag [string]": "",
@@ -150,7 +150,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,529,148,697",
+        "ID": "143529148697",
         "Handle": "faq-beautycare",
         "Command": "MERGE",
         "Title": "faq-beautycare",
@@ -158,7 +158,7 @@
         "Body HTML": "",
         "Created At": "2024-12-04 00:57:36 -0800",
         "Updated At": "2024-12-04 00:57:36 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-04 00:57:36 -0800",
         "Template Suffix": "faq-beautycare",
         "Metafield: title_tag [string]": "",
@@ -175,7 +175,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,528,952,089",
+        "ID": "143528952089",
         "Handle": "unauthorized-resellers",
         "Command": "MERGE",
         "Title": "Unauthorized Resellers",
@@ -183,7 +183,7 @@
         "Body HTML": "",
         "Created At": "2024-12-04 00:54:48 -0800",
         "Updated At": "2024-12-04 00:54:48 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-04 00:54:48 -0800",
         "Template Suffix": "unauthorized-resellers",
         "Metafield: title_tag [string]": "",
@@ -200,7 +200,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,611,986,201",
+        "ID": "143611986201",
         "Handle": "reviews-and-ratings",
         "Command": "MERGE",
         "Title": "reviews-and-ratings",
@@ -208,7 +208,7 @@
         "Body HTML": "",
         "Created At": "2024-12-05 22:50:21 -0800",
         "Updated At": "2024-12-19 02:50:17 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-05 22:50:21 -0800",
         "Template Suffix": "reviews-and-ratings",
         "Metafield: title_tag [string]": "Meaningful Beauty Reviews & Ratings | Meaningful Beauty\u00ae",
@@ -225,7 +225,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "145,092,968,729",
+        "ID": "145092968729",
         "Handle": "account-management",
         "Command": "MERGE",
         "Title": "account-management",
@@ -233,7 +233,7 @@
         "Body HTML": "",
         "Created At": "2025-01-09 02:10:37 -0800",
         "Updated At": "2025-01-09 02:10:55 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2025-01-09 02:10:53 -0800",
         "Template Suffix": "account-management",
         "Metafield: title_tag [string]": "",
@@ -250,7 +250,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,528,886,553",
+        "ID": "143528886553",
         "Handle": "our-technology",
         "Command": "MERGE",
         "Title": "Our Technology",
@@ -258,7 +258,7 @@
         "Body HTML": "",
         "Created At": "2024-12-04 00:53:21 -0800",
         "Updated At": "2024-12-19 02:49:45 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-04 00:53:21 -0800",
         "Template Suffix": "our-technology",
         "Metafield: title_tag [string]": "Our Technology | Meaningful Beauty",
@@ -275,7 +275,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,529,541,913",
+        "ID": "143529541913",
         "Handle": "swym-share-wishlist",
         "Command": "MERGE",
         "Title": "Wishlist",
@@ -283,7 +283,7 @@
         "Body HTML": "<div id=\"swym-shared-wishlist-render-container\"></div><script type=\"text/javascript\">window.SwymCallbacks = window.SwymCallbacks || [];window.SwymCallbacks.push(function(swat) {  var queryParams = swat.utils.getEncodedAsObject(window.location.search);  var sharedHkey = queryParams[\"hkey\"] || queryParams[\"lid\"];  var sharedWishlistContainerElement = document.querySelector(\"#swym-shared-wishlist-render-container\");  swat.ui.renderSharedWishlistInContainer(sharedWishlistContainerElement, sharedHkey, queryParams);});</script>",
         "Created At": "2024-12-04 01:04:43 -0800",
         "Updated At": "2024-12-04 01:04:43 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-04 01:04:43 -0800",
         "Template Suffix": "swym",
         "Metafield: title_tag [string]": "",
@@ -300,7 +300,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,529,214,233",
+        "ID": "143529214233",
         "Handle": "faq",
         "Command": "MERGE",
         "Title": "faq",
@@ -308,7 +308,7 @@
         "Body HTML": "",
         "Created At": "2024-12-04 00:58:13 -0800",
         "Updated At": "2024-12-23 03:21:02 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-04 00:58:13 -0800",
         "Template Suffix": "faq",
         "Metafield: title_tag [string]": "FAQ - Skincare Products | Meaningful Beauty\u00ae",
@@ -325,7 +325,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,522,824,473",
+        "ID": "143522824473",
         "Handle": "preupsell-sas-wsc",
         "Command": "MERGE",
         "Title": "preupsell-sas-wsc",
@@ -333,7 +333,7 @@
         "Body HTML": "",
         "Created At": "2024-12-03 21:58:45 -0800",
         "Updated At": "2025-01-20 09:39:11 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-03 21:58:45 -0800",
         "Template Suffix": "preupsell-sas-wsc",
         "Metafield: title_tag [string]": "Sites-Meaningful Beauty-Site",
@@ -350,7 +350,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,528,919,321",
+        "ID": "143528919321",
         "Handle": "sitemap",
         "Command": "MERGE",
         "Title": "sitemap",
@@ -358,7 +358,7 @@
         "Body HTML": "<section class=\"site-map\" id=\"sitemap-page\">\n<h1 class=\"heading\">Site Map</h1>\n<div class=\"site-content\">\n<h3>Discover</h3>\n<ul>\n<li><a href=\"/\">Meaningful Beauty Skincare</a></li>\n<li><a href=\"/pages/lp-core-ageproofhair\">Meaningful Beauty Haircare</a></li>\n<li><a href=\"/collections/shop\">Shop All</a></li>\n<li><a href=\"/pages/reviews-and-ratings\">Reviews & Ratings</a></li>\n<li><a href=\"/pages/our-story\">Our Story</a></li>\n<li><a href=\"/pages/our-technology\">Our Technology</a></li>\n</ul>\n<h3>Deluxe Systems</h3>\n<ul>\n<li><a href=\"/products/7piece-deluxe-skincare-system\">7-Piece Deluxe Face & Neck Skincare System</a></li>\n<li><a href=\"/products/4-piece-deluxe-age-proof-haircare-system-1\">4-Piece Deluxe Age-Proof Haircare System</a></li>\n</ul>\n<h3>Essentials Systems</h3>\n<ul>\n<li><a href=\"/products/5-piece-essentials-skincare-system-advanced-formula-1\">5-Piece Essentials Skincare System</a></li>\n<li><a href=\"/products/2-piece-essentials-haircare-system\">2-Piece Essentials Haircare System</a></li>\n</ul>\n<h3>Skincare Products</h3>\n<h4>Serums</h4>\n<ul>\n<li><a href=\"/products/youth-activating-melon-serum\">Youth Activating Melon Serum Advanced Formula</a></li>\n<li><a href=\"/products/creme-de-serum\">Cr\u00e8me de S\u00e9rum</a></li>\n<li><a href=\"/products/glowing-serum\">Glowing Serum</a></li>\n<li><a href=\"/products/firming-serum\">Firming Serum</a></li>\n<li><a href=\"/products/ultra-lifting-and-filling-treatment\">Ultra Lifting and Filling Treatment</a></li>\n</ul>\n<h4>Eye</h4>\n<ul>\n<li><a href=\"/products/youth-activating-smoothing-and-refreshing-eye-serum\">Youth Activating Smoothing and Refreshing Eye Serum</a></li>\n<li><a href=\"/products/eye-enhancing-serum\">Eye Enhancing Serum</a></li>\n<li><a href=\"/products/lifting-eye-creme\">Lifting Eye Cr\u00e8me \u2014 Advanced Formula</a></li>\n<li><a href=\"/products/revive-and-brighten-eye-masque\">Revive and Brighten Eye Masque</a></li>\n</ul>\n<h4>Masques & Treatments</h4>\n<ul>\n<li><a href=\"/products/vitamin-c-bi-phase-brightening-oil\">Vitamin C Bi-Phase Brightening Oil with Activated-C Technology</a></li>\n<li><a href=\"/products/dark-spot-treatment\">Dark Spot Treatment</a></li>\n<li><a href=\"/products/wrinkle-smoothing-capsules\">Wrinkle Smoothing Capsules \u2014 Advanced Formula</a></li>\n<li><a href=\"/products/skin-brightening-treatment\">Skin Brightening Treatment</a></li>\n<li><a href=\"/products/skin-renewing-peel\">Skin Renewing Peel</a></li>\n<li><a href=\"/products/intensive-triple-exfoliating-treatment\">Intensive Triple Exfoliating Treatment</a></li>\n</ul>\n<h4>Moisturizers</h4>\n<ul>\n<li><a href=\"/products/vitamin-c-brightening-water-creme\">Vitamin C Brightening Water Cr\u00e8me with Activated Hydraspheres</a></li>\n<li><a href=\"/products/hydrating-and-soothing-facial-mist\">Hydrating and Soothing Facial Mist</a></li>\n<li><a href=\"/products/anti-aging-day-creme-1\">Anti-Aging Day Cr\u00e8me with Broad Spectrum SPF 30</a></li>\n<li><a href=\"/products/age-recovery-night-creme-with-retinol\">Age Recovery Night Cr\u00e8me with Retinol Advanced Formula</a></li>\n</ul>\n<h4>Cleansers & Toners</h4>\n<ul>\n<li><a href=\"/products/pore-refining-toner\">Pore Refining Toner</a></li>\n<li><a href=\"/products/skin-softening-gentle-cleanser-1\">Skin Softening Gentle Cleanser</a></li>\n</ul>\n<h3>Body</h3>\n<ul>\n<li><a href=\"/products/firming-tightening-body-hydration-treatment\">Firming and Tightening Body Hydration Treatment</a></li>\n<li><a href=\"/products/skin-brightening-decollete-and-neck-treatment\">Skin Brightening D\u00e9collet\u00e9 and Neck Treatment SPF 15</a></li>\n</ul>\n<h3>Hair</h3>\n<ul>\n<li><a href=\"/products/strengthening-shampoo\">Strengthening Shampoo</a></li>\n<li><a href=\"/products/smooth-shiny-conditioner\">Smooth & Shiny Conditioner</a></li>\n<li><a href=\"/products/restorative-scalp-treatment\">Restorative Scalp Treatment</a></li>\n<li><a href=\"/products/styling-and-protecting-spray\">Styling and Protecting Spray</a></li>\n<li><a href=\"/products/root-touch-up\">Root Touch Up</a></li>\n</ul>\n<h3>Helpful Links</h3>\n<ul>\n<li><a href=\"/pages/faq-customer-service\">Customer Service</a></li>\n<li><a href=\"/policies/privacy-policy\">Privacy Policy</a></li>\n<li><a href=\"/pages/accessibility\">Accessibility Statement</a></li>\n<li><a href=\"/pages/faq\">FAQs</a></li>\n<li><a href=\"/policies/terms-of-service\">Terms and Conditions</a></li>\n<li><a href=\"/pages/unauthorized-resellers\">Unauthorized Resellers</a></li>\n</ul>\n</div>\n</section>",
         "Created At": "2024-12-04 00:54:06 -0800",
         "Updated At": "2025-01-30 11:16:42 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-04 00:54:06 -0800",
         "Template Suffix": "",
         "Metafield: title_tag [string]": "Site Map",
@@ -375,7 +375,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "130,121,400,601",
+        "ID": "130121400601",
         "Handle": "contact",
         "Command": "MERGE",
         "Title": "Contact",
@@ -383,7 +383,7 @@
         "Body HTML": "",
         "Created At": "2023-10-30 15:31:03 -0700",
         "Updated At": "2023-10-30 15:31:03 -0700",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2023-10-30 15:31:03 -0700",
         "Template Suffix": "contact",
         "Metafield: title_tag [string]": "",
@@ -400,7 +400,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,529,640,217",
+        "ID": "143529640217",
         "Handle": "swym-wishlist",
         "Command": "MERGE",
         "Title": "Wishlist",
@@ -408,7 +408,7 @@
         "Body HTML": "<!-- Include html in the body -->\n<div id=\"swym-wishlist-render-container\"></div>\n<script type=\"text/javascript\">\n\twindow.SwymCallbacks = window.SwymCallbacks || [];\n\twindow.SwymCallbacks.push(function(swat) {\n\t\tvar wishlistContainerElement = document.querySelector(\"#swym-wishlist-render-container\");\n\t\tvar queryParams = swat.utils.getEncodedAsObject(window.location.search);// Contains queryParams[\"lid\"];\n\t\tswat.ui.renderWishlistInContainer(wishlistContainerElement, queryParams);});\n</script>",
         "Created At": "2024-12-04 01:06:38 -0800",
         "Updated At": "2024-12-04 01:06:38 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-04 01:06:38 -0800",
         "Template Suffix": "swym",
         "Metafield: title_tag [string]": "",
@@ -425,7 +425,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "144,127,885,593",
+        "ID": "144127885593",
         "Handle": "manage-communications",
         "Command": "MERGE",
         "Title": "manage-communications",
@@ -433,7 +433,7 @@
         "Body HTML": "",
         "Created At": "2024-12-18 03:26:26 -0800",
         "Updated At": "2024-12-18 03:28:20 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-17 13:58:18 -0800",
         "Template Suffix": "manage-communications",
         "Metafield: title_tag [string]": "",
@@ -450,7 +450,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,529,115,929",
+        "ID": "143529115929",
         "Handle": "faq-customer-service",
         "Command": "MERGE",
         "Title": "faq-customer-service",
@@ -458,7 +458,7 @@
         "Body HTML": "",
         "Created At": "2024-12-04 00:57:15 -0800",
         "Updated At": "2024-12-19 02:51:46 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-04 00:57:15 -0800",
         "Template Suffix": "faq-customer-service",
         "Metafield: title_tag [string]": "FAQ - Customer Service | Meaningful Beauty\u00ae",
@@ -475,7 +475,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,520,956,697",
+        "ID": "143520956697",
         "Handle": "how-to-use",
         "Command": "MERGE",
         "Title": "How to use",
@@ -483,7 +483,7 @@
         "Body HTML": "",
         "Created At": "2024-12-03 21:08:17 -0800",
         "Updated At": "2024-12-03 21:08:17 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-03 21:08:17 -0800",
         "Template Suffix": "how-to-use",
         "Metafield: title_tag [string]": "",
@@ -500,7 +500,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,528,984,857",
+        "ID": "143528984857",
         "Handle": "wishlist",
         "Command": "MERGE",
         "Title": "Wishlist",
@@ -508,7 +508,7 @@
         "Body HTML": "",
         "Created At": "2024-12-04 00:55:11 -0800",
         "Updated At": "2024-12-04 00:55:11 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-04 00:55:11 -0800",
         "Template Suffix": "swym",
         "Metafield: title_tag [string]": "",
@@ -525,7 +525,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "144,624,812,313",
+        "ID": "144624812313",
         "Handle": "sas-skin-spl-offer-mb7",
         "Command": "MERGE",
         "Title": "sas-skin-spl-offer-mb7",
@@ -533,7 +533,7 @@
         "Body HTML": "",
         "Created At": "2024-12-30 22:05:05 -0800",
         "Updated At": "2025-01-12 23:26:58 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-30 22:05:05 -0800",
         "Template Suffix": "sas-skin-spl-offer-mb7",
         "Metafield: title_tag [string]": "",
@@ -550,7 +550,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "144,118,382,873",
+        "ID": "144118382873",
         "Handle": "sas-skin-special-offer-es",
         "Command": "MERGE",
         "Title": "sas-skin-special-offer-es",
@@ -558,7 +558,7 @@
         "Body HTML": "",
         "Created At": "2024-12-17 21:15:31 -0800",
         "Updated At": "2024-12-22 23:16:19 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-17 21:15:31 -0800",
         "Template Suffix": "sas-skin-special-offer-es",
         "Metafield: title_tag [string]": "Buy Meaningful Beauty\u00ae Skincare Products",
@@ -575,7 +575,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,522,169,113",
+        "ID": "143522169113",
         "Handle": "lp-core-ageproofhair",
         "Command": "MERGE",
         "Title": "lp-core-ageproofhair",
@@ -583,7 +583,7 @@
         "Body HTML": "",
         "Created At": "2024-12-03 21:50:53 -0800",
         "Updated At": "2024-12-20 01:37:29 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-03 21:50:53 -0800",
         "Template Suffix": "lp-core-ageproofhair",
         "Metafield: title_tag [string]": "lp-core-ageproofhair",
@@ -600,7 +600,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,522,693,401",
+        "ID": "143522693401",
         "Handle": "preupsell-sas-compra",
         "Command": "MERGE",
         "Title": "preupsell-sas-compra",
@@ -608,7 +608,7 @@
         "Body HTML": "",
         "Created At": "2024-12-03 21:58:14 -0800",
         "Updated At": "2025-01-20 09:40:05 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-03 21:58:14 -0800",
         "Template Suffix": "preupsell-sas-compra",
         "Metafield: title_tag [string]": "Sites-Meaningful Beauty-Site",
@@ -625,7 +625,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,522,922,777",
+        "ID": "143522922777",
         "Handle": "sas-skin-special-offer",
         "Command": "MERGE",
         "Title": "sas-skin-special-offer",
@@ -633,7 +633,7 @@
         "Body HTML": "",
         "Created At": "2024-12-03 21:59:06 -0800",
         "Updated At": "2024-12-22 21:10:22 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-03 21:59:06 -0800",
         "Template Suffix": "sas-skin-special-offer",
         "Metafield: title_tag [string]": "Buy Meaningful Beauty\u00ae Skincare Products",
@@ -650,7 +650,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,522,234,649",
+        "ID": "143522234649",
         "Handle": "lp-skin-special-offer1",
         "Command": "MERGE",
         "Title": "lp-skin-special-offer1",
@@ -658,7 +658,7 @@
         "Body HTML": "",
         "Created At": "2024-12-03 21:52:23 -0800",
         "Updated At": "2024-12-19 23:56:39 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-03 21:52:23 -0800",
         "Template Suffix": "lp-skin-special-offer1",
         "Metafield: title_tag [string]": "Meaningful Beauty\u00ae | Cindy Crawford Anti-aging Skin Care & Hair Care",
@@ -675,7 +675,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,522,496,793",
+        "ID": "143522496793",
         "Handle": "sas-skin-special-offer1",
         "Command": "MERGE",
         "Title": "sas-skin-special-offer1",
@@ -683,7 +683,7 @@
         "Body HTML": "",
         "Created At": "2024-12-03 21:56:20 -0800",
         "Updated At": "2025-01-06 22:35:55 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-03 21:56:20 -0800",
         "Template Suffix": "sas-skin-special-offer1",
         "Metafield: title_tag [string]": "Buy Meaningful Beauty\u00ae Skincare Products",
@@ -700,7 +700,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,522,791,705",
+        "ID": "143522791705",
         "Handle": "sas-hair-special-offer",
         "Command": "MERGE",
         "Title": "sas-hair-special-offer",
@@ -708,7 +708,7 @@
         "Body HTML": "",
         "Created At": "2024-12-03 21:58:29 -0800",
         "Updated At": "2024-12-19 02:10:57 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-03 21:58:29 -0800",
         "Template Suffix": "sas-hair-special-offer",
         "Metafield: title_tag [string]": "Shop Meaningful Beauty\u00ae Haircare - Full Age-Proof & Anti-Aging Systems",
@@ -725,7 +725,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,529,312,537",
+        "ID": "143529312537",
         "Handle": "es",
         "Command": "MERGE",
         "Title": "es",
@@ -733,7 +733,7 @@
         "Body HTML": "",
         "Created At": "2024-12-04 01:00:13 -0800",
         "Updated At": "2024-12-15 23:11:35 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-04 01:00:13 -0800",
         "Template Suffix": "es-compramb",
         "Metafield: title_tag [string]": "",
@@ -750,7 +750,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,522,464,025",
+        "ID": "143522464025",
         "Handle": "sas-winback",
         "Command": "MERGE",
         "Title": "sas-winback",
@@ -758,7 +758,7 @@
         "Body HTML": "",
         "Created At": "2024-12-03 21:55:58 -0800",
         "Updated At": "2024-12-23 11:19:20 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-03 21:55:58 -0800",
         "Template Suffix": "sas-winback",
         "Metafield: title_tag [string]": "Buy Meaningful Beauty\u00ae Skincare Products",
@@ -775,7 +775,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,522,627,865",
+        "ID": "143522627865",
         "Handle": "sas-hair-special-offer2",
         "Command": "MERGE",
         "Title": "sas-hair-special-offer2",
@@ -783,7 +783,7 @@
         "Body HTML": "",
         "Created At": "2024-12-03 21:57:14 -0800",
         "Updated At": "2024-12-19 02:11:43 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-03 21:57:14 -0800",
         "Template Suffix": "sas-hair-special-offer2",
         "Metafield: title_tag [string]": "Shop Meaningful Beauty\u00ae Haircare - Full Age-Proof & Anti-Aging Systems",
@@ -800,7 +800,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,522,595,097",
+        "ID": "143522595097",
         "Handle": "sas-es-special-offer",
         "Command": "MERGE",
         "Title": "sas-es-special-offer",
@@ -808,7 +808,7 @@
         "Body HTML": "",
         "Created At": "2024-12-03 21:56:41 -0800",
         "Updated At": "2024-12-11 04:51:35 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-03 21:56:41 -0800",
         "Template Suffix": "sas-es-special-offer",
         "Metafield: title_tag [string]": "",
@@ -825,7 +825,7 @@
         "Metafield: page.campaign_order_discount [metaobject_reference]": ""
     },
     {
-        "ID": "143,522,398,489",
+        "ID": "143522398489",
         "Handle": "lp_lf_noprp_ageproofhair_ps",
         "Command": "MERGE",
         "Title": "lp_lf_noprp_ageproofhair_ps",
@@ -833,7 +833,7 @@
         "Body HTML": "",
         "Created At": "2024-12-03 21:55:17 -0800",
         "Updated At": "2025-01-20 09:41:27 -0800",
-        "Published": "1",
+        "Published": "true",
         "Published At": "2024-12-03 21:55:17 -0800",
         "Template Suffix": "lp_lf_noprp_ageproofhair_ps",
         "Metafield: title_tag [string]": "Meaningful Beauty\u00ae | Cindy Crawford Anti-aging Skin Care & Hair Care",
