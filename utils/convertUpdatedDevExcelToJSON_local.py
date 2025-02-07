@@ -54,9 +54,9 @@ for sheet in sheet_names:
     
     # Iterate over each column to check if its data is a float or int and format if necessary
     for col in df.columns:
-        # If the column is boolean, convert to TRUE/FALSE
-        if df[col].dtype == 'bool':
-            df[col] = df[col].replace({True: 'TRUE', False: 'FALSE'})
+        # Check if the column contains 'TRUE'/'FALSE' as strings and convert them to booleans
+        if df[col].dtype == 'object':
+            df[col] = df[col].apply(lambda x: True if x == 'TRUE' else (False if x == 'FALSE' else x))
         
         # If the column contains numeric data, format with commas, but preserve as string
         elif pd.api.types.is_numeric_dtype(df[col]):
