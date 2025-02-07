@@ -2,10 +2,10 @@
     const fetch = (await import("node-fetch")).default;
 
     const SOURCE_SHOPIFY_STORE = "mb-stg.myshopify.com";
-    const SOURCE_ACCESS_TOKEN = "";
+    const SOURCE_ACCESS_TOKEN = "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";
 
     const DESTINATION_SHOPIFY_STORE = "mbdev09.myshopify.com";
-    const DESTINATION_ACCESS_TOKEN = "";
+    const DESTINATION_ACCESS_TOKEN = "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";
 
     let metaobjectMappings = {}; // Stores metaobject type → ID mappings
 
