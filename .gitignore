@@ -1,3 +1,6 @@
 developer_updated_matrixify_export/
 output_json/
 local-matrixify-export/
+changes/final-output/
+changes/git-diff/
+utils/
