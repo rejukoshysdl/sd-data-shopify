@@ -1,82 +1,114 @@
-diff --git a/.gitignore b/.gitignore
-index c578b50..d02ec9c 100644
---- a/.gitignore
-+++ b/.gitignore
-@@ -1,3 +1,6 @@
- developer_updated_matrixify_export/
- output_json/
- local-matrixify-export/
-+changes/final-output/
-+changes/git-diff/
-+utils/
-diff --git a/changes/final-output/updated_pages.json b/changes/final-output/updated_pages.json
-deleted file mode 100644
-index 74d96f6..0000000
---- a/changes/final-output/updated_pages.json
-+++ /dev/null
-@@ -1,27 +0,0 @@
--[
--    {
--        "ID": "143529181465",
--        "Handle": "faq-haircare",
--        "Command": "MERGE",
--        "Title": "faq-haircare-change-1",
--        "Author": "",
--        "Body HTML": "",
--        "Created At": "2024-12-04 00:57:53 -0800",
--        "Updated At": "2024-12-04 00:57:53 -0800",
--        "Published": "true",
--        "Published At": "2024-12-04 00:57:53 -0800",
--        "Template Suffix": "faq-haircare",
--        "Metafield: title_tag [string]": "",
--        "Metafield: description_tag [string]": "",
--        "Metafield: page.footer_type [single_line_text_field]": "",
--        "Metafield: page.campaign_id [single_line_text_field]": "",
--        "Metafield: page.pricebook [metaobject_reference]": "",
--        "Metafield: page.promo_ribbon [metaobject_reference]": "",
--        "Metafield: page.header_type [single_line_text_field]": "",
--        "Metafield: page.sas_page_url [page_reference]": "",
--        "Metafield: page.default_campaign [single_line_text_field]": "",
--        "Metafield: page.page_type [single_line_text_field]": "",
--        "Metafield: page.campaign_list [json]": "",
--        "Metafield: page.campaign_order_discount [metaobject_reference]": ""
--    }
--]
-\ No newline at end of file
 diff --git a/changes/git-diff/changes.diff b/changes/git-diff/changes.diff
-index 2670d9e..e69de29 100644
+index e03258d..e69de29 100644
 --- a/changes/git-diff/changes.diff
 +++ b/changes/git-diff/changes.diff
-@@ -1,54 +0,0 @@
+@@ -1,258 +0,0 @@
+-diff --git a/.gitignore b/.gitignore
+-index c578b50..d02ec9c 100644
+---- a/.gitignore
+-+++ b/.gitignore
+-@@ -1,3 +1,6 @@
+- developer_updated_matrixify_export/
+- output_json/
+- local-matrixify-export/
+-+changes/final-output/
+-+changes/git-diff/
+-+utils/
+-diff --git a/changes/final-output/updated_pages.json b/changes/final-output/updated_pages.json
+-deleted file mode 100644
+-index 74d96f6..0000000
+---- a/changes/final-output/updated_pages.json
+-+++ /dev/null
+-@@ -1,27 +0,0 @@
+--[
+--    {
+--        "ID": "143529181465",
+--        "Handle": "faq-haircare",
+--        "Command": "MERGE",
+--        "Title": "faq-haircare-change-1",
+--        "Author": "",
+--        "Body HTML": "",
+--        "Created At": "2024-12-04 00:57:53 -0800",
+--        "Updated At": "2024-12-04 00:57:53 -0800",
+--        "Published": "true",
+--        "Published At": "2024-12-04 00:57:53 -0800",
+--        "Template Suffix": "faq-haircare",
+--        "Metafield: title_tag [string]": "",
+--        "Metafield: description_tag [string]": "",
+--        "Metafield: page.footer_type [single_line_text_field]": "",
+--        "Metafield: page.campaign_id [single_line_text_field]": "",
+--        "Metafield: page.pricebook [metaobject_reference]": "",
+--        "Metafield: page.promo_ribbon [metaobject_reference]": "",
+--        "Metafield: page.header_type [single_line_text_field]": "",
+--        "Metafield: page.sas_page_url [page_reference]": "",
+--        "Metafield: page.default_campaign [single_line_text_field]": "",
+--        "Metafield: page.page_type [single_line_text_field]": "",
+--        "Metafield: page.campaign_list [json]": "",
+--        "Metafield: page.campaign_order_discount [metaobject_reference]": ""
+--    }
+--]
+-\ No newline at end of file
 -diff --git a/changes/git-diff/changes.diff b/changes/git-diff/changes.diff
--index 23d1ddb..e69de29 100644
+-index 2670d9e..e69de29 100644
 ---- a/changes/git-diff/changes.diff
 -+++ b/changes/git-diff/changes.diff
--@@ -1,22 +0,0 @@
+-@@ -1,54 +0,0 @@
+--diff --git a/changes/git-diff/changes.diff b/changes/git-diff/changes.diff
+--index 23d1ddb..e69de29 100644
+----- a/changes/git-diff/changes.diff
+--+++ b/changes/git-diff/changes.diff
+--@@ -1,22 +0,0 @@
+---diff --git a/repo-shopify-data/Pages.json b/repo-shopify-data/Pages.json
+---index 786a795..10e809c 100644
+------ a/repo-shopify-data/Pages.json
+---+++ b/repo-shopify-data/Pages.json
+---@@ -3,7 +3,7 @@
+---         "ID": "143529181465",
+---         "Handle": "faq-haircare",
+---         "Command": "MERGE",
+----        "Title": "faq-haircare",
+---+        "Title": "faq-haircare-change",
+---         "Author": "",
+---         "Body HTML": "",
+---         "Created At": "2024-12-04 00:57:53 -0800",
+---@@ -28,7 +28,7 @@
+---         "ID": "143529247001",
+---         "Handle": "do-not-sell-or-share-my-personal-information",
+---         "Command": "MERGE",
+----        "Title": "Do not sell or share my personal information",
+---+        "Title": "Do not sell or share my personal information-change",
+---         "Author": "",
+---         "Body HTML": "<link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.css\"> <meta charset=\"utf-8\">\n<p>As described in our Privacy Policy, we collect personal information from your interactions with us and our website, including through cookies and similar technologies. We may also share this personal information with third parties, including advertising partners. We do this in order to show you ads on other websites that are more relevant to your interests and for other reasons outlined in our privacy policy.</p>\n<p>Sharing of personal information for targeted advertising based on your interaction on different websites may be considered \"sales\", \"sharing\", or \"targeted advertising\" under certain U.S. state privacy laws. Depending on where you live, you may have the right to opt out of these activities. If you would like to exercise this opt-out right, please follow the instructions below.</p>\n<p>If you visit our website with the Global Privacy Control opt-out preference signal enabled, depending on where you are, we will treat this as a request to opt-out of activity that may be considered a \u201csale\u201d or \u201csharing\u201d of personal information or other uses that may be considered targeted advertising for the device and browser you used to visit our website.</p>\n<div data-error=\"A problem occurred, try submitting your email again>\" data-success=\"Opted-out successfully\" data-email-label=\"Email\" data-form-description='If you would like to opt out of activity that may be considered a \"sale\" or \"share,\" or \"targeted advertising\", please submit your email.' data-not-applicable='To opt out of the \"sale\" or \"sharing\" of your personal information collected using cookies and other device-based identifiers as described above, you must be browsing from one of the applicable US states referred to above.' id=\"pc--optOutFormContainer\">\n<script src=\"https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.js\" defer></script> <script src=\"https://js.hcaptcha.com/1/api.js?onload=optOutOnLoad\" defer></script>\n</div>",
+---         "Created At": "2024-12-04 00:58:37 -0800",
 --diff --git a/repo-shopify-data/Pages.json b/repo-shopify-data/Pages.json
---index 786a795..10e809c 100644
+--index 10e809c..d26a77c 100644
 ----- a/repo-shopify-data/Pages.json
 --+++ b/repo-shopify-data/Pages.json
 --@@ -3,7 +3,7 @@
 --         "ID": "143529181465",
 --         "Handle": "faq-haircare",
 --         "Command": "MERGE",
----        "Title": "faq-haircare",
---+        "Title": "faq-haircare-change",
+---        "Title": "faq-haircare-change",
+--+        "Title": "faq-haircare-change-1",
 --         "Author": "",
 --         "Body HTML": "",
 --         "Created At": "2024-12-04 00:57:53 -0800",
---@@ -28,7 +28,7 @@
---         "ID": "143529247001",
---         "Handle": "do-not-sell-or-share-my-personal-information",
---         "Command": "MERGE",
----        "Title": "Do not sell or share my personal information",
---+        "Title": "Do not sell or share my personal information-change",
---         "Author": "",
---         "Body HTML": "<link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.css\"> <meta charset=\"utf-8\">\n<p>As described in our Privacy Policy, we collect personal information from your interactions with us and our website, including through cookies and similar technologies. We may also share this personal information with third parties, including advertising partners. We do this in order to show you ads on other websites that are more relevant to your interests and for other reasons outlined in our privacy policy.</p>\n<p>Sharing of personal information for targeted advertising based on your interaction on different websites may be considered \"sales\", \"sharing\", or \"targeted advertising\" under certain U.S. state privacy laws. Depending on where you live, you may have the right to opt out of these activities. If you would like to exercise this opt-out right, please follow the instructions below.</p>\n<p>If you visit our website with the Global Privacy Control opt-out preference signal enabled, depending on where you are, we will treat this as a request to opt-out of activity that may be considered a \u201csale\u201d or \u201csharing\u201d of personal information or other uses that may be considered targeted advertising for the device and browser you used to visit our website.</p>\n<div data-error=\"A problem occurred, try submitting your email again>\" data-success=\"Opted-out successfully\" data-email-label=\"Email\" data-form-description='If you would like to opt out of activity that may be considered a \"sale\" or \"share,\" or \"targeted advertising\", please submit your email.' data-not-applicable='To opt out of the \"sale\" or \"sharing\" of your personal information collected using cookies and other device-based identifiers as described above, you must be browsing from one of the applicable US states referred to above.' id=\"pc--optOutFormContainer\">\n<script src=\"https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.js\" defer></script> <script src=\"https://js.hcaptcha.com/1/api.js?onload=optOutOnLoad\" defer></script>\n</div>",
---         "Created At": "2024-12-04 00:58:37 -0800",
+--diff --git a/utils/run_scripts_capture_changes.sh b/utils/run_scripts_capture_changes.sh
+--index c60901c..c8b2e54 100644
+----- a/utils/run_scripts_capture_changes.sh
+--+++ b/utils/run_scripts_capture_changes.sh
+--@@ -1,6 +1,8 @@
+-- #!/bin/bash 
+-- 
+---git diff origin/dev dev > ../changes/git-diff/changes.diff 
+--+#git diff origin/dev dev > ../changes/git-diff/changes.diff //apploicable only after comitting
+--+
+--+git diff > ../changes/git-diff/changes.diff 
+-- 
+-- # Execute the  Python script to generate changes
+-- python3.13 extract-changes-only.py
 -diff --git a/repo-shopify-data/Pages.json b/repo-shopify-data/Pages.json
--index 10e809c..d26a77c 100644
+-index 10e809c..786a795 100644
 ---- a/repo-shopify-data/Pages.json
 -+++ b/repo-shopify-data/Pages.json
 -@@ -3,7 +3,7 @@
@@ -84,175 +116,148 @@ index 2670d9e..e69de29 100644
 -         "Handle": "faq-haircare",
 -         "Command": "MERGE",
 --        "Title": "faq-haircare-change",
--+        "Title": "faq-haircare-change-1",
+-+        "Title": "faq-haircare",
 -         "Author": "",
 -         "Body HTML": "",
 -         "Created At": "2024-12-04 00:57:53 -0800",
--diff --git a/utils/run_scripts_capture_changes.sh b/utils/run_scripts_capture_changes.sh
--index c60901c..c8b2e54 100644
----- a/utils/run_scripts_capture_changes.sh
--+++ b/utils/run_scripts_capture_changes.sh
--@@ -1,6 +1,8 @@
-- #!/bin/bash 
+-@@ -28,7 +28,7 @@
+-         "ID": "143529247001",
+-         "Handle": "do-not-sell-or-share-my-personal-information",
+-         "Command": "MERGE",
+--        "Title": "Do not sell or share my personal information-change",
+-+        "Title": "Do not sell or share my personal information",
+-         "Author": "",
+-         "Body HTML": "<link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.css\"> <meta charset=\"utf-8\">\n<p>As described in our Privacy Policy, we collect personal information from your interactions with us and our website, including through cookies and similar technologies. We may also share this personal information with third parties, including advertising partners. We do this in order to show you ads on other websites that are more relevant to your interests and for other reasons outlined in our privacy policy.</p>\n<p>Sharing of personal information for targeted advertising based on your interaction on different websites may be considered \"sales\", \"sharing\", or \"targeted advertising\" under certain U.S. state privacy laws. Depending on where you live, you may have the right to opt out of these activities. If you would like to exercise this opt-out right, please follow the instructions below.</p>\n<p>If you visit our website with the Global Privacy Control opt-out preference signal enabled, depending on where you are, we will treat this as a request to opt-out of activity that may be considered a \u201csale\u201d or \u201csharing\u201d of personal information or other uses that may be considered targeted advertising for the device and browser you used to visit our website.</p>\n<div data-error=\"A problem occurred, try submitting your email again>\" data-success=\"Opted-out successfully\" data-email-label=\"Email\" data-form-description='If you would like to opt out of activity that may be considered a \"sale\" or \"share,\" or \"targeted advertising\", please submit your email.' data-not-applicable='To opt out of the \"sale\" or \"sharing\" of your personal information collected using cookies and other device-based identifiers as described above, you must be browsing from one of the applicable US states referred to above.' id=\"pc--optOutFormContainer\">\n<script src=\"https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.js\" defer></script> <script src=\"https://js.hcaptcha.com/1/api.js?onload=optOutOnLoad\" defer></script>\n</div>",
+-         "Created At": "2024-12-04 00:58:37 -0800",
+-diff --git a/repo-shopify-data/Redirects.json b/repo-shopify-data/Redirects.json
+-index 07d165c..bae46d8 100644
+---- a/repo-shopify-data/Redirects.json
+-+++ b/repo-shopify-data/Redirects.json
+-@@ -1,7 +1,7 @@
+- [
+-     {
+-         "ID": "504552718617",
+--        "Path": "/youth-activating-smoothing-and-refreshing-eye-serum-MT1A3715.html",
+-+        "Path": "/youth-activating-smoothing-and-refreshing-eye-serum-MT1A3715-change.html",
+-         "Command": "MERGE",
+-         "Target": "/products/youth-activating-smoothing-and-refreshing-eye-serum"
+-     },
+-diff --git a/utils/extract-changes-only.py b/utils/extract-changes-only.py
+-index cbee276..4d781d3 100644
+---- a/utils/extract-changes-only.py
+-+++ b/utils/extract-changes-only.py
+-@@ -1,22 +1,25 @@
+- import json
+- import re
+-+import os
 - 
---git diff origin/dev dev > ../changes/git-diff/changes.diff 
--+#git diff origin/dev dev > ../changes/git-diff/changes.diff //apploicable only after comitting
+--# Path to the original Pages.json file
+--original_file_path = '../repo-shopify-data/Pages.json'
+-+# Define the paths to the original JSON files and output directory
+-+original_files = {
+-+    'Pages.json': '../repo-shopify-data/Pages.json',
+-+    'Redirects.json': '../repo-shopify-data/Redirects.json'
+-+}
+- 
+- # Path to the diff file (changes.diff)
+- diff_file_path = '../changes/git-diff/changes.diff'
+- 
+--# Save the modified pages to a new JSON file
+--output_file_path = '../changes/final-output/updated_pages.json'
+-+# Output directory for modified files
+-+output_dir = '../changes/final-output/'
+- 
+--# Load the original Pages.json data
+--with open(original_file_path, 'r') as file:
+--    pages_data = json.load(file)
+-+# Ensure the output directory exists
+-+os.makedirs(output_dir, exist_ok=True)
+- 
+- # Function to extract modified blocks from the diff file
+--def extract_changes_from_diff(diff_file_path):
+--    changes = []
+-+def extract_changes_from_diff(diff_file_path, valid_files):
+-+    changes = {file: [] for file in valid_files}
+-     
+-     with open(diff_file_path, 'r') as file:
+-         content = file.read()
+-@@ -24,28 +27,63 @@ def extract_changes_from_diff(diff_file_path):
+-         # Regex to match the lines for ID, Handle, and content change
+-         diff_blocks = re.findall(r'@@ -(\d+),(\d+) \+(\d+),(\d+) @@\n([\s\S]+?)(?=@@ |\Z)', content)
+-         
+-+        print("Diff blocks extracted:")
+-+        for block in diff_blocks:
+-+            print(block)
+-+        
+-         for block in diff_blocks:
+-             start_line, num_lines, new_start, new_num_lines, diff_content = block
+--            # Extract all ID and Handle entries from the diff content
+--            ids_and_handles = re.findall(r'"ID": "([^"]+)",\s+"Handle": "([^"]+)"', diff_content)
+--            for id_handle in ids_and_handles:
+--                changes.append(id_handle)  # Store the ID and Handle of the modified block
+--
+-+            
+-+            # Extract the file name from the diff content (e.g., Pages.json, Redirects.json)
+-+            file_name_match = re.match(r'--- a/([^ ]+)', diff_content)
+-+            if file_name_match:
+-+                file_name = file_name_match.group(1)
+-+                if file_name in valid_files:
+-+                    # Extract all ID and Handle entries from the diff content
+-+                    ids_and_handles = re.findall(r'"ID": "([^"]+)",\s+"Handle": "([^"]+)"', diff_content)
+-+                    for id_handle in ids_and_handles:
+-+                        changes[file_name].append(id_handle)  # Store the ID and Handle of the modified block
+-+                        
+-+    print(f"Changes extracted: {changes}")
+-     return changes
+- 
+--# Extract the changes from the diff file
+--changes = extract_changes_from_diff(diff_file_path)
+-+# Extract the changes from the diff file for the valid files (Pages.json, Redirects.json)
+-+valid_files = ['Pages.json', 'Redirects.json']
+-+changes = extract_changes_from_diff(diff_file_path, valid_files)
+- 
+--# Filter the Pages.json data for only the modified blocks
+--modified_pages = []
+-+# Function to filter and write modified data for each file
+-+def filter_and_write_modified_data(original_files, changes, output_dir):
+-+    for file_name, file_path in original_files.items():
+-+        # Skip files that don't have changes
+-+        if file_name not in changes or not changes[file_name]:
+-+            print(f"No changes for {file_name}, skipping file.")
+-+            continue
 -+
--+git diff > ../changes/git-diff/changes.diff 
+-+        # Load the original data
+-+        with open(file_path, 'r') as file:
+-+            data = json.load(file)
+-+
+-+        # Filter the modified entries based on ID and Handle
+-+        modified_data = [
+-+            entry for entry in data if any(
+-+                entry.get('ID') == change[0] and entry.get('Handle') == change[1]
+-+                for change in changes[file_name]
+-+            )
+-+        ]
+-+        
+-+        print(f"Modified data for {file_name}: {modified_data}")
 - 
-- # Execute the  Python script to generate changes
-- python3.13 extract-changes-only.py
-diff --git a/repo-shopify-data/Pages.json b/repo-shopify-data/Pages.json
-index 10e809c..786a795 100644
---- a/repo-shopify-data/Pages.json
-+++ b/repo-shopify-data/Pages.json
-@@ -3,7 +3,7 @@
-         "ID": "143529181465",
-         "Handle": "faq-haircare",
-         "Command": "MERGE",
--        "Title": "faq-haircare-change",
-+        "Title": "faq-haircare",
-         "Author": "",
-         "Body HTML": "",
-         "Created At": "2024-12-04 00:57:53 -0800",
-@@ -28,7 +28,7 @@
-         "ID": "143529247001",
-         "Handle": "do-not-sell-or-share-my-personal-information",
-         "Command": "MERGE",
--        "Title": "Do not sell or share my personal information-change",
-+        "Title": "Do not sell or share my personal information",
-         "Author": "",
-         "Body HTML": "<link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.css\"> <meta charset=\"utf-8\">\n<p>As described in our Privacy Policy, we collect personal information from your interactions with us and our website, including through cookies and similar technologies. We may also share this personal information with third parties, including advertising partners. We do this in order to show you ads on other websites that are more relevant to your interests and for other reasons outlined in our privacy policy.</p>\n<p>Sharing of personal information for targeted advertising based on your interaction on different websites may be considered \"sales\", \"sharing\", or \"targeted advertising\" under certain U.S. state privacy laws. Depending on where you live, you may have the right to opt out of these activities. If you would like to exercise this opt-out right, please follow the instructions below.</p>\n<p>If you visit our website with the Global Privacy Control opt-out preference signal enabled, depending on where you are, we will treat this as a request to opt-out of activity that may be considered a \u201csale\u201d or \u201csharing\u201d of personal information or other uses that may be considered targeted advertising for the device and browser you used to visit our website.</p>\n<div data-error=\"A problem occurred, try submitting your email again>\" data-success=\"Opted-out successfully\" data-email-label=\"Email\" data-form-description='If you would like to opt out of activity that may be considered a \"sale\" or \"share,\" or \"targeted advertising\", please submit your email.' data-not-applicable='To opt out of the \"sale\" or \"sharing\" of your personal information collected using cookies and other device-based identifiers as described above, you must be browsing from one of the applicable US states referred to above.' id=\"pc--optOutFormContainer\">\n<script src=\"https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.js\" defer></script> <script src=\"https://js.hcaptcha.com/1/api.js?onload=optOutOnLoad\" defer></script>\n</div>",
-         "Created At": "2024-12-04 00:58:37 -0800",
-diff --git a/repo-shopify-data/Redirects.json b/repo-shopify-data/Redirects.json
-index 07d165c..bae46d8 100644
---- a/repo-shopify-data/Redirects.json
-+++ b/repo-shopify-data/Redirects.json
-@@ -1,7 +1,7 @@
- [
-     {
-         "ID": "504552718617",
--        "Path": "/youth-activating-smoothing-and-refreshing-eye-serum-MT1A3715.html",
-+        "Path": "/youth-activating-smoothing-and-refreshing-eye-serum-MT1A3715-change.html",
-         "Command": "MERGE",
-         "Target": "/products/youth-activating-smoothing-and-refreshing-eye-serum"
-     },
-diff --git a/utils/extract-changes-only.py b/utils/extract-changes-only.py
-index cbee276..4d781d3 100644
---- a/utils/extract-changes-only.py
-+++ b/utils/extract-changes-only.py
-@@ -1,22 +1,25 @@
- import json
- import re
-+import os
- 
--# Path to the original Pages.json file
--original_file_path = '../repo-shopify-data/Pages.json'
-+# Define the paths to the original JSON files and output directory
-+original_files = {
-+    'Pages.json': '../repo-shopify-data/Pages.json',
-+    'Redirects.json': '../repo-shopify-data/Redirects.json'
-+}
- 
- # Path to the diff file (changes.diff)
- diff_file_path = '../changes/git-diff/changes.diff'
- 
--# Save the modified pages to a new JSON file
--output_file_path = '../changes/final-output/updated_pages.json'
-+# Output directory for modified files
-+output_dir = '../changes/final-output/'
- 
--# Load the original Pages.json data
--with open(original_file_path, 'r') as file:
--    pages_data = json.load(file)
-+# Ensure the output directory exists
-+os.makedirs(output_dir, exist_ok=True)
- 
- # Function to extract modified blocks from the diff file
--def extract_changes_from_diff(diff_file_path):
--    changes = []
-+def extract_changes_from_diff(diff_file_path, valid_files):
-+    changes = {file: [] for file in valid_files}
-     
-     with open(diff_file_path, 'r') as file:
-         content = file.read()
-@@ -24,28 +27,63 @@ def extract_changes_from_diff(diff_file_path):
-         # Regex to match the lines for ID, Handle, and content change
-         diff_blocks = re.findall(r'@@ -(\d+),(\d+) \+(\d+),(\d+) @@\n([\s\S]+?)(?=@@ |\Z)', content)
-         
-+        print("Diff blocks extracted:")
-+        for block in diff_blocks:
-+            print(block)
-+        
-         for block in diff_blocks:
-             start_line, num_lines, new_start, new_num_lines, diff_content = block
--            # Extract all ID and Handle entries from the diff content
--            ids_and_handles = re.findall(r'"ID": "([^"]+)",\s+"Handle": "([^"]+)"', diff_content)
--            for id_handle in ids_and_handles:
--                changes.append(id_handle)  # Store the ID and Handle of the modified block
--
-+            
-+            # Extract the file name from the diff content (e.g., Pages.json, Redirects.json)
-+            file_name_match = re.match(r'--- a/([^ ]+)', diff_content)
-+            if file_name_match:
-+                file_name = file_name_match.group(1)
-+                if file_name in valid_files:
-+                    # Extract all ID and Handle entries from the diff content
-+                    ids_and_handles = re.findall(r'"ID": "([^"]+)",\s+"Handle": "([^"]+)"', diff_content)
-+                    for id_handle in ids_and_handles:
-+                        changes[file_name].append(id_handle)  # Store the ID and Handle of the modified block
-+                        
-+    print(f"Changes extracted: {changes}")
-     return changes
- 
--# Extract the changes from the diff file
--changes = extract_changes_from_diff(diff_file_path)
-+# Extract the changes from the diff file for the valid files (Pages.json, Redirects.json)
-+valid_files = ['Pages.json', 'Redirects.json']
-+changes = extract_changes_from_diff(diff_file_path, valid_files)
- 
--# Filter the Pages.json data for only the modified blocks
--modified_pages = []
-+# Function to filter and write modified data for each file
-+def filter_and_write_modified_data(original_files, changes, output_dir):
-+    for file_name, file_path in original_files.items():
-+        # Skip files that don't have changes
-+        if file_name not in changes or not changes[file_name]:
-+            print(f"No changes for {file_name}, skipping file.")
-+            continue
-+
-+        # Load the original data
-+        with open(file_path, 'r') as file:
-+            data = json.load(file)
-+
-+        # Filter the modified entries based on ID and Handle
-+        modified_data = [
-+            entry for entry in data if any(
-+                entry.get('ID') == change[0] and entry.get('Handle') == change[1]
-+                for change in changes[file_name]
-+            )
-+        ]
-+        
-+        print(f"Modified data for {file_name}: {modified_data}")
- 
--for page in pages_data:
--    for id_handle in changes:
--        if page.get('ID') == id_handle[0] and page.get('Handle') == id_handle[1]:
--            modified_pages.append(page)
-+        # If no modified data found, skip writing the file
-+        if not modified_data:
-+            print(f"No modified data for {file_name}, skipping write.")
-+            continue
- 
-+        # Write the modified data to a new JSON file in the output directory
-+        output_file_path = os.path.join(output_dir, file_name)
-+        with open(output_file_path, 'w') as file:
-+            json.dump(modified_data, file, indent=4)
- 
--with open(output_file_path, 'w') as file:
--    json.dump(modified_pages, file, indent=4)
-+        print(f"Modified {file_name} written to {output_file_path}")
- 
--print(f"Modified pages written to {output_file_path}")
-+# Filter and write the modified data for Pages.json and Redirects.json
-+filter_and_write_modified_data(original_files, changes, output_dir)
+--for page in pages_data:
+--    for id_handle in changes:
+--        if page.get('ID') == id_handle[0] and page.get('Handle') == id_handle[1]:
+--            modified_pages.append(page)
+-+        # If no modified data found, skip writing the file
+-+        if not modified_data:
+-+            print(f"No modified data for {file_name}, skipping write.")
+-+            continue
+- 
+-+        # Write the modified data to a new JSON file in the output directory
+-+        output_file_path = os.path.join(output_dir, file_name)
+-+        with open(output_file_path, 'w') as file:
+-+            json.dump(modified_data, file, indent=4)
+- 
+--with open(output_file_path, 'w') as file:
+--    json.dump(modified_pages, file, indent=4)
+-+        print(f"Modified {file_name} written to {output_file_path}")
+- 
+--print(f"Modified pages written to {output_file_path}")
+-+# Filter and write the modified data for Pages.json and Redirects.json
+-+filter_and_write_modified_data(original_files, changes, output_dir)
