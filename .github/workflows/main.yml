@@ -20,8 +20,8 @@ jobs:
     # Step 2: Set Git user info
     - name: Set Git user info
       run: |
-        git config --global user.name "MB USER"
-        git config --global user.email "reju.koshy@squaredatalabs.com"  # Set default user email for commits
+        git config --global user.name "MB Deployment"
+        git config --global user.email "ecom@meaningfulbeauty.com"  # Set default user email for commits
 
     # Step 3: Set up Python environment
     - name: Set up Python 3.13
