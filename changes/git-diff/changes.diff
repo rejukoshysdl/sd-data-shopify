@@ -1,0 +1,13 @@
+diff --git a/repo-shopify-data/Pages.json b/repo-shopify-data/Pages.json
+index 96feac9..2e95f6e 100644
+--- a/repo-shopify-data/Pages.json
++++ b/repo-shopify-data/Pages.json
+@@ -126,7 +126,7 @@
+     },
+     {
+         "ID": "143529083161",
+-        "Handle": "code-of-conduct-changed",
++        "Handle": "code-of-conduct",
+         "Command": "MERGE",
+         "Title": "code-of-conduct",
+         "Author": "",
