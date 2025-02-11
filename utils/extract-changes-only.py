@@ -1,89 +1,77 @@
 import json
-import re
 import os
+import re
 
-# Define the paths to the original JSON files and output directory
-original_files = {
-    'Pages.json': '../repo-shopify-data/Pages.json',
-    'Redirects.json': '../repo-shopify-data/Redirects.json'
-}
+# Function to read config properties
+def load_properties(filepath):
+    properties = {}
+    with open(filepath, "r") as file:
+        for line in file:
+            line = line.strip()
+            if line and not line.startswith("#"):  # Ignore comments
+                key, value = line.split("=", 1)
+                properties[key.strip()] = value.strip()
+    return properties
 
-# Path to the diff file (changes.diff)
-diff_file_path = '../changes/git-diff/changes.diff'
+# Load properties
+config = load_properties("../config.properties")
 
-# Output directory for modified files
-output_dir = '../changes/final-output/'
+# Define paths
+changed_ids_file = config["CHANGED_IDS_FILE"]
+output_dir = config["FINAL_OUTPUT_DIR"]
 
 # Ensure the output directory exists
 os.makedirs(output_dir, exist_ok=True)
 
-# Function to extract modified blocks from the diff file
-def extract_changes_from_diff(diff_file_path, valid_files):
-    changes = {file: [] for file in valid_files}
-    
-    with open(diff_file_path, 'r') as file:
-        content = file.read()
-        
-        # Regex to match the lines for ID, Handle, and content change
-        diff_blocks = re.findall(r'@@ -(\d+),(\d+) \+(\d+),(\d+) @@\n([\s\S]+?)(?=@@ |\Z)', content)
-        
-        print("Diff blocks extracted:")
-        for block in diff_blocks:
-            print(block)
-        
-        for block in diff_blocks:
-            start_line, num_lines, new_start, new_num_lines, diff_content = block
-            
-            # Extract the file name from the diff content (e.g., Pages.json, Redirects.json)
-            file_name_match = re.match(r'--- a/([^ ]+)', diff_content)
-            if file_name_match:
-                file_name = file_name_match.group(1)
-                if file_name in valid_files:
-                    # Extract all ID and Handle entries from the diff content
-                    ids_and_handles = re.findall(r'"ID": "([^"]+)",\s+"Handle": "([^"]+)"', diff_content)
-                    for id_handle in ids_and_handles:
-                        changes[file_name].append(id_handle)  # Store the ID and Handle of the modified block
-                        
-    print(f"Changes extracted: {changes}")
-    return changes
+# Load repository file paths
+original_files = {}
+for file_path in config["REPO_FILES"].split(", "):
+    section_name = os.path.basename(file_path).replace(".json", "")
+    original_files[section_name] = file_path
 
-# Extract the changes from the diff file for the valid files (Pages.json, Redirects.json)
-valid_files = ['Pages.json', 'Redirects.json']
-changes = extract_changes_from_diff(diff_file_path, valid_files)
+# Function to load JSON data from a file
+def load_json(file_path):
+    if os.path.exists(file_path):
+        with open(file_path, 'r') as f:
+            return json.load(f)
+    return []
 
-# Function to filter and write modified data for each file
-def filter_and_write_modified_data(original_files, changes, output_dir):
-    for file_name, file_path in original_files.items():
-        # Skip files that don't have changes
-        if file_name not in changes or not changes[file_name]:
-            print(f"No changes for {file_name}, skipping file.")
-            continue
+# Function to write JSON data to a file
+def write_json(file_path, data):
+    with open(file_path, 'w') as f:
+        json.dump(data, f, indent=4)
 
-        # Load the original data
-        with open(file_path, 'r') as file:
-            data = json.load(file)
+# Function to read changed IDs from changed_ids.txt
+def read_changed_ids(changed_ids_file):
+    changed_ids = {}
+    with open(changed_ids_file, "r") as file:
+        for line in file:
+            match = re.match(r'(\w+) -> (.+)', line.strip())  
+            if match:
+                section = match.group(1)
+                ids = match.group(2).split(", ")  
+                changed_ids[section] = ids
+    return changed_ids
 
-        # Filter the modified entries based on ID and Handle
-        modified_data = [
-            entry for entry in data if any(
-                entry.get('ID') == change[0] and entry.get('Handle') == change[1]
-                for change in changes[file_name]
-            )
-        ]
-        
-        print(f"Modified data for {file_name}: {modified_data}")
+# Read changed IDs
+changed_ids = read_changed_ids(changed_ids_file)
 
-        # If no modified data found, skip writing the file
-        if not modified_data:
-            print(f"No modified data for {file_name}, skipping write.")
-            continue
+# Dictionary to store extracted data
+output_data = {}
 
-        # Write the modified data to a new JSON file in the output directory
-        output_file_path = os.path.join(output_dir, file_name)
-        with open(output_file_path, 'w') as file:
-            json.dump(modified_data, file, indent=4)
+# Process each file and extract relevant JSON blocks
+for section, ids in changed_ids.items():
+    if section in original_files:
+        file_path = original_files[section]
+        data = load_json(file_path)
 
-        print(f"Modified {file_name} written to {output_file_path}")
+        # Extract only blocks that match the changed IDs
+        relevant_blocks = [block for block in data if str(block.get('ID')) in ids]
 
-# Filter and write the modified data for Pages.json and Redirects.json
-filter_and_write_modified_data(original_files, changes, output_dir)
+        if relevant_blocks:
+            output_data[section] = relevant_blocks
+            output_file_path = os.path.join(output_dir, f"{section}.json")
+            write_json(output_file_path, relevant_blocks)
+            print(f"Extracted {len(relevant_blocks)} blocks for {section} and saved to {output_file_path}")
+
+print("Extraction process completed.")
