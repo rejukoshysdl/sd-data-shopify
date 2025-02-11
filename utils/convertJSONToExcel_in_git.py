@@ -5,91 +5,102 @@ import pandas as pd
 from datetime import datetime
 import subprocess
 
-# Function to convert JSON files back to Excel sheets
-def json_to_excel(json_dir, output_excel_file):
+# Function to convert JSON files from a directory into an Excel file
+def json_to_excel(json_dir, output_folder):
     """
     Convert JSON files from a directory into an Excel file with each JSON file as a separate sheet.
-    
-    :param json_dir: Directory containing the JSON files
-    :param output_excel_file: Path to save the resulting Excel file
+
+    :param json_dir: Directory containing the JSON files (including subdirectories)
+    :param output_folder: Folder where the Excel file will be saved
     """
-    # Print the directory path for debugging
-    print(f"Searching for JSON files in directory: {os.path.abspath(json_dir)}")
-    
-    # Get all JSON files in the directory
-    json_files = glob.glob(os.path.join(json_dir, '**', '*.json'), recursive=True)  # Include subdirectories
-    
-    # Print the files being processed for debugging
-    print(f"JSON files to process: {json_files}")
-    
-    # Check if any JSON files were found
+    print(f"🔍 Searching for JSON files in: {os.path.abspath(json_dir)}")
+
+    # Get all JSON files recursively
+    json_files = glob.glob(os.path.join(json_dir, '**', '*.json'), recursive=True)
+
     if not json_files:
-        print("No JSON files found in the specified directory.")
-        return
-    
+        print(f"🚫 Skipping {json_dir} (No JSON files found).")
+        return None
+
+    # Ensure output folder exists
+    os.makedirs(output_folder, exist_ok=True)
+
+    # Generate unique Excel file name
+    current_time = datetime.now().strftime('%Y-%m-%d_%H%M%S')
+    output_excel_file = os.path.join(output_folder, f'Export_{current_time}.xlsx')
+
+    print(f"📄 Processing {len(json_files)} JSON files in {json_dir}...")
+
     # Create an Excel writer object
     with pd.ExcelWriter(output_excel_file, engine='xlsxwriter') as writer:
         for json_file in json_files:
-            # Get the sheet name from the JSON file name (without the .json extension)
-            sheet_name = os.path.splitext(os.path.basename(json_file))[0]
-            
-            # Load the JSON data
+            # Extract sheet name from JSON file name (max length = 31 for Excel sheets)
+            sheet_name = os.path.splitext(os.path.basename(json_file))[0][:31]
+
+            # Load JSON data
             with open(json_file, 'r') as f:
                 json_data = json.load(f)
-            
-            # Print out the first few records of the JSON data for debugging
-            print(f"Processing JSON file: {json_file}")
-            print(f"Loaded JSON data (first 5 records): {json_data[:5]}")  # Print first 5 items
-            
-            # Convert JSON data to a DataFrame
+
+            print(f"✅ Processing file: {json_file}")
+
+            # Convert JSON to DataFrame
             df = pd.DataFrame(json_data)
-            
-            # Write DataFrame to the corresponding sheet in Excel
+
+            # Handle boolean and numeric formatting
+            for col in df.columns:
+                if pd.api.types.is_bool_dtype(df[col]):
+                    df[col] = df[col].replace({True: 'TRUE', False: 'FALSE'})
+                elif pd.api.types.is_numeric_dtype(df[col]):
+                    df[col] = df[col].apply(lambda x: f"{x:,.0f}" if pd.notna(x) and x == int(x) else f"{x:,.2f}")
+
+            # Write DataFrame to corresponding sheet
             df.to_excel(writer, sheet_name=sheet_name, index=False)
 
-    print(f"Excel file has been created at: {output_excel_file}")
+    print(f"🎉 Excel file created: {output_excel_file}")
 
-# Define the directory containing the JSON files
-json_directory = os.path.join(os.getcwd(), 'repo-shopify-data')  # Absolute path
+    return output_excel_file  # Return the file path for GitHub push
 
-# Define the output folder here
-output_folder = './final-matrixify-export'  # Folder where the Excel file will be saved
-os.makedirs(output_folder, exist_ok=True)  # Create the folder if it doesn't exist
+# Define JSON directories and corresponding Excel export folders
+folder_mappings = {
+    "repo-shopify-data": "final-matrixify-export",
+    "changes/change-only-jsons": "changes/change-only-excel"
+}
 
-# Get the current date and time to format the file name
-current_time = datetime.now().strftime('%Y-%m-%d_%H%M%S')
-output_excel_file = os.path.join(output_folder, f'Export_{current_time}.xlsx')  # Excel file path with dynamic name
+# List to store generated Excel file paths
+generated_files = []
 
-# Call the function to convert JSON to Excel
-json_to_excel(json_directory, output_excel_file)
+# Process each JSON directory
+for json_dir, output_dir in folder_mappings.items():
+    print(f"\n🚀 Processing directory: {json_dir} → {output_dir}")
+    excel_file = json_to_excel(json_dir, output_dir)
+    if excel_file:
+        generated_files.append(excel_file)
 
-# Ensure GITHUB_TOKEN is set up (GitHub Actions provides this automatically)
+# GitHub push logic
 github_token = os.getenv('GITHUB_TOKEN')
+branch_name = os.getenv('GITHUB_REF_NAME', 'main')  # Default to 'main'
 
-# Get the current branch from the GitHub environment (either 'main' or 'int')
-branch_name = os.getenv('GITHUB_REF_NAME', 'main')  # Default to 'main' if not set (from GitHub Actions)
+print(f"\n🔹 Using GitHub branch: {branch_name}")
 
-# Print the GitHub token and branch for debugging (remove in production)
-print(f"GITHUB_TOKEN: {github_token}")
-print(f"Using branch: {branch_name}")
-
-# Git commands to commit and push the generated Excel file to GitHub
 try:
-    # Add the file to staging
-    subprocess.run(['git', 'add', output_excel_file], check=True)
-    
-    # Commit the file with a message
-    subprocess.run(['git', 'commit', '-m', f'Add Excel file {output_excel_file}'], check=True)
-    
-    # Push the changes to the remote repository using GITHUB_TOKEN for authentication
-    push_command = [
-        'git', 'push', 
-        f'https://{github_token}@github.com/{os.getenv("GITHUB_REPOSITORY")}.git', 
-        branch_name  # Use the dynamic branch name
-    ]
-    subprocess.run(push_command, check=True)
+    for file_path in generated_files:
+        # Add the file to Git staging
+        subprocess.run(['git', 'add', file_path], check=True)
 
-    print(f"Excel file pushed to GitHub successfully.")
+        # Commit the file with a message
+        subprocess.run(['git', 'commit', '-m', f'Add Excel file {file_path}'], check=True)
+
+        # Push to GitHub using GITHUB_TOKEN
+        push_command = [
+            'git', 'push',
+            f'https://{github_token}@github.com/{os.getenv("GITHUB_REPOSITORY")}.git',
+            branch_name
+        ]
+        subprocess.run(push_command, check=True)
+
+    print("✅ All Excel files pushed to GitHub successfully.")
 
 except subprocess.CalledProcessError as e:
-    print(f"Error occurred during Git operations: {e}")
+    print(f"❌ Error during Git operations: {e}")
+
+print("\n🎯 Script execution completed!")

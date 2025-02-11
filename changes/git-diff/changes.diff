@@ -1,13 +1,13 @@
-diff --git a/repo-shopify-data/Metaobjects.json b/repo-shopify-data/Metaobjects.json
-index 0f7b2bf..44e885c 100644
---- a/repo-shopify-data/Metaobjects.json
-+++ b/repo-shopify-data/Metaobjects.json
-@@ -3,7 +3,7 @@
-         "ID": "102993264921",
-         "Handle": "spf-protection",
+diff --git a/repo-shopify-data/Files.json b/repo-shopify-data/Files.json
+index 791273f..2d68837 100644
+--- a/repo-shopify-data/Files.json
++++ b/repo-shopify-data/Files.json
+@@ -1,7 +1,7 @@
+ [
+     {
+         "ID": "gid://shopify/MediaImage/39968078922009",
+-        "File Name": "12_AgeRecoveryNightCremeMelonRetinol_1oz_Closed-changed.jpg",
++        "File Name": "12_AgeRecoveryNightCremeMelonRetinol_1oz_Closed.jpg",
          "Command": "MERGE",
--        "Display Name": "SPF protection-1",
-+        "Display Name": "SPF protection",
-         "Status": "",
-         "Updated At": "2024-12-02 22:15:08 -0800",
-         "Definition: Handle": "shopify--product-certifications-standards",
+         "Link": "https://cdn.shopify.com/s/files/1/0841/8646/4537/files/12_AgeRecoveryNightCremeMelonRetinol_1oz_Closed.jpg?v=1733205990",
+         "Alt Text": "",
