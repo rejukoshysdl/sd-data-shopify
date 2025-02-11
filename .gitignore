@@ -1,5 +1,5 @@
 developer_updated_matrixify_export/
 output_json/
 local-matrixify-export/
-changes/git-diff/changes.diff
-changes/id-output/changed_ids.txt
+changes/git-diff/
+changes/id-output/
