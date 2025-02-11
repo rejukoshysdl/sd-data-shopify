@@ -1,26 +1,13 @@
 diff --git a/repo-shopify-data/Metaobjects.json b/repo-shopify-data/Metaobjects.json
-index 44e885c..0f7b2bf 100644
+index 0f7b2bf..44e885c 100644
 --- a/repo-shopify-data/Metaobjects.json
 +++ b/repo-shopify-data/Metaobjects.json
 @@ -3,7 +3,7 @@
          "ID": "102993264921",
          "Handle": "spf-protection",
          "Command": "MERGE",
--        "Display Name": "SPF protection",
-+        "Display Name": "SPF protection-1",
+-        "Display Name": "SPF protection-1",
++        "Display Name": "SPF protection",
          "Status": "",
          "Updated At": "2024-12-02 22:15:08 -0800",
          "Definition: Handle": "shopify--product-certifications-standards",
-diff --git a/repo-shopify-data/Products.json b/repo-shopify-data/Products.json
-index 857cb6b..8992fee 100644
---- a/repo-shopify-data/Products.json
-+++ b/repo-shopify-data/Products.json
-@@ -3,7 +3,7 @@
-         "ID": "9817270223129",
-         "Handle": "root-touch-up-1",
-         "Command": "MERGE",
--        "Title": "Root touch up-changed1",
-+        "Title": "Root touch up",
-         "Body HTML": "<meta charset=\"utf-8\"><span>Makeup for hair? Instantly cover roots and even out hair color between home coloring or salon visits with powder and a brush.",
-         "Vendor": "Meaningful Beauty",
-         "Type": "Free gift",
