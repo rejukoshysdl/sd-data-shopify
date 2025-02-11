@@ -1,13 +1,13 @@
 diff --git a/repo-shopify-data/Metaobjects.json b/repo-shopify-data/Metaobjects.json
-index 44e885c..0f7b2bf 100644
+index 0f7b2bf..44e885c 100644
 --- a/repo-shopify-data/Metaobjects.json
 +++ b/repo-shopify-data/Metaobjects.json
 @@ -3,7 +3,7 @@
          "ID": "102993264921",
          "Handle": "spf-protection",
          "Command": "MERGE",
--        "Display Name": "SPF protection",
-+        "Display Name": "SPF protection-1",
+-        "Display Name": "SPF protection-1",
++        "Display Name": "SPF protection",
          "Status": "",
          "Updated At": "2024-12-02 22:15:08 -0800",
          "Definition: Handle": "shopify--product-certifications-standards",
