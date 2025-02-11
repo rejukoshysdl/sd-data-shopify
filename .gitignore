@@ -3,4 +3,4 @@ output_json/
 local-matrixify-export/
 changes/final-output/
 changes/git-diff/
-utils/
+changes/
