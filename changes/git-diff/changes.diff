@@ -1,13 +1,13 @@
-diff --git a/repo-shopify-data/Pages.json b/repo-shopify-data/Pages.json
-index 96feac9..2e95f6e 100644
---- a/repo-shopify-data/Pages.json
-+++ b/repo-shopify-data/Pages.json
-@@ -126,7 +126,7 @@
-     },
-     {
-         "ID": "143529083161",
--        "Handle": "code-of-conduct-changed",
-+        "Handle": "code-of-conduct",
+diff --git a/repo-shopify-data/CustomCollections.json b/repo-shopify-data/CustomCollections.json
+index 4a2acd1..302ed4e 100644
+--- a/repo-shopify-data/CustomCollections.json
++++ b/repo-shopify-data/CustomCollections.json
+@@ -3,7 +3,7 @@
+         "ID": "489005154585",
+         "Handle": "mb8-sas",
          "Command": "MERGE",
-         "Title": "code-of-conduct",
-         "Author": "",
+-        "Title": "MB8 SAS-changed-1",
++        "Title": "MB8 SAS-changed",
+         "Body HTML": "",
+         "Sort Order": "Manual",
+         "Template Suffix": "",
