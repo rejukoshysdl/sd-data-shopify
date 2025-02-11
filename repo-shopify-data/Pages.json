@@ -126,7 +126,7 @@
     },
     {
         "ID": "143529083161",
-        "Handle": "code-of-conduct",
+        "Handle": "code-of-conduct-changed",
         "Command": "MERGE",
         "Title": "code-of-conduct",
         "Author": "",
@@ -826,7 +826,7 @@
     },
     {
         "ID": "143522398489",
-        "Handle": "lp_lf_noprp_ageproofhair_ps",
+        "Handle": "lp_lf_noprp_ageproofhair_ps-changed",
         "Command": "MERGE",
         "Title": "lp_lf_noprp_ageproofhair_ps",
         "Author": "",

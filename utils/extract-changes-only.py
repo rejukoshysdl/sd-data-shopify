@@ -2,16 +2,32 @@ import json
 import os
 import re
 
+# Function to read config properties
+def load_properties(filepath):
+    properties = {}
+    with open(filepath, "r") as file:
+        for line in file:
+            line = line.strip()
+            if line and not line.startswith("#"):  # Ignore comments
+                key, value = line.split("=", 1)
+                properties[key.strip()] = value.strip()
+    return properties
+
+# Load properties
+config = load_properties("../config.properties")
+
 # Define paths
-changed_ids_file = "../changes/id-output/changed_ids.txt"
-original_files = {
-    'Pages': '../repo-shopify-data/Pages.json',
-    'Redirects': '../repo-shopify-data/Redirects.json'
-}
-output_dir = "../changes/final-output/"
+changed_ids_file = config["CHANGED_IDS_FILE"]
+output_dir = config["FINAL_OUTPUT_DIR"]
 
 # Ensure the output directory exists
 os.makedirs(output_dir, exist_ok=True)
+
+# Load repository file paths
+original_files = {}
+for file_path in config["REPO_FILES"].split(", "):
+    section_name = os.path.basename(file_path).replace(".json", "")
+    original_files[section_name] = file_path
 
 # Function to load JSON data from a file
 def load_json(file_path):
@@ -30,10 +46,10 @@ def read_changed_ids(changed_ids_file):
     changed_ids = {}
     with open(changed_ids_file, "r") as file:
         for line in file:
-            match = re.match(r'(\w+) -> ([\d, ]+)', line.strip())
+            match = re.match(r'(\w+) -> (.+)', line.strip())  
             if match:
                 section = match.group(1)
-                ids = match.group(2).split(", ")
+                ids = match.group(2).split(", ")  
                 changed_ids[section] = ids
     return changed_ids
 
@@ -50,7 +66,7 @@ for section, ids in changed_ids.items():
         data = load_json(file_path)
 
         # Extract only blocks that match the changed IDs
-        relevant_blocks = [block for block in data if block.get('ID') in ids]
+        relevant_blocks = [block for block in data if str(block.get('ID')) in ids]
 
         if relevant_blocks:
             output_data[section] = relevant_blocks
