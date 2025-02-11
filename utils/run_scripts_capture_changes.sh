@@ -14,7 +14,6 @@ else
     echo "Error: Configuration file $CONFIG_FILE not found!"
     exit 1
 fi
-
 # Function to clear a directory
 clear_directory() {
     local dir=$1

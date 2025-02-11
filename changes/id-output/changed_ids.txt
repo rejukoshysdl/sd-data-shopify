@@ -1,4 +1,0 @@
-Files -> gid://shopify/MediaImage/39968078922009
-Menus -> 288001491225
-Pages -> 143522398489, 143529083161
-Redirects -> 504430592281
