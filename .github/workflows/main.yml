@@ -54,5 +54,4 @@ jobs:
     - name: Run convertJSONToExcel script
       run: |
         source venv/bin/activate  # Ensure virtual environment is active
-        python3 ./utils/run_capture_changes_in_git.py  # Adjust path if necessary 
         python3 ./utils/convertJSONToExcel_in_git.py  # Adjust path if necessary
