@@ -78,6 +78,12 @@ jobs:
           source venv/bin/activate
           python -m pip install --upgrade pip
 
+      - name: Ensure Latest Extracted Files
+        run: |
+          git fetch origin int
+          git pull origin int --rebase
+          echo "✅ Latest change diff file pulled!"
+
       - name: Run Extract ID Script
         run: |
           source venv/bin/activate
