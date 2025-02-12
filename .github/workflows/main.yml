@@ -29,6 +29,8 @@ jobs:
 
       - name: Commit and Push Diff Deletion
         run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
           git add -A  # ✅ Ensures deleted files are staged
           git commit -m "Remove old changes.diff before generating new diff" || echo "✅ No need to commit"
           git push origin int || echo "⚠️ Git push failed, check permissions."
