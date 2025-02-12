@@ -43,4 +43,4 @@ jobs:
 
           git add ./changes/git-diff/changes.diff
           git commit -m "Update changes.diff with JSON file differences"
-          git push origin HEAD:${{ github.head_ref }}  # Push to the PR branch
+          git push origin HEAD:${{ github.base_ref }}  # Push to the PR branch
