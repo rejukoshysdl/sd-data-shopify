@@ -1,57 +1,107 @@
-name: Run convertExcelToJSON and Push Excel File
+name: Compare JSON and Convert Excel After Merge
 
 on:
   push:
     branches:
-      - main  # Trigger when changes are pushed to the 'main' branch
-      - int  # Trigger the workflow for the 'int' branch
+      - int  # ✅ Runs when a new commit is pushed to `int`
+      - main  # ✅ Runs when a new commit is pushed to `main`
 
 jobs:
-  run-conversion-and-push:
-    runs-on: ubuntu-latest  # Running on Ubuntu OS
-
+  # **STEP 1: Compare `int` vs `main`**
+  diff_check:
+    runs-on: ubuntu-latest
     steps:
-    # Step 1: Checkout repository to access the code
-    - name: Checkout repository
-      uses: actions/checkout@v2
-      with:
-        ref: ${{ github.ref }}
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-    # Step 2: Set Git user info
-    - name: Set Git user info
-      run: |
-        git config --global user.name "MB Deployment"
-        git config --global user.email "ecom@meaningfulbeauty.com"  # Set default user email for commits
+      - name: Fetch Latest Branches
+        run: |
+          git fetch origin main  # Fetch latest `main`
+          git fetch origin int  # Fetch latest `int`
 
-    # Step 3: Set up Python environment
-    - name: Set up Python 3.13
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.13'  # Specify the Python version to match your script
+      - name: Create Diff Directory
+        run: |
+          mkdir -p ./changes/git-diff
 
-    # Step 4: Cache Python dependencies
-    - name: Cache Python dependencies
-      uses: actions/cache@v2
-      with:
-        path: |
-          ~/.cache/pip
-          venv/
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/*.py') }}  # Cache dependencies based on Python file changes
-        restore-keys: |
-          ${{ runner.os }}-pip-
+      - name: Compare JSON Files in repo-shopify-data (int vs main)
+        run: |
+          DIFF_FILE="./changes/git-diff/changes.diff"
 
-    # Step 5: Install dependencies (only if not cached)
-    - name: Install dependencies
-      run: |
-        if [ ! -d "venv" ]; then
-          python3 -m venv venv  # Create virtual environment if it doesn't exist
-        fi
-        source venv/bin/activate  # Activate the virtual environment
-        pip install --upgrade pip  # Upgrade pip to the latest version
-        pip install pandas openpyxl xlsxwriter  # Install dependencies if not cached
+          # ✅ Compare `int` against `main`
+          git diff origin/main..origin/int -- 'repo-shopify-data/*.json' > $DIFF_FILE
 
-    # Step 6: Run the conversion Python script
-    - name: Run convertJSONToExcel script
-      run: |
-        source venv/bin/activate  # Ensure virtual environment is active
-        python3 ./utils/convertJSONToExcel_in_git.py  # Adjust path if necessary
+          if [ ! -s $DIFF_FILE ]; then
+            echo "✅ No JSON files changed between `int` and `main`" > $DIFF_FILE
+          fi
+
+          cat $DIFF_FILE  # Show diff output for debugging
+
+      - name: Upload Diff Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: json-diff-report
+          path: ./changes/git-diff/changes.diff
+
+      - name: Commit and Push Diff File to `int`
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add ./changes/git-diff/changes.diff
+          git status  # Debugging: Show Git status
+
+          # ✅ Prevent empty commits
+          if git diff --cached --quiet; then
+            echo "✅ No new changes detected. Skipping commit."
+          else
+            git commit -m "Update changes.diff with JSON file differences after merging into int"
+            git push origin int || echo "⚠️ Warning: Git push failed. Check permissions."
+          fi
+
+  # **STEP 2: Convert JSON to Excel**
+  run-conversion-and-push:
+    runs-on: ubuntu-latest
+    needs: diff_check  # ✅ Ensures `compare-int-vs-main` runs first
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set Git user info
+        run: |
+          git config --global user.name "MB Deployment"
+          git config --global user.email "ecom@meaningfulbeauty.com"
+
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.13'
+
+      - name: Cache Python dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cache/pip
+            venv/
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/*.py') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          if [ ! -d "venv" ]; then
+            python3 -m venv venv
+          fi
+          source venv/bin/activate
+          pip install --upgrade pip
+          pip install pandas openpyxl xlsxwriter
+
+      - name: Run convertJSONToExcel script
+        run: |
+          source venv/bin/activate
+          python3 ./utils/convertJSONToExcel_in_git.py
