@@ -27,6 +27,12 @@ jobs:
           rm -rf changes/git-diff/*
           echo "🧹 Old diff files removed!"
 
+      - name: Commit and Push Diff Deletion
+        run: |
+          git add -A  # ✅ Ensures deleted files are staged
+          git commit -m "Remove old changes.diff before generating new diff" || echo "✅ No need to commit"
+          git push origin int || echo "⚠️ Git push failed, check permissions."
+
       - name: Compare JSON Files in repo-shopify-data (int vs main)
         run: |
           DIFF_FILE="./changes/git-diff/changes.diff"
