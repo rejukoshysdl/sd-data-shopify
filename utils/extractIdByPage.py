@@ -67,16 +67,27 @@ try:
     subprocess.run(["git", "config", "--global", "user.name", "github-actions"], check=True)
     subprocess.run(["git", "config", "--global", "user.email", "github-actions@github.com"], check=True)
 
-    # ** Stash changes before pulling to avoid unstaged changes error **
-    subprocess.run(["git", "stash", "push", "-m", "Saving unstaged changes before pull"], check=True)
+    # ** Check if there are local changes before stashing **
+    has_changes = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True).stdout.strip()
+    if has_changes:
+        print("🔄 Stashing local changes before pulling...")
+        subprocess.run(["git", "stash", "push", "-m", "Saving unstaged changes before pull"], check=True)
+        stash_created = True
+    else:
+        print("✅ No local changes to stash.")
+        stash_created = False
 
     # ** Fetch latest branch to avoid non-fast-forward issues **
     subprocess.run(["git", "fetch", "origin", "int"], check=True)
     subprocess.run(["git", "checkout", "int"], check=True)
     subprocess.run(["git", "pull", "--rebase", "origin", "int"], check=True)
 
-    # ** Apply stashed changes back after pull **
-    subprocess.run(["git", "stash", "pop"], check=True)
+    # ** Only pop stash if one was created earlier **
+    if stash_created:
+        print("🔄 Restoring stashed changes...")
+        subprocess.run(["git", "stash", "pop"], check=True)
+    else:
+        print("✅ No stash to apply.")
 
     # ** Add extracted IDs file and push to remote repository **
     subprocess.run(["git", "add", output_file_path], check=True)
