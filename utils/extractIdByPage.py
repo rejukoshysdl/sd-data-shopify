@@ -1,5 +1,6 @@
 import os
 import re
+import subprocess
 
 # Detect if running in GitHub Actions
 GITHUB_WORKSPACE = os.getenv("GITHUB_WORKSPACE", os.getcwd())  # Use GitHub workspace if available
@@ -54,9 +55,39 @@ with open(diff_file_path, "r", encoding="utf-8") as file:
 # Remove empty sections
 changed_ids = {section: list(ids) for section, ids in changed_ids.items() if ids}
 
-# Write the IDs to a file
+# Write the extracted IDs to `changed_ids.txt`
 with open(output_file_path, "w", encoding="utf-8") as output_file:
     for section, ids in changed_ids.items():
         output_file.write(f"{section} -> {', '.join(ids)}\n")
 
 print(f"✅ Output saved to {output_file_path}")
+
+# ** Ensure Git Tracks the File in the Repository **
+try:
+    subprocess.run(["git", "config", "--global", "user.name", "github-actions"], check=True)
+    subprocess.run(["git", "config", "--global", "user.email", "github-actions@github.com"], check=True)
+
+    # ** Fetch latest branch to avoid non-fast-forward issues **
+    subprocess.run(["git", "fetch", "origin", "int"], check=True)
+    subprocess.run(["git", "checkout", "int"], check=True)
+    subprocess.run(["git", "pull", "--rebase", "origin", "int"], check=True)
+
+    # ** Add extracted IDs file and push to remote repository **
+    subprocess.run(["git", "add", output_file_path], check=True)
+    subprocess.run(["git", "status"], check=True)
+
+    # ** Prevent empty commits **
+    if subprocess.run(["git", "diff", "--cached", "--quiet"]).returncode == 0:
+        print("✅ No new changes detected. Skipping commit.")
+    else:
+        subprocess.run(["git", "commit", "-m", "Add extracted changed IDs"], check=True)
+
+        # ** Attempt push, retry with force if needed **
+        if subprocess.run(["git", "push", "origin", "int"]).returncode != 0:
+            print("⚠️ Warning: Push failed. Retrying with force...")
+            subprocess.run(["git", "push", "origin", "int", "--force"], check=True)
+
+    print("✅ Extracted IDs file pushed to GitHub successfully.")
+
+except subprocess.CalledProcessError as e:
+    print(f"❌ Error during Git operations: {e}")
