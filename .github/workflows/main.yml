@@ -19,8 +19,8 @@ jobs:
 
       - name: Fetch Latest Branches
         run: |
-          git fetch origin main  # Fetch latest `main`
-          git fetch origin int  # Fetch latest `int`
+          git fetch origin main
+          git fetch origin int
 
       - name: Create Diff Directory
         run: |
@@ -29,15 +29,9 @@ jobs:
       - name: Compare JSON Files in repo-shopify-data (int vs main)
         run: |
           DIFF_FILE="./changes/git-diff/changes.diff"
-
-          # ✅ Compare `int` against `main`
           git diff origin/main..origin/int -- 'repo-shopify-data/*.json' > $DIFF_FILE
-
-          if [ ! -s $DIFF_FILE ]; then
-            echo "✅ No JSON files changed between `int` and `main`" > $DIFF_FILE
-          fi
-
-          cat $DIFF_FILE  # Show diff output for debugging
+          [ -s $DIFF_FILE ] || echo "✅ No JSON files changed between `int` and `main`" > $DIFF_FILE
+          cat $DIFF_FILE
 
       - name: Upload Diff Report
         uses: actions/upload-artifact@v4
@@ -49,24 +43,22 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-
+          git stash push --include-untracked -m "Stashing changes before pull"
+          git pull --rebase origin int
+          git stash pop || echo "✅ No stashed changes to apply."
           git add ./changes/git-diff/changes.diff
-          git update-index --refresh
-          git status  # Debugging: Show Git status
-
-          # ✅ Prevent empty commits
+          git status
           if git diff --cached --quiet; then
             echo "✅ No new changes detected. Skipping commit."
           else
             git commit -m "Update changes.diff with JSON file differences after merging into int"
-            git pull --rebase origin int || echo "⚠️ Warning: Pull failed, trying to continue..."
             git push origin int || echo "⚠️ Warning: Git push failed. Check permissions."
           fi
 
   # **STEP 2: Extract Changed IDs from JSON Diff**
   extract_ids:
     runs-on: ubuntu-latest
-    needs: diff_check  # ✅ Ensures `diff_check` runs first
+    needs: diff_check
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -88,30 +80,28 @@ jobs:
       - name: Run Extract ID Script
         run: |
           source venv/bin/activate
-          python ./utils/extractIdByPage.py  # ✅ Runs the script in remote GitHub folders
+          python ./utils/extractIdByPage.py
 
       - name: Commit and Push Extracted ID File
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-
+          git stash push --include-untracked -m "Stashing changes before pull"
+          git pull --rebase origin int
+          git stash pop || echo "✅ No stashed changes to apply."
           git add changes/id-output/changed_ids.txt
-          git update-index --refresh
-          git status  # ✅ Debugging: Show Git status
-
-          # ✅ Prevent empty commits
+          git status
           if git diff --cached --quiet; then
             echo "✅ No new ID changes detected. Skipping commit."
           else
             git commit -m "Update changed_ids.txt with extracted IDs"
-            git pull --rebase origin int || echo "⚠️ Warning: Pull failed, trying to continue..."
             git push origin int || echo "⚠️ Warning: Git push failed. Check permissions."
           fi
 
   # **STEP 3: Convert JSON to Excel**
   run-conversion-and-push:
     runs-on: ubuntu-latest
-    needs: extract_ids  # ✅ Ensures `extract_ids` runs first
+    needs: extract_ids
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -145,16 +135,12 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-
+          git stash push --include-untracked -m "Stashing changes before pull"
+          git pull --rebase origin int
+          git stash pop || echo "✅ No stashed changes to apply."
           ls -lh final-matrixify-export/*.xlsx || echo "⚠️ No Excel files found!"
           git add final-matrixify-export/*.xlsx
-          git update-index --refresh
-          git status  # ✅ Debugging: Show Git status
-
-          # ✅ Ensure latest version before pushing
-          git pull --rebase origin int || echo "⚠️ Warning: Pull failed, trying to continue..."
-
-          # ✅ Prevent empty commits
+          git status
           if git diff --cached --quiet; then
             echo "✅ No new changes detected. Skipping commit."
           else
