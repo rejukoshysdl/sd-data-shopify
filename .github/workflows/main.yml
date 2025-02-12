@@ -71,6 +71,13 @@ jobs:
           echo "🧹 Old extracted IDs removed!"
           git status
 
+      - name: Commit and push deletion of old changed_ids.txt
+        run: |
+          git add changes/id-output/changed_ids.txt
+          git commit -m "Remove outdated changed_ids.txt before generating new IDs" || echo "✅ No need to commit"
+          git push origin int || echo "⚠️ Git push failed, check permissions."
+
+
       - name: Pull Latest Changes After Cleanup
         run: |
           #git fetch origin int
