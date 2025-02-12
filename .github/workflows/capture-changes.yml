@@ -4,6 +4,7 @@ on:
   pull_request:
     branches:
       - int  # Runs only when merging into 'int'
+      - main  # Runs only when merging into 'int'
 
 jobs:
   diff_check:
