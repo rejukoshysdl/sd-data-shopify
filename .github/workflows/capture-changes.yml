@@ -11,9 +11,10 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Ensures full history is available
+          token: ${{ secrets.GITHUB_TOKEN }}  # Ensure push permission
 
       - name: Fetch Latest Branches
         run: |
@@ -35,8 +36,11 @@ jobs:
             echo "✅ No JSON files changed in repo-shopify-data" > $DIFF_FILE
           fi
 
-      - name: Upload Diff Report
-        uses: actions/upload-artifact@v3
-        with:
-          name: json-diff-report
-          path: ./changes/git-diff/changes.diff
+      - name: Commit and Push changes.diff to PR Branch
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+          git add ./changes/git-diff/changes.diff
+          git commit -m "Update changes.diff with JSON file differences"
+          git push origin HEAD:${{ github.head_ref }}  # Push to the PR branch
