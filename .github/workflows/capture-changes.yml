@@ -3,12 +3,12 @@ name: Compare JSON Files Before Merge
 on:
   pull_request:
     branches:
-      - int    # Runs when merging into `int`
-      - main   # Runs when merging into `main`
+      - int
+      - main
 
     types:
-      - opened            # When a new PR is created
-      - synchronize       # When a new commit is pushed to an open PR
+      - opened
+      - synchronize
 
 jobs:
   diff_check:
@@ -32,27 +32,22 @@ jobs:
       - name: Compare JSON Files in repo-shopify-data
         run: |
           DIFF_FILE="./changes/git-diff/changes.diff"
-          
-          # Run git diff and save output
           git diff origin/${{ github.base_ref }}..origin/${{ github.head_ref }} -- 'repo-shopify-data/*.json' > $DIFF_FILE
           
-          # Ensure the file is not empty, otherwise, Git won't track it
           if [ ! -s $DIFF_FILE ]; then
             echo "✅ No JSON files changed in repo-shopify-data" > $DIFF_FILE
           fi
           
-          cat $DIFF_FILE  # Show the diff output for debugging
-          
-          # Stash changes to persist them across branch switch
-          git add $DIFF_FILE
-          git stash push -m "Saving changes.diff for later use"
+          cat $DIFF_FILE
 
       - name: Switch to Target Branch (`int`) and Apply Changes
         run: |
           git checkout ${{ github.base_ref }}  # Switch to `int`
-          git pull origin ${{ github.base_ref }}  # Ensure latest changes
+          git pull origin ${{ github.base_ref }}
 
-          git stash pop || echo "✅ No stashed changes to apply"
+          # ✅ Fix: Set Git User Identity
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
 
           git add ./changes/git-diff/changes.diff
           git status  # Debugging: Show Git status
