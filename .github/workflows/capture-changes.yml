@@ -1,14 +1,9 @@
-name: Compare JSON Files Before Merge
+name: Compare JSON Files After Merge to `int`
 
 on:
-  pull_request:
+  push:
     branches:
-      - int
-      - main
-
-    types:
-      - opened
-      - synchronize
+      - int  # ✅ Runs only when a new commit is pushed to `int`
 
 jobs:
   diff_check:
@@ -23,29 +18,34 @@ jobs:
 
       - name: Fetch Latest Branches
         run: |
-          git fetch origin ${{ github.base_ref }} ${{ github.head_ref }}
+          git fetch origin main  # Fetch latest `main`
+          git fetch origin int  # Fetch latest `int`
 
       - name: Create Diff Directory
         run: |
           mkdir -p ./changes/git-diff
 
-      - name: Compare JSON Files in repo-shopify-data
+      - name: Compare JSON Files in repo-shopify-data (int vs main)
         run: |
           DIFF_FILE="./changes/git-diff/changes.diff"
-          git diff origin/${{ github.base_ref }}..origin/${{ github.head_ref }} -- 'repo-shopify-data/*.json' > $DIFF_FILE
-          
+
+          # ✅ Compare `int` against `main`
+          git diff origin/main..origin/int -- 'repo-shopify-data/*.json' > $DIFF_FILE
+
           if [ ! -s $DIFF_FILE ]; then
-            echo "✅ No JSON files changed in repo-shopify-data" > $DIFF_FILE
+            echo "✅ No JSON files changed between `int` and `main`" > $DIFF_FILE
           fi
-          
-          cat $DIFF_FILE
 
-      - name: Switch to Target Branch (`int`) and Apply Changes
+          cat $DIFF_FILE  # Show diff output for debugging
+
+      - name: Upload Diff Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: json-diff-report
+          path: ./changes/git-diff/changes.diff
+
+      - name: Commit and Push Diff File to `int`
         run: |
-          git checkout ${{ github.base_ref }}  # Switch to `int`
-          git pull origin ${{ github.base_ref }}
-
-          # ✅ Fix: Set Git User Identity
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
@@ -55,6 +55,5 @@ jobs:
           if git diff --cached --quiet; then
             echo "✅ No new changes detected. Skipping commit."
           else
-            git commit -m "Update changes.diff with JSON file differences"
-            git push origin ${{ github.base_ref }}
-          fi
+            git commit -m "Update changes.diff with JSON file differences after merging into int"
+            git push origin int
