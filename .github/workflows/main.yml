@@ -180,23 +180,3 @@ jobs:
         run: |
           source venv/bin/activate
           python ./utils/convertJSONToExcel_in_git.py || echo "✅ No Excel files created, continuing."
-
-      - name: Commit and Push Excel File
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-
-          git stash push --include-untracked -m "Stashing changes before pull"
-          git pull --rebase origin int
-          git stash pop || echo "✅ No stashed changes to apply."
-
-          ls -lh final-matrixify-export/*.xlsx || echo "⚠️ No Excel files found!"
-          git add final-matrixify-export/*.xlsx || echo "✅ No new Excel files to commit."
-
-          git status
-          
-          if git diff --cached --quiet; then
-            echo "✅ No new changes detected. Skipping commit."
-          else
-            git commit -m "Add Excel file export"
-            git push origin int || (echo "❌ Push failed. Retrying with force push..." && git push origin int --force)
