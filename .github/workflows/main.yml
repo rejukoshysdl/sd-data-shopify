@@ -69,6 +69,7 @@ jobs:
           rm -f changes/id-output/changed_ids.txt
           ls -l changes/id-output/
           echo "🧹 Old extracted IDs removed!"
+          git status
 
       - name: Pull Latest Changes After Cleanup
         run: |
@@ -76,6 +77,7 @@ jobs:
           #git reset --hard origin/int
           #git pull --rebase origin int
           echo "✅ Latest change diff file pulled!"
+           git status
 
       - name: Run Extract ID Script
         run: |
