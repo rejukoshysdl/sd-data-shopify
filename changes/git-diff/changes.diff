@@ -1,1 +1,13 @@
-✅ No JSON files changed between  and 
+diff --git a/repo-shopify-data/Redirects.json b/repo-shopify-data/Redirects.json
+index 62ee980..07d165c 100644
+--- a/repo-shopify-data/Redirects.json
++++ b/repo-shopify-data/Redirects.json
+@@ -7,7 +7,7 @@
+     },
+     {
+         "ID": "504430592281",
+-        "Path": "/haircare-changed1",
++        "Path": "/haircare",
+         "Command": "MERGE",
+         "Target": "/pages/lp-core-ageproofhair"
+     },
