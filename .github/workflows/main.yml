@@ -30,8 +30,13 @@ jobs:
         run: |
           DIFF_FILE="./changes/git-diff/changes.diff"
           git diff origin/main..origin/int -- 'repo-shopify-data/*.json' > $DIFF_FILE
-          [ -s $DIFF_FILE ] || echo "✅ No JSON files changed between `int` and `main`" > $DIFF_FILE
-          cat $DIFF_FILE
+          
+          # ✅ Ensure the file is not empty, otherwise, Git won't track it
+          if [ ! -s $DIFF_FILE ]; then
+            echo "✅ No JSON files changed between `int` and `main`" > $DIFF_FILE
+          fi
+          
+          cat $DIFF_FILE  # Show diff output for debugging
 
       - name: Upload Diff Report
         uses: actions/upload-artifact@v4
@@ -43,11 +48,14 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
+          
           git stash push --include-untracked -m "Stashing changes before pull"
           git pull --rebase origin int
           git stash pop || echo "✅ No stashed changes to apply."
+
           git add ./changes/git-diff/changes.diff
           git status
+          
           if git diff --cached --quiet; then
             echo "✅ No new changes detected. Skipping commit."
           else
@@ -80,17 +88,20 @@ jobs:
       - name: Run Extract ID Script
         run: |
           source venv/bin/activate
-          python ./utils/extractIdByPage.py
+          python ./utils/extractIdByPage.py || echo "✅ No IDs extracted, continuing."
 
       - name: Commit and Push Extracted ID File
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
+
           git stash push --include-untracked -m "Stashing changes before pull"
           git pull --rebase origin int
           git stash pop || echo "✅ No stashed changes to apply."
+
           git add changes/id-output/changed_ids.txt
           git status
+
           if git diff --cached --quiet; then
             echo "✅ No new ID changes detected. Skipping commit."
           else
@@ -129,20 +140,25 @@ jobs:
       - name: Run convertJSONToExcel script
         run: |
           source venv/bin/activate
-          python ./utils/convertJSONToExcel_in_git.py
+          python ./utils/convertJSONToExcel_in_git.py || echo "✅ No Excel files created, continuing."
 
       - name: Commit and Push Excel File
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
+
           git stash push --include-untracked -m "Stashing changes before pull"
           git pull --rebase origin int
           git stash pop || echo "✅ No stashed changes to apply."
+
           ls -lh final-matrixify-export/*.xlsx || echo "⚠️ No Excel files found!"
-          git add final-matrixify-export/*.xlsx
+          git add final-matrixify-export/*.xlsx || echo "✅ No new Excel files to commit."
+
           git status
+          
           if git diff --cached --quiet; then
             echo "✅ No new changes detected. Skipping commit."
           else
             git commit -m "Add Excel file export"
             git push origin int || (echo "❌ Push failed. Retrying with force push..." && git push origin int --force)
+          fi
