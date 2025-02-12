@@ -1,9 +1,12 @@
-name: Compare JSON Files on PR
+name: Compare JSON Files Before Merge
 
 on:
-  pull_request:
-    branches:
-      - int  # Runs only when merging into 'int'
+  pull_request_target:
+    types:
+      - synchronize  # When a new commit is pushed to the PR
+      - ready_for_review  # When PR is marked "Ready for Merge"
+      - reopened  # When a closed PR is reopened
+      - labeled  # If a label like "ready to merge" is applied
 
 jobs:
   diff_check:
@@ -14,11 +17,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.event.pull_request.head.ref }}  # Ensure we check the latest PR commit
 
       - name: Fetch Latest Branches
         run: |
-          git fetch origin ${{ github.base_ref }} ${{ github.head_ref }}
+          git fetch origin ${{ github.event.pull_request.base.ref }}  # Destination branch (int or main)
+          git fetch origin ${{ github.event.pull_request.head.ref }}  # Source branch (dev)
 
       - name: Create Diff Directory
         run: |
@@ -28,33 +32,18 @@ jobs:
         run: |
           DIFF_FILE="./changes/git-diff/changes.diff"
           
-          # Run git diff and save output
-          git diff origin/${{ github.base_ref }}..origin/${{ github.head_ref }} -- 'repo-shopify-data/*.json' > $DIFF_FILE
+          # Run git diff on the latest PR commit vs destination branch
+          git diff origin/${{ github.event.pull_request.base.ref }}..origin/${{ github.event.pull_request.head.ref }} -- 'repo-shopify-data/*.json' > $DIFF_FILE
           
-          # Ensure the file is not empty, otherwise, Git won't track it
+          # Ensure the file is not empty
           if [ ! -s $DIFF_FILE ]; then
             echo "✅ No JSON files changed in repo-shopify-data" > $DIFF_FILE
           fi
-          
-          cat $DIFF_FILE  # Show the diff output for debugging
-          
-          # Stash changes to persist them across branch switch
-          git add $DIFF_FILE
-          git stash push -m "Saving changes.diff for later use"
 
-      - name: Switch to Target Branch (`int`) and Apply Changes
-        run: |
-          git checkout ${{ github.base_ref }}  # Switch to `int`
-          git pull origin ${{ github.base_ref }}  # Ensure latest changes
+          cat $DIFF_FILE  # Show diff output for debugging
 
-          git stash pop || echo "✅ No stashed changes to apply"
-
-          git add ./changes/git-diff/changes.diff
-          git status  # Debugging: Show Git status
-
-          if git diff --cached --quiet; then
-            echo "✅ No new changes detected. Skipping commit."
-          else
-            git commit -m "Update changes.diff with JSON file differences"
-            git push origin ${{ github.base_ref }}
-          fi
+      - name: Upload Diff Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: json-diff-report
+          path: ./changes/git-diff/changes.diff
