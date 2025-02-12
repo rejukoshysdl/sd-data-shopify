@@ -1,10 +1,10 @@
-name: Compare JSON, Extract IDs, and Convert JSON to Excel After Merge
+name: Compare JSON, Extract IDs, and Convert Excel After Merge
 
 on:
   push:
     branches:
-      - int
-      - main
+      - int  # ✅ Runs when a new commit is pushed to `int`
+      - main  # ✅ Runs when a new commit is pushed to `main`
 
 jobs:
   # **STEP 1: Compare `int` vs `main`**
@@ -19,8 +19,8 @@ jobs:
 
       - name: Fetch Latest Branches
         run: |
-          git fetch origin main
-          git fetch origin int
+          git fetch origin main  # Fetch latest `main`
+          git fetch origin int  # Fetch latest `int`
 
       - name: Create Diff Directory
         run: |
@@ -29,13 +29,21 @@ jobs:
       - name: Compare JSON Files in repo-shopify-data (int vs main)
         run: |
           DIFF_FILE="./changes/git-diff/changes.diff"
+
+          # ✅ Compare `int` against `main`
           git diff origin/main..origin/int -- 'repo-shopify-data/*.json' > $DIFF_FILE
 
           if [ ! -s $DIFF_FILE ]; then
             echo "✅ No JSON files changed between `int` and `main`" > $DIFF_FILE
           fi
 
-          cat $DIFF_FILE
+          cat $DIFF_FILE  # Show diff output for debugging
+
+      - name: Upload Diff Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: json-diff-report
+          path: ./changes/git-diff/changes.diff
 
       - name: Commit and Push Diff File to `int`
         run: |
@@ -43,21 +51,22 @@ jobs:
           git config --global user.email "github-actions@github.com"
 
           git add ./changes/git-diff/changes.diff
+          git update-index --refresh
           git status  # Debugging: Show Git status
 
-          git pull --rebase origin int || echo "⚠️ Pull failed, continuing..."
-
+          # ✅ Prevent empty commits
           if git diff --cached --quiet; then
             echo "✅ No new changes detected. Skipping commit."
           else
             git commit -m "Update changes.diff with JSON file differences after merging into int"
-            git push origin int || echo "⚠️ Git push failed."
+            git pull --rebase origin int || echo "⚠️ Warning: Pull failed, trying to continue..."
+            git push origin int || echo "⚠️ Warning: Git push failed. Check permissions."
           fi
 
   # **STEP 2: Extract Changed IDs from JSON Diff**
   extract_ids:
     runs-on: ubuntu-latest
-    needs: diff_check
+    needs: diff_check  # ✅ Ensures `diff_check` runs first
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -72,39 +81,37 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          python3 -m venv venv
+          python -m venv venv
           source venv/bin/activate
           python -m pip install --upgrade pip
 
       - name: Run Extract ID Script
         run: |
           source venv/bin/activate
-          python ./utils/extractIdByPage.py
+          python ./utils/extractIdByPage.py  # ✅ Runs the script in remote GitHub folders
 
-      - name: Commit and Push Extracted IDs
+      - name: Commit and Push Extracted ID File
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
-          # ✅ Ensure Git detects file changes
-          git add ./changes/id-output/changed_ids.txt
+          git add changes/id-output/changed_ids.txt
           git update-index --refresh
-          git status
+          git status  # ✅ Debugging: Show Git status
 
-          git pull --rebase origin int || echo "⚠️ Pull failed, continuing..."
-
-          # ✅ Fix commit logic to prevent syntax errors
+          # ✅ Prevent empty commits
           if git diff --cached --quiet; then
-            echo "✅ No new changes detected. Skipping commit."
+            echo "✅ No new ID changes detected. Skipping commit."
           else
-            git commit -m "Add extracted changed IDs"
-            git push origin int || echo "⚠️ Git push failed."
+            git commit -m "Update changed_ids.txt with extracted IDs"
+            git pull --rebase origin int || echo "⚠️ Warning: Pull failed, trying to continue..."
+            git push origin int || echo "⚠️ Warning: Git push failed. Check permissions."
           fi
 
   # **STEP 3: Convert JSON to Excel**
   run-conversion-and-push:
     runs-on: ubuntu-latest
-    needs: extract_ids
+    needs: extract_ids  # ✅ Ensures `extract_ids` runs first
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -124,7 +131,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python3 -m venv venv
+          python -m venv venv
           source venv/bin/activate
           python -m pip install --upgrade pip
           python -m pip install pandas openpyxl xlsxwriter
@@ -139,15 +146,17 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
-          # ✅ Ensure Git detects Excel file
+          ls -lh final-matrixify-export/*.xlsx || echo "⚠️ No Excel files found!"
           git add final-matrixify-export/*.xlsx
           git update-index --refresh
-          git status
+          git status  # ✅ Debugging: Show Git status
 
-          git pull --rebase origin int || echo "⚠️ Pull failed, continuing..."
+          # ✅ Ensure latest version before pushing
+          git pull --rebase origin int || echo "⚠️ Warning: Pull failed, trying to continue..."
 
+          # ✅ Prevent empty commits
           if git diff --cached --quiet; then
             echo "✅ No new changes detected. Skipping commit."
           else
             git commit -m "Add Excel file export"
-            git push origin int || echo "❌ Push failed."
+            git push origin int || (echo "❌ Push failed. Retrying with force push..." && git push origin int --force)
