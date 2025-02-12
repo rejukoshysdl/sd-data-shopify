@@ -1,0 +1,20 @@
+diff --git a/repo-shopify-data/Redirects.json b/repo-shopify-data/Redirects.json
+index 62ee980..ee48b60 100644
+--- a/repo-shopify-data/Redirects.json
++++ b/repo-shopify-data/Redirects.json
+@@ -7,13 +7,13 @@
+     },
+     {
+         "ID": "504430592281",
+-        "Path": "/haircare-changed1",
++        "Path": "/haircarE-TEST",
+         "Command": "MERGE",
+         "Target": "/pages/lp-core-ageproofhair"
+     },
+     {
+         "ID": "504431477017",
+-        "Path": "/savenow2",
++        "Path": "/savenow23",
+         "Command": "MERGE",
+         "Target": "/pages/sas-winback/?utm_campaign=July24&amp%3Butm_medium=directmail&amp%3Butm_source=DAP&amp%3Butm_content=SMB_151-180&amp%3Buci=US-MT-D-TP-XX-M2-XXXX-137161"
+     },
