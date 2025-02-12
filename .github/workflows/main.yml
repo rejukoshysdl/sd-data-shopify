@@ -58,6 +58,7 @@ jobs:
             echo "✅ No new changes detected. Skipping commit."
           else
             git commit -m "Update changes.diff with JSON file differences after merging into int"
+            git pull --rebase origin int  # ✅ Ensure the latest version before pushing
             git push origin int || echo "⚠️ Warning: Git push failed. Check permissions."
           fi
 
@@ -94,12 +95,31 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python3 -m venv venv
-          source venv/bin/activate
-          pip install --upgrade pip
-          pip install pandas openpyxl xlsxwriter
+          python -m venv venv  # ✅ Create virtual environment
+          source venv/bin/activate  # ✅ Activate virtual environment
+          python -m pip install --upgrade pip
+          python -m pip install pandas openpyxl xlsxwriter
 
       - name: Run convertJSONToExcel script
         run: |
           source venv/bin/activate
-          python3 ./utils/convertJSONToExcel_in_git.py
+          python ./utils/convertJSONToExcel_in_git.py
+
+      - name: Commit and Push Excel File
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add final-matrixify-export/*.xlsx
+          git status  # Debugging: Show Git status
+
+          # ✅ Ensure latest version before pushing
+          git pull --rebase origin int || echo "⚠️ Warning: Pull failed, trying to continue..."
+
+          # ✅ Prevent empty commits
+          if git diff --cached --quiet; then
+            echo "✅ No new changes detected. Skipping commit."
+          else
+            git commit -m "Add Excel file export"
+            git push origin int || (echo "❌ Push failed. Retrying with force push..." && git push origin int --force)
+          fi
