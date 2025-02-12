@@ -73,6 +73,8 @@ jobs:
 
       - name: Commit and push deletion of old changed_ids.txt
         run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
           git add changes/id-output/changed_ids.txt
           git commit -m "Remove outdated changed_ids.txt before generating new IDs" || echo "✅ No need to commit"
           git push origin int || echo "⚠️ Git push failed, check permissions."
