@@ -1,12 +1,13 @@
 name: Compare JSON Files Before Merge
 
 on:
-  pull_request_target:
+  pull_request:
     branches:
       - int    # Runs when merging into `int`
       - main   # Runs when merging into `main`
 
     types:
+      - opened            # When a new PR is created
       - synchronize       # When a new commit is pushed to an open PR
 
 jobs:
