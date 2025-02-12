@@ -67,13 +67,14 @@ jobs:
       - name: Cleanup Before Pull
         run: |
           rm -f changes/id-output/changed_ids.txt
+          ls -l changes/id-output/
           echo "🧹 Old extracted IDs removed!"
 
       - name: Pull Latest Changes After Cleanup
         run: |
-          git fetch origin int
-          git reset --hard origin/int
-          git pull --rebase origin int
+          #git fetch origin int
+          #git reset --hard origin/int
+          #git pull --rebase origin int
           echo "✅ Latest change diff file pulled!"
 
       - name: Run Extract ID Script
