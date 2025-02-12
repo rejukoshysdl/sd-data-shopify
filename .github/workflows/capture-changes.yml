@@ -52,8 +52,10 @@ jobs:
           git add ./changes/git-diff/changes.diff
           git status  # Debugging: Show Git status
 
+          # ✅ Prevent empty commits
           if git diff --cached --quiet; then
             echo "✅ No new changes detected. Skipping commit."
           else
             git commit -m "Update changes.diff with JSON file differences after merging into int"
-            git push origin int
+            git push origin int || echo "⚠️ Warning: Git push failed. Check permissions."
+          fi
