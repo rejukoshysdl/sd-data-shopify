@@ -89,12 +89,6 @@ jobs:
           source venv/bin/activate
           python ./utils/extractIdByPage.py  # ✅ Runs the script in remote GitHub folders
 
-      - name: Upload Extracted IDs
-        uses: actions/upload-artifact@v4
-        with:
-          name: extracted-ids
-          path: ./changes/id-output/changed_ids.txt
-
   # **STEP 3: Convert JSON to Excel**
   run-conversion-and-push:
     runs-on: ubuntu-latest
