@@ -1,4 +1,4 @@
-name: Compare JSON and Convert Excel After Merge
+name: Compare JSON, Extract IDs, and Convert Excel After Merge
 
 on:
   push:
@@ -62,12 +62,45 @@ jobs:
             git push origin int || echo "⚠️ Warning: Git push failed. Check permissions."
           fi
 
-  # **STEP 2: Convert JSON to Excel**
+  # **STEP 2: Extract Changed IDs from JSON Diff**
+  extract_ids:
+    runs-on: ubuntu-latest
+    needs: diff_check  # ✅ Ensures `diff_check` runs first
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.13'
+
+      - name: Install Dependencies
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+          python -m pip install --upgrade pip
+
+      - name: Run Extract ID Script
+        run: |
+          source venv/bin/activate
+          python ./utils/extractIdByPage.py  # ✅ Runs the script in remote GitHub folders
+
+      - name: Upload Extracted IDs
+        uses: actions/upload-artifact@v4
+        with:
+          name: extracted-ids
+          path: ./changes/id-output/changed_ids.txt
+
+  # **STEP 3: Convert JSON to Excel**
   run-conversion-and-push:
     runs-on: ubuntu-latest
-    needs: diff_check  # ✅ Ensures `compare-int-vs-main` runs first
+    needs: extract_ids  # ✅ Ensures `extract_ids` runs first
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -83,20 +116,10 @@ jobs:
         with:
           python-version: '3.13'
 
-      - name: Cache Python dependencies
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.cache/pip
-            venv/
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/*.py') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
       - name: Install dependencies
         run: |
-          python -m venv venv  # ✅ Create virtual environment
-          source venv/bin/activate  # ✅ Activate virtual environment
+          python -m venv venv
+          source venv/bin/activate
           python -m pip install --upgrade pip
           python -m pip install pandas openpyxl xlsxwriter
 
@@ -122,4 +145,3 @@ jobs:
           else
             git commit -m "Add Excel file export"
             git push origin int || (echo "❌ Push failed. Retrying with force push..." && git push origin int --force)
-          fi
