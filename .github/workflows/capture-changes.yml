@@ -7,6 +7,7 @@ on:
       - main   # Runs when merging into `main`
 
     types:
+      - opened            # When a new PR is created
       - synchronize       # When a new commit is pushed to an open PR
 
 jobs:
