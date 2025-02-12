@@ -136,6 +136,11 @@ jobs:
           git pull origin int --rebase
           echo "✅ Latest change file pulled!"
 
+      - name: Clear Old Extracted JSONs
+        run: |
+          rm -rf changes/change-only-jsons/*
+          echo "🧹 Old extracted JSONs removed!"
+
       - name: Run Extract Changes Script
         run: |
           source venv/bin/activate
