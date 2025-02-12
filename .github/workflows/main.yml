@@ -86,7 +86,7 @@ jobs:
 
       - name: Clear Old Extracted ID File
         run: |
-          rm -f changes/id-output/changed_ids.txt
+          rm -f ../../changes/id-output/changed_ids.txt
           echo "🧹 Old extracted IDs removed!"
 
       - name: Run Extract ID Script
@@ -143,7 +143,7 @@ jobs:
 
       - name: Clear Old Extracted JSONs
         run: |
-          rm -rf changes/change-only-jsons/*
+          rm -rf ../../changes/change-only-jsons/*
           echo "🧹 Old extracted JSONs removed!"
 
       - name: Run Extract Changes Script
