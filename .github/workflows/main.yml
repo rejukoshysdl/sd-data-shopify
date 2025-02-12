@@ -3,8 +3,8 @@ name: Compare JSON, Extract IDs, Extract Changes, and Convert Excel After Merge
 on:
   push:
     branches:
-      - int  # ✅ Runs when a new commit is pushed to `int`
-      - main  # ✅ Runs when a new commit is pushed to `main`
+      - int
+      - main
 
 jobs:
   # **STEP 1: Compare `int` vs `main`**
@@ -22,9 +22,10 @@ jobs:
           git fetch origin main
           git fetch origin int
 
-      - name: Create Diff Directory
+      - name: Cleanup Before Processing
         run: |
-          mkdir -p ./changes/git-diff
+          rm -rf changes/git-diff/*
+          echo "🧹 Old diff files removed!"
 
       - name: Compare JSON Files in repo-shopify-data (int vs main)
         run: |
@@ -41,10 +42,6 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-
-          git stash push --include-untracked -m "Stashing changes before pull"
-          git pull --rebase origin int
-          git stash pop || echo "✅ No stashed changes to apply."
 
           git add ./changes/git-diff/changes.diff
           git status
@@ -67,42 +64,24 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Set up Python 3.13
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.13'
-
-      - name: Install Dependencies
+      - name: Cleanup Before Pull
         run: |
-          python -m venv venv
-          source venv/bin/activate
-          python -m pip install --upgrade pip
+          rm -f changes/id-output/changed_ids.txt
+          echo "🧹 Old extracted IDs removed!"
 
-      - name: Ensure Latest Extracted Files
+      - name: Pull Latest Changes After Cleanup
         run: |
           git fetch origin int
-          git pull origin int --rebase
+          git reset --hard origin/int
+          git pull --rebase origin int
           echo "✅ Latest change diff file pulled!"
-
-      - name: Clear Old Extracted ID File
-        run: |
-          rm -f ../../changes/id-output/changed_ids.txt
-          echo "🧹 Old extracted IDs removed!"
 
       - name: Run Extract ID Script
         run: |
-          source venv/bin/activate
-          python ./utils/extractIdByPage.py || echo "✅ No IDs extracted, continuing."
+          python3 ./utils/extractIdByPage.py || echo "✅ No IDs extracted, continuing."
 
       - name: Commit and Push Extracted ID File
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-
-          git stash push --include-untracked -m "Stashing changes before pull"
-          git pull --rebase origin int
-          git stash pop || echo "✅ No stashed changes to apply."
-
           git add changes/id-output/changed_ids.txt
           git status
 
@@ -124,42 +103,24 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Set up Python 3.13
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.13'
-
-      - name: Install Dependencies
+      - name: Cleanup Before Pull
         run: |
-          python -m venv venv
-          source venv/bin/activate
-          python -m pip install --upgrade pip
+          rm -rf changes/change-only-jsons/*
+          echo "🧹 Old extracted JSONs removed!"
 
-      - name: Ensure Latest Extracted Files
+      - name: Pull Latest Changes After Cleanup
         run: |
           git fetch origin int
-          git pull origin int --rebase
+          git reset --hard origin/int
+          git pull --rebase origin int
           echo "✅ Latest change file pulled!"
-
-      - name: Clear Old Extracted JSONs
-        run: |
-          rm -rf ../../changes/change-only-jsons/*
-          echo "🧹 Old extracted JSONs removed!"
 
       - name: Run Extract Changes Script
         run: |
-          source venv/bin/activate
-          python ./utils/extract-changes-only.py || echo "✅ No changed JSON blocks extracted, continuing."
+          python3 ./utils/extract-changes-only.py || echo "✅ No changed JSON blocks extracted, continuing."
 
       - name: Commit and Push Extracted Changes
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-
-          git stash push --include-untracked -m "Stashing changes before pull"
-          git pull --rebase origin int
-          git stash pop || echo "✅ No stashed changes to apply."
-
           git add changes/change-only-jsons/*.json
           git status
 
@@ -181,30 +142,29 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Set Git user info
+      - name: Cleanup Before Pull
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          rm -rf final-matrixify-export/*
+          echo "🧹 Old Excel exports removed!"
 
-      - name: Set up Python 3.13
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.13'
-
-      - name: Install dependencies
-        run: |
-          python -m venv venv
-          source venv/bin/activate
-          python -m pip install --upgrade pip
-          python -m pip install pandas openpyxl xlsxwriter
-
-      - name: Ensure Latest Extracted Files
+      - name: Pull Latest Changes After Cleanup
         run: |
           git fetch origin int
-          git pull origin int --rebase
+          git reset --hard origin/int
+          git pull --rebase origin int
           echo "✅ Latest extracted JSONs pulled!"
 
       - name: Run convertJSONToExcel script
         run: |
-          source venv/bin/activate
-          python ./utils/convertJSONToExcel_in_git.py || echo "✅ No Excel files created, continuing."
+          python3 ./utils/convertJSONToExcel_in_git.py || echo "✅ No Excel files created, continuing."
+
+      - name: Commit and Push Excel File
+        run: |
+          git add final-matrixify-export/*.xlsx
+          git status
+
+          if git diff --cached --quiet; then
+            echo "✅ No new changes detected. Skipping commit."
+          else
+            git commit -m "Add Excel file export"
+            git push origin int || (echo "❌ Push failed. Retrying with force push..." && git push origin int --force)
