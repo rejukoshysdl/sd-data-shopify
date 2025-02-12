@@ -54,6 +54,8 @@ def read_changed_ids(changed_ids_file):
 # Read changed IDs
 changed_ids = read_changed_ids(changed_ids_file)
 
+print(f"✅ Extracted IDs: {changed_ids}")
+
 # Dictionary to store extracted data
 output_data = {}
 
@@ -69,6 +71,7 @@ for section, ids in changed_ids.items():
         if relevant_blocks:
             output_data[section] = relevant_blocks
             output_file_path = os.path.join(output_dir, f"{section}.json")
+            print(f"✅ Output file contents: {open(output_file_path).read()}")
             write_json(output_file_path, relevant_blocks)
             print(f"✅ Extracted {len(relevant_blocks)} blocks for {section} and saved to {output_file_path}")
 
