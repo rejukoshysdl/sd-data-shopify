@@ -78,7 +78,7 @@ jobs:
 
       - name: Run Extract ID Script
         run: |
-          python3 ./utils/extractIdByPage.py || echo "✅ No IDs extracted, continuing."
+          python3 ./utils/extractIdByPage.py
 
       - name: Commit and Push Extracted ID File
         run: |
