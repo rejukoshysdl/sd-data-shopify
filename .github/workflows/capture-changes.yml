@@ -1,7 +1,7 @@
 name: Compare JSON Files Before Merge
 
 on:
-  pull_request_target:
+  pull_request:
     branches:
       - int    # Runs when merging into `int`
       - main   # Runs when merging into `main`
