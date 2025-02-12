@@ -24,7 +24,7 @@ jobs:
 
       - name: Cleanup Before Processing
         run: |
-          rm -rf changes/git-diff/*
+          rm -f changes/git-diff/changes.diff
           echo "🧹 Old diff files removed!"
 
       - name: Commit and Push Diff Deletion
@@ -34,7 +34,11 @@ jobs:
           git add -A  # ✅ Ensures deleted files are staged
           git commit -m "Remove old changes.diff before generating new diff" || echo "✅ No need to commit"
           git push origin int || echo "⚠️ Git push failed, check permissions."
-          git pull --rebase origin int 
+
+      - name: Fetch Latest Branches
+        run: |
+          git fetch origin main
+          git fetch origin int 
 
       - name: Compare JSON Files in repo-shopify-data (int vs main)
         run: |
