@@ -130,7 +130,7 @@ jobs:
 
       - name: Cleanup Before Pull
         run: |
-          [ -d changes/change-only-jsons ] || mkdir -p changes/change-only-jsons
+        
           rm -rf changes/change-only-jsons/*.json
           echo "🧹 Old extracted JSONs removed!"
           git status
