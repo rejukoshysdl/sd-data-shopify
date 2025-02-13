@@ -141,21 +141,25 @@ jobs:
           git commit -m "Remove outdated extracted JSONs before generating new ones" || echo "✅ No need to commit"
           git push origin int || echo "⚠️ Git push failed, check permissions."
           git pull --rebase origin int
-          
+
       - name: Run Extract Changes Script
         run: |
           python3 ./utils/extract-changes-only.py || echo "✅ No changed JSON blocks extracted, continuing."
 
       - name: Commit and Push Extracted Changes
         run: |
-          git add changes/change-only-jsons/*.json
-          git status
+          if ls changes/change-only-jsons/*.json 1> /dev/null 2>&1; then
+            git add changes/change-only-jsons/*.json
+            git status
 
-          if git diff --cached --quiet; then
-            echo "✅ No new extracted changes detected. Skipping commit."
+            if git diff --cached --quiet; then
+              echo "✅ No new extracted changes detected. Skipping commit."
+            else
+              git commit -m "Update change-only-jsons with extracted JSON changes"
+              git push origin int || echo "⚠️ Warning: Git push failed. Check permissions."
+            fi
           else
-            git commit -m "Update change-only-jsons with extracted JSON changes"
-            git push origin int || echo "⚠️ Warning: Git push failed. Check permissions."
+            echo "✅ No JSON changes found, skipping commit step."
           fi
 
   # **STEP 4: Convert JSON to Excel**
