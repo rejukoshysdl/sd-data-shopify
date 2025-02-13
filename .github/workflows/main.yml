@@ -141,14 +141,7 @@ jobs:
           git commit -m "Remove outdated extracted JSONs before generating new ones" || echo "✅ No need to commit"
           git push origin int || echo "⚠️ Git push failed, check permissions."
           git pull --rebase origin int
-
-      - name: Pull Latest Changes After Cleanup
-        run: |
-          git fetch origin int
-          git reset --hard origin/int
-          git pull --rebase origin int
-          echo "✅ Latest change file pulled!"
-
+          
       - name: Run Extract Changes Script
         run: |
           python3 ./utils/extract-changes-only.py || echo "✅ No changed JSON blocks extracted, continuing."
