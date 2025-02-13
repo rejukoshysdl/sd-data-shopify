@@ -129,6 +129,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Cleanup Before Pull
+          mkdir -p changes/change-only-jsons
         run: |
           rm -rf changes/change-only-jsons/*.json
           echo "🧹 Old extracted JSONs removed!"
@@ -145,7 +146,6 @@ jobs:
           git add -A  # Ensure deleted files are staged
           git commit -m "Remove outdated extracted JSONs before generating new ones" || echo "✅ No need to commit"
           git fetch origin int
-          git push origin int || echo "⚠️ Git push failed, check permissions."
           git pull --rebase origin int || echo "⚠️ Git rebase failed, attempting force push..." 
           git push origin int || (echo "⚠️ Warning: Push failed, retrying with force..." && git push origin int --force)
 
