@@ -195,14 +195,3 @@ jobs:
       - name: Run convertJSONToExcel script
         run: |
           python3 ./utils/convertJSONToExcel_in_git.py || echo "✅ No Excel files created, continuing."
-
-      - name: Commit and Push Excel File
-        run: |
-          git add final-matrixify-export/*.xlsx
-          git status
-
-          if git diff --cached --quiet; then
-            echo "✅ No new changes detected. Skipping commit."
-          else
-            git commit -m "Add Excel file export"
-            git push origin int || (echo "❌ Push failed. Retrying with force push..." && git push origin int --force)
