@@ -1,57 +1,197 @@
-name: Run convertExcelToJSON and Push Excel File
+name: Compare JSON, Extract IDs, Extract Changes, and Convert Excel After Merge
 
 on:
   push:
     branches:
-      - main  # Trigger when changes are pushed to the 'main' branch
-      - int  # Trigger the workflow for the 'int' branch
+      - int
+      - main
 
 jobs:
-  run-conversion-and-push:
-    runs-on: ubuntu-latest  # Running on Ubuntu OS
-
+  # **STEP 1: Compare `int` vs `main`**
+  diff_check:
+    runs-on: ubuntu-latest
     steps:
-    # Step 1: Checkout repository to access the code
-    - name: Checkout repository
-      uses: actions/checkout@v2
-      with:
-        ref: ${{ github.ref }}
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-    # Step 2: Set Git user info
-    - name: Set Git user info
-      run: |
-        git config --global user.name "MB Deployment"
-        git config --global user.email "ecom@meaningfulbeauty.com"  # Set default user email for commits
+      - name: Fetch Latest Branches
+        run: |
+          git fetch origin main
+          git fetch origin int
 
-    # Step 3: Set up Python environment
-    - name: Set up Python 3.13
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.13'  # Specify the Python version to match your script
+      - name: Cleanup Before Processing
+        run: |
+          rm -f changes/git-diff/changes.diff
+          echo "🧹 Old diff files removed!"
 
-    # Step 4: Cache Python dependencies
-    - name: Cache Python dependencies
-      uses: actions/cache@v2
-      with:
-        path: |
-          ~/.cache/pip
-          venv/
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/*.py') }}  # Cache dependencies based on Python file changes
-        restore-keys: |
-          ${{ runner.os }}-pip-
+      - name: Commit and Push Diff Deletion
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add -A  # ✅ Ensures deleted files are staged
+          git commit -m "Remove old changes.diff before generating new diff" || echo "✅ No need to commit"
+          git push origin int || echo "⚠️ Git push failed, check permissions."
 
-    # Step 5: Install dependencies (only if not cached)
-    - name: Install dependencies
-      run: |
-        if [ ! -d "venv" ]; then
-          python3 -m venv venv  # Create virtual environment if it doesn't exist
-        fi
-        source venv/bin/activate  # Activate the virtual environment
-        pip install --upgrade pip  # Upgrade pip to the latest version
-        pip install pandas openpyxl xlsxwriter  # Install dependencies if not cached
+      - name: Fetch Latest Branches
+        run: |
+          git fetch origin main
+          git fetch origin int 
 
-    # Step 6: Run the conversion Python script
-    - name: Run convertJSONToExcel script
-      run: |
-        source venv/bin/activate  # Ensure virtual environment is active
-        python3 ./utils/convertJSONToExcel_in_git.py  # Adjust path if necessary
+      - name: Compare JSON Files in repo-shopify-data (int vs main)
+        run: |
+          DIFF_FILE="./changes/git-diff/changes.diff"
+          git diff origin/main..origin/int -- 'repo-shopify-data/*.json' > $DIFF_FILE
+          
+          if [ ! -s $DIFF_FILE ]; then
+            echo "✅ No JSON files changed between `int` and `main`" > $DIFF_FILE
+          fi
+          
+          cat $DIFF_FILE  # Show diff output for debugging
+
+      - name: Commit and Push Diff File to `int`
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add ./changes/git-diff/changes.diff
+          git status
+          
+          if git diff --cached --quiet; then
+            echo "✅ No new changes detected. Skipping commit."
+          else
+            git commit -m "Update changes.diff with JSON file differences after merging into int"
+            git push origin int || echo "⚠️ Warning: Git push failed. Check permissions."
+          fi
+
+  # **STEP 2: Extract Changed IDs from JSON Diff**
+  extract_ids:
+    runs-on: ubuntu-latest
+    needs: diff_check
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Cleanup Before Pull
+        run: |
+          rm -f changes/id-output/changed_ids.txt
+          ls -l changes/id-output/
+          echo "🧹 Old extracted IDs removed!"
+          git status
+
+      - name: Commit and push deletion of old changed_ids.txt
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add changes/id-output/changed_ids.txt
+          git commit -m "Remove outdated changed_ids.txt before generating new IDs" || echo "✅ No need to commit"
+          git push origin int || echo "⚠️ Git push failed, check permissions."
+          git pull --rebase origin int
+
+      - name: Pull Latest Changes After Cleanup
+        run: |
+          #git fetch origin int
+          #git reset --hard origin/int
+          #git pull --rebase origin int
+          echo "✅ Latest change diff file pulled!"
+           git status
+
+      - name: Run Extract ID Script
+        run: |
+          python3 ./utils/extractIdByPage.py
+
+      - name: Commit and Push Extracted ID File
+        run: |
+          git add changes/id-output/changed_ids.txt
+          git status
+
+          if git diff --cached --quiet; then
+            echo "✅ No new ID changes detected. Skipping commit."
+          else
+            git commit -m "Update changed_ids.txt with extracted IDs"
+            git push origin int || echo "⚠️ Warning: Git push failed. Check permissions."
+          fi
+
+  # **STEP 3: Extract Changed JSON Blocks from IDs**
+  extract_changes:
+    runs-on: ubuntu-latest
+    needs: extract_ids
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Cleanup Before Pull
+        run: |
+          rm -rf changes/change-only-jsons/*
+          echo "🧹 Old extracted JSONs removed!"
+
+      - name: Commit and push deletion of old extracted JSONs
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add -A  # Ensure deleted files are staged
+          git commit -m "Remove outdated extracted JSONs before generating new ones" || echo "✅ No need to commit"
+          git push origin int || echo "⚠️ Git push failed, check permissions."
+          git pull --rebase origin int
+
+      - name: Pull Latest Changes After Cleanup
+        run: |
+          git fetch origin int
+          git reset --hard origin/int
+          git pull --rebase origin int
+          echo "✅ Latest change file pulled!"
+
+      - name: Run Extract Changes Script
+        run: |
+          python3 ./utils/extract-changes-only.py || echo "✅ No changed JSON blocks extracted, continuing."
+
+      - name: Commit and Push Extracted Changes
+        run: |
+          git add changes/change-only-jsons/*.json
+          git status
+
+          if git diff --cached --quiet; then
+            echo "✅ No new extracted changes detected. Skipping commit."
+          else
+            git commit -m "Update change-only-jsons with extracted JSON changes"
+            git push origin int || echo "⚠️ Warning: Git push failed. Check permissions."
+          fi
+
+  # **STEP 4: Convert JSON to Excel**
+  run-conversion-and-push:
+    runs-on: ubuntu-latest
+    needs: extract_changes
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Cleanup Before Pull
+        run: |
+          rm -rf final-matrixify-export/*
+          echo "🧹 Old Excel exports removed!"
+
+      - name: Pull Latest Changes After Cleanup
+        run: |
+          git fetch origin int
+          git reset --hard origin/int
+          git pull --rebase origin int
+          echo "✅ Latest extracted JSONs pulled!"
+
+      - name: Install Python Dependencies
+        run: |
+          pip install pandas openpyxl xlsxwriter
+
+      - name: Run convertJSONToExcel script
+        run: |
+          python3 ./utils/convertJSONToExcel_in_git.py || echo "✅ No Excel files created, continuing."
