@@ -7,13 +7,13 @@
     },
     {
         "ID": "504430592281",
-        "Path": "/haircare",
+        "Path": "/haircare-again",
         "Command": "MERGE",
         "Target": "/pages/lp-core-ageproofhair"
     },
     {
         "ID": "504431477017",
-        "Path": "/savenow23",
+        "Path": "/savenow23-1",
         "Command": "MERGE",
         "Target": "/pages/sas-winback/?utm_campaign=July24&amp%3Butm_medium=directmail&amp%3Butm_source=DAP&amp%3Butm_content=SMB_151-180&amp%3Buci=US-MT-D-TP-XX-M2-XXXX-137161"
     },
