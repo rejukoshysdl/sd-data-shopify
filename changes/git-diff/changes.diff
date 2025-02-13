@@ -1,0 +1,39 @@
+diff --git a/repo-shopify-data/Files.json b/repo-shopify-data/Files.json
+index f8012fc..6c4bb52 100644
+--- a/repo-shopify-data/Files.json
++++ b/repo-shopify-data/Files.json
+@@ -61,7 +61,7 @@
+     },
+     {
+         "ID": "gid://shopify/MediaImage/39968080462105",
+-        "File Name": "MB8_5-Piece_Hawaii_Essentials_Skincare_System_30Day_Flatlays_31_050824_35c6ecdd-04c4-4ff9-b75f-da4433e86e61-changed.jpg",
++        "File Name": "MB8_5-Piece_Hawaii_Essentials_Skincare_System_30Day_Flatlays_31_050824_35c6ecdd-04c4-4ff9-b75f-da4433e86e61.jpg",
+         "Command": "MERGE",
+         "Link": "https://cdn.shopify.com/s/files/1/0841/8646/4537/files/MB8_5-Piece_Hawaii_Essentials_Skincare_System_30Day_Flatlays_31_050824_35c6ecdd-04c4-4ff9-b75f-da4433e86e61.jpg?v=1733205995",
+         "Alt Text": "",
+diff --git a/repo-shopify-data/Pages.json b/repo-shopify-data/Pages.json
+index 6e8f627..8d2f3c7 100644
+--- a/repo-shopify-data/Pages.json
++++ b/repo-shopify-data/Pages.json
+@@ -28,7 +28,7 @@
+         "ID": "143529247001",
+         "Handle": "do-not-sell-or-share-my-personal-information",
+         "Command": "MERGE",
+-        "Title": "Do not sell or share my personal information-changed",
++        "Title": "Do not sell or share my personal information",
+         "Author": "",
+         "Body HTML": "<link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.css\"> <meta charset=\"utf-8\">\n<p>As described in our Privacy Policy, we collect personal information from your interactions with us and our website, including through cookies and similar technologies. We may also share this personal information with third parties, including advertising partners. We do this in order to show you ads on other websites that are more relevant to your interests and for other reasons outlined in our privacy policy.</p>\n<p>Sharing of personal information for targeted advertising based on your interaction on different websites may be considered \"sales\", \"sharing\", or \"targeted advertising\" under certain U.S. state privacy laws. Depending on where you live, you may have the right to opt out of these activities. If you would like to exercise this opt-out right, please follow the instructions below.</p>\n<p>If you visit our website with the Global Privacy Control opt-out preference signal enabled, depending on where you are, we will treat this as a request to opt-out of activity that may be considered a \u201csale\u201d or \u201csharing\u201d of personal information or other uses that may be considered targeted advertising for the device and browser you used to visit our website.</p>\n<div data-error=\"A problem occurred, try submitting your email again>\" data-success=\"Opted-out successfully\" data-email-label=\"Email\" data-form-description='If you would like to opt out of activity that may be considered a \"sale\" or \"share,\" or \"targeted advertising\", please submit your email.' data-not-applicable='To opt out of the \"sale\" or \"sharing\" of your personal information collected using cookies and other device-based identifiers as described above, you must be browsing from one of the applicable US states referred to above.' id=\"pc--optOutFormContainer\">\n<script src=\"https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.js\" defer></script> <script src=\"https://js.hcaptcha.com/1/api.js?onload=optOutOnLoad\" defer></script>\n</div>",
+         "Created At": "2024-12-04 00:58:37 -0800",
+diff --git a/repo-shopify-data/Redirects.json b/repo-shopify-data/Redirects.json
+index f6d1ba0..1d6206b 100644
+--- a/repo-shopify-data/Redirects.json
++++ b/repo-shopify-data/Redirects.json
+@@ -7,7 +7,7 @@
+     },
+     {
+         "ID": "504430592281",
+-        "Path": "/haircare-changed",
++        "Path": "/haircare",
+         "Command": "MERGE",
+         "Target": "/pages/lp-core-ageproofhair"
+     },
