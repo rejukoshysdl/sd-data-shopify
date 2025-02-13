@@ -130,13 +130,18 @@ jobs:
 
       - name: Cleanup Before Pull
         run: |
-          rm -rf changes/change-only-jsons/*
+          rm -rf changes/change-only-jsons/*.json
           echo "🧹 Old extracted JSONs removed!"
+          git status
 
       - name: Commit and push deletion of old extracted JSONs
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
+
+           # Ensure git tracks the deletion of files
+          git rm -rf changes/change-only-jsons/*.json || echo "✅ No files to remove" 
+
           git add -A  # Ensure deleted files are staged
           git commit -m "Remove outdated extracted JSONs before generating new ones" || echo "✅ No need to commit"
           git push origin int || echo "⚠️ Git push failed, check permissions."
