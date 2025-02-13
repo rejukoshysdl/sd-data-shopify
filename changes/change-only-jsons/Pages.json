@@ -1,0 +1,27 @@
+[
+    {
+        "ID": "143529181465",
+        "Handle": "faq-haircare",
+        "Command": "MERGE",
+        "Title": "faq-haircare-mbtest",
+        "Author": "",
+        "Body HTML": "",
+        "Created At": "2024-12-04 00:57:53 -0800",
+        "Updated At": "2024-12-04 00:57:53 -0800",
+        "Published": "true",
+        "Published At": "2024-12-04 00:57:53 -0800",
+        "Template Suffix": "faq-haircare",
+        "Metafield: title_tag [string]": "",
+        "Metafield: description_tag [string]": "",
+        "Metafield: page.footer_type [single_line_text_field]": "",
+        "Metafield: page.campaign_id [single_line_text_field]": "",
+        "Metafield: page.pricebook [metaobject_reference]": "",
+        "Metafield: page.promo_ribbon [metaobject_reference]": "",
+        "Metafield: page.header_type [single_line_text_field]": "",
+        "Metafield: page.sas_page_url [page_reference]": "",
+        "Metafield: page.default_campaign [single_line_text_field]": "",
+        "Metafield: page.page_type [single_line_text_field]": "",
+        "Metafield: page.campaign_list [json]": "",
+        "Metafield: page.campaign_order_discount [metaobject_reference]": ""
+    }
+]
