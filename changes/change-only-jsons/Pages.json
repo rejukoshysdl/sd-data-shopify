@@ -1,0 +1,27 @@
+[
+    {
+        "ID": "143529247001",
+        "Handle": "do-not-sell-or-share-my-personal-information",
+        "Command": "MERGE",
+        "Title": "Do not sell or share my personal information",
+        "Author": "",
+        "Body HTML": "<link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.css\"> <meta charset=\"utf-8\">\n<p>As described in our Privacy Policy, we collect personal information from your interactions with us and our website, including through cookies and similar technologies. We may also share this personal information with third parties, including advertising partners. We do this in order to show you ads on other websites that are more relevant to your interests and for other reasons outlined in our privacy policy.</p>\n<p>Sharing of personal information for targeted advertising based on your interaction on different websites may be considered \"sales\", \"sharing\", or \"targeted advertising\" under certain U.S. state privacy laws. Depending on where you live, you may have the right to opt out of these activities. If you would like to exercise this opt-out right, please follow the instructions below.</p>\n<p>If you visit our website with the Global Privacy Control opt-out preference signal enabled, depending on where you are, we will treat this as a request to opt-out of activity that may be considered a \u201csale\u201d or \u201csharing\u201d of personal information or other uses that may be considered targeted advertising for the device and browser you used to visit our website.</p>\n<div data-error=\"A problem occurred, try submitting your email again>\" data-success=\"Opted-out successfully\" data-email-label=\"Email\" data-form-description='If you would like to opt out of activity that may be considered a \"sale\" or \"share,\" or \"targeted advertising\", please submit your email.' data-not-applicable='To opt out of the \"sale\" or \"sharing\" of your personal information collected using cookies and other device-based identifiers as described above, you must be browsing from one of the applicable US states referred to above.' id=\"pc--optOutFormContainer\">\n<script src=\"https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.js\" defer></script> <script src=\"https://js.hcaptcha.com/1/api.js?onload=optOutOnLoad\" defer></script>\n</div>",
+        "Created At": "2024-12-04 00:58:37 -0800",
+        "Updated At": "2024-12-04 00:58:37 -0800",
+        "Published": "true",
+        "Published At": "2024-12-04 00:58:37 -0800",
+        "Template Suffix": "",
+        "Metafield: title_tag [string]": "",
+        "Metafield: description_tag [string]": "",
+        "Metafield: page.footer_type [single_line_text_field]": "",
+        "Metafield: page.campaign_id [single_line_text_field]": "",
+        "Metafield: page.pricebook [metaobject_reference]": "",
+        "Metafield: page.promo_ribbon [metaobject_reference]": "",
+        "Metafield: page.header_type [single_line_text_field]": "",
+        "Metafield: page.sas_page_url [page_reference]": "",
+        "Metafield: page.default_campaign [single_line_text_field]": "",
+        "Metafield: page.page_type [single_line_text_field]": "",
+        "Metafield: page.campaign_list [json]": "",
+        "Metafield: page.campaign_order_discount [metaobject_reference]": ""
+    }
+]
