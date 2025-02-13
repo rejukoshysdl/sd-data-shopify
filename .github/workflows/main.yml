@@ -129,8 +129,8 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Cleanup Before Pull
-          mkdir -p changes/change-only-jsons
         run: |
+          [ -d changes/change-only-jsons ] || mkdir -p changes/change-only-jsons
           rm -rf changes/change-only-jsons/*.json
           echo "🧹 Old extracted JSONs removed!"
           git status
