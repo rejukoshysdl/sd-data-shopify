@@ -188,6 +188,10 @@ jobs:
           git pull --rebase origin int
           echo "✅ Latest extracted JSONs pulled!"
 
+      - name: Install Python Dependencies
+        run: |
+          pip install pandas openpyxl xlsxwriter
+
       - name: Run convertJSONToExcel script
         run: |
           python3 ./utils/convertJSONToExcel_in_git.py || echo "✅ No Excel files created, continuing."
