@@ -1,0 +1,13 @@
+diff --git a/repo-shopify-data/Redirects.json b/repo-shopify-data/Redirects.json
+index 48dc8d0..88036f1 100644
+--- a/repo-shopify-data/Redirects.json
++++ b/repo-shopify-data/Redirects.json
+@@ -7,7 +7,7 @@
+     },
+     {
+         "ID": "504430592281",
+-        "Path": "/haircare-1",
++        "Path": "/haircare",
+         "Command": "MERGE",
+         "Target": "/pages/lp-core-ageproofhair"
+     },
