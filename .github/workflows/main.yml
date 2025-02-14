@@ -26,17 +26,26 @@ jobs:
         run: |
           # Extract branch name from GitHub Actions variable
           BRANCH_NAME="${GITHUB_REF_NAME}"
+          echo "🔹 Detected branch: $BRANCH_NAME"
+
+          if [[ -z "$BRANCH_NAME" ]]; then
+            echo "❌ ERROR: GITHUB_REF_NAME is empty. Exiting."
+            exit 1
+          fi
 
           if [[ "$BRANCH_NAME" == "int" ]]; then
             echo "BASE_BRANCH=staging" >> $GITHUB_ENV
+            export BASE_BRANCH="staging"
           elif [[ "$BRANCH_NAME" == "staging" ]]; then
             echo "BASE_BRANCH=main" >> $GITHUB_ENV
+            export BASE_BRANCH="main"
           else
             echo "❌ Unknown push branch detected: $BRANCH_NAME"
             exit 1
           fi 
 
-          echo "✅ Push event detected. Base branch set to $BASE_BRANCH"
+          echo "✅ Push event detected. Base branch set to: $BASE_BRANCH"
+
 
       - name: Cleanup Before Processing
         run: |
