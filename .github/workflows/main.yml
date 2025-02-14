@@ -153,8 +153,8 @@ jobs:
           git rm -rf changes/change-only-jsons/*.json || echo "✅ No files to remove"
           git add -A  # Ensure deleted files are staged
           git commit -m "Remove outdated extracted JSONs before generating new ones" || echo "✅ No need to commit"
-          git pull --rebase origin $GITHUB_REF_NAME || echo "⚠️ Git rebase failed, attempting force push..." 
-          git push origin $GITHUB_REF_NAME || (echo "⚠️ Warning: Push failed, retrying with force..." && git push origin $GITHUB_REF_NAME --force)
+          git pull --rebase origin $GITHUB_REF_NAME || echo "⚠️ Git rebase failed" 
+          git push origin $GITHUB_REF_NAME
 
       - name: Run Extract Changes Script
         run: |
