@@ -82,6 +82,9 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Set Execution Permission for Git Script
+        run: chmod +x utils/git_commit_push.sh
+
       - name: Cleanup Before Pull
         run: |
           rm -f changes/id-output/changed_ids.txt
@@ -111,6 +114,9 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set Execution Permission for Git Script
+        run: chmod +x utils/git_commit_push.sh
 
       - name: Cleanup Before Pull
         run: |
@@ -146,6 +152,9 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set Execution Permission for Git Script
+        run: chmod +x utils/git_commit_push.sh
 
       - name: Cleanup Before Pull
         run: |
