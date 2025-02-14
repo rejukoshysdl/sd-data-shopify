@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - int
-      - main
+      - staging
 
 jobs:
   # **STEP 1: Compare Branches**
@@ -32,9 +32,9 @@ jobs:
           fi
 
           if [[ "$BRANCH_NAME" == "int" ]]; then
-            echo "BASE_BRANCH=main" >> $GITHUB_ENV
+            echo "BASE_BRANCH=staging" >> $GITHUB_ENV
           elif [[ "$BRANCH_NAME" == "staging" ]]; then
-            echo "BASE_BRANCH=int" >> $GITHUB_ENV
+            echo "BASE_BRANCH=main" >> $GITHUB_ENV
           else
             echo "❌ Unknown push branch detected: $BRANCH_NAME"
             exit 1
