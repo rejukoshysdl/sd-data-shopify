@@ -1,0 +1,27 @@
+[
+    {
+        "ID": "143522398489",
+        "Handle": "lp_lf_noprp_ageproofhair_ps",
+        "Command": "MERGE",
+        "Title": "lp_lf_noprp_ageproofhair_ps",
+        "Author": "",
+        "Body HTML": "",
+        "Created At": "2024-12-03 21:55:17 -0800",
+        "Updated At": "2025-01-20 09:41:27 -0800",
+        "Published": "True",
+        "Published At": "2024-12-03 21:55:17 -0800",
+        "Template Suffix": "lp_lf_noprp_ageproofhair_ps",
+        "Metafield: title_tag [string]": "Meaningful Beauty\u00ae | Cindy Crawford Anti-aging Skin Care & Hair Care",
+        "Metafield: description_tag [string]": "Diminish visible signs of aging with Meaningful Beauty\u00ae skincare & hair care products by Cindy Crawford - the anti-aging system with revolutionary antioxidants.",
+        "Metafield: page.footer_type [single_line_text_field]": "PS-Footer-Lp",
+        "Metafield: page.campaign_id [single_line_text_field]": "lp_lf_noprp_ageproofhair_ps",
+        "Metafield: page.pricebook [metaobject_reference]": "pricebook.mb-hair-34-54-pb",
+        "Metafield: page.promo_ribbon [metaobject_reference]": "promo_ribbon.promo-ribbon-x7ls1hrh",
+        "Metafield: page.header_type [single_line_text_field]": "LP-Header",
+        "Metafield: page.sas_page_url [page_reference]": "sas-hair-special-offer2",
+        "Metafield: page.default_campaign [single_line_text_field]": "lp_lf_noprp_ageproofhair_ps",
+        "Metafield: page.page_type [single_line_text_field]": "LANDINGPAGE",
+        "Metafield: page.campaign_list [json]": "",
+        "Metafield: page.campaign_order_discount [metaobject_reference]": ""
+    }
+]
