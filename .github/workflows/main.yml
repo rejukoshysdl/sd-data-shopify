@@ -206,3 +206,35 @@ jobs:
       - name: Run convertJSONToExcel script
         run: |
           python3 ./utils/convertJSONToExcel_in_git.py || echo "✅ No Excel files created, continuing."
+
+      - name: Commit and Push Generated Excel Files
+        run: |
+            git config --global user.name "github-actions"
+            git config --global user.email "github-actions@github.com"
+  
+            # ✅ Add Excel files if they exist
+            if ls final-matrixify-export/*.xlsx 1> /dev/null 2>&1 || ls changes/change-only-excel/*.xlsx 1> /dev/null 2>&1; then
+              git add final-matrixify-export/*.xlsx || echo "✅ No new Excel files in final-matrixify-export"
+              git add changes/change-only-excel/*.xlsx || echo "✅ No new Excel files in change-only-excel"
+              
+              git status
+  
+              # ✅ Prevent empty commits
+              if git diff --cached --quiet; then
+                echo "✅ No new Excel files detected. Skipping commit."
+              else
+                git commit -m "Add exported Excel files"
+              # Attempt rebase
+              if ! git pull --rebase origin $GITHUB_REF_NAME; then
+                  echo "❌ Git rebase failed. Please resolve conflicts manually."
+                  exit 1  # Stop execution if rebase fails
+              fi 
+              # Push after a successful rebase
+              git push origin $GITHUB_REF_NAME || (
+                  echo "⚠️ Push failed. Retrying after pulling latest changes..."
+                  git pull --rebase origin $GITHUB_REF_NAME && git push origin $GITHUB_REF_NAME
+              )
+              fi
+            else
+              echo "✅ No new Excel files to commit."
+            fi
