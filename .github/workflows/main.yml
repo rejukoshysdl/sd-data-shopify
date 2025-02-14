@@ -17,6 +17,9 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Set Execution Permission for Git Script
+        run: chmod +x utils/git_commit_push.sh
+
       - name: Fetch Latest Branches
         run: |
           git fetch --all
