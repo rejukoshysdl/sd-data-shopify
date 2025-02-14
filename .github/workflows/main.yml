@@ -1,11 +1,6 @@
 name: Compare JSON, Extract IDs, Extract Changes, and Convert Excel After Merge
 
 on:
-  pull_request:
-    branches:
-      - int
-      - staging
-
   push:
     branches:
       - int
@@ -29,8 +24,8 @@ jobs:
       - name: Set Branch Variables
         id: set_branch
         run: |
-          # Extract branch name from github.ref
-          BRANCH_NAME="${{ github.ref_name }}"
+          # Extract branch name from GitHub Actions variable
+          BRANCH_NAME="${GITHUB_REF_NAME}"
 
           if [[ "$BRANCH_NAME" == "int" ]]; then
             echo "BASE_BRANCH=staging" >> $GITHUB_ENV
@@ -40,8 +35,8 @@ jobs:
             echo "❌ Unknown push branch detected: $BRANCH_NAME"
             exit 1
           fi 
-          echo "✅ Push event detected. Base branch set to $BASE_BRANCH"
 
+          echo "✅ Push event detected. Base branch set to $BASE_BRANCH"
 
       - name: Cleanup Before Processing
         run: |
@@ -52,17 +47,18 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
+
           git add -A  # Ensure deleted files are staged
           git commit -m "Remove old changes.diff before generating new diff" || echo "✅ No need to commit"
-          git push origin ${{ github.ref_name }} || echo "⚠️ Git push failed, check permissions."
+          git push origin $GITHUB_REF_NAME || echo "⚠️ Git push failed, check permissions."
 
       - name: Compare JSON Files
         run: |
           DIFF_FILE="./changes/git-diff/changes.diff"
-          git diff origin/${{ env.BASE_BRANCH }}..origin/${{ github.ref_name }} -- 'repo-shopify-data/*.json' > $DIFF_FILE
+          git diff origin/${{ env.BASE_BRANCH }}..origin/$GITHUB_REF_NAME -- 'repo-shopify-data/*.json' > $DIFF_FILE
           
           if [ ! -s $DIFF_FILE ]; then
-            echo "✅ No JSON files changed between ${{ env.BASE_BRANCH }} and ${{ github.ref_name }}" > $DIFF_FILE
+            echo "✅ No JSON files changed between ${{ env.BASE_BRANCH }} and $GITHUB_REF_NAME" > $DIFF_FILE
           fi
           
           cat $DIFF_FILE  # Show diff output for debugging
@@ -78,10 +74,10 @@ jobs:
           if git diff --cached --quiet; then
             echo "✅ No new changes detected. Skipping commit."
           else
-            git commit -m "Update changes.diff with JSON file differences after merging into ${{ github.ref_name }}"
-            git push origin ${{ github.ref_name }} || echo "⚠️ Warning: Git push failed. Check permissions."
+            git commit -m "Update changes.diff with JSON file differences after merging into $GITHUB_REF_NAME"
+            git push origin $GITHUB_REF_NAME || echo "⚠️ Warning: Git push failed. Check permissions."
           fi
-          
+
 
   # **STEP 2: Extract Changed IDs from JSON Diff**
   extract_ids:
