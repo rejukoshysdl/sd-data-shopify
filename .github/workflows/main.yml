@@ -4,10 +4,10 @@ on:
   push:
     branches:
       - int
-      - staging
+      - main
 
 jobs:
-  # **STEP 1: Compare the Correct Branches**
+  # **STEP 1: Compare Branches**
   diff_check:
     runs-on: ubuntu-latest
     steps:
@@ -21,10 +21,8 @@ jobs:
         run: |
           git fetch --all
 
-      - name: Set Branch Variables
-        id: set_branch
+      - name: Detect Current Branch
         run: |
-          # Extract branch name from GitHub Actions variable
           BRANCH_NAME="${GITHUB_REF_NAME}"
           echo "🔹 Detected branch: $BRANCH_NAME"
 
@@ -34,9 +32,9 @@ jobs:
           fi
 
           if [[ "$BRANCH_NAME" == "int" ]]; then
-            echo "BASE_BRANCH=staging" >> $GITHUB_ENV
-          elif [[ "$BRANCH_NAME" == "staging" ]]; then
             echo "BASE_BRANCH=main" >> $GITHUB_ENV
+          elif [[ "$BRANCH_NAME" == "staging" ]]; then
+            echo "BASE_BRANCH=int" >> $GITHUB_ENV
           else
             echo "❌ Unknown push branch detected: $BRANCH_NAME"
             exit 1
@@ -53,10 +51,14 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-
-          git add -A  # Ensure deleted files are staged
+          git add -A  # ✅ Ensures deleted files are staged
           git commit -m "Remove old changes.diff before generating new diff" || echo "✅ No need to commit"
           git push origin $GITHUB_REF_NAME || echo "⚠️ Git push failed, check permissions."
+
+      - name: Fetch Latest Branches
+        run: |
+          git fetch --all
+          
 
       - name: Compare JSON Files
         run: |
@@ -64,7 +66,7 @@ jobs:
           git diff origin/${{ env.BASE_BRANCH }}..origin/$GITHUB_REF_NAME -- 'repo-shopify-data/*.json' > $DIFF_FILE
           
           if [ ! -s $DIFF_FILE ]; then
-            echo "✅ No JSON files changed between ${{ env.BASE_BRANCH }} and $GITHUB_REF_NAME" > $DIFF_FILE
+            echo "✅ No JSON files changed between $GITHUB_REF_NAME and ${{ env.BASE_BRANCH }}" > $DIFF_FILE
           fi
           
           cat $DIFF_FILE  # Show diff output for debugging
@@ -84,7 +86,6 @@ jobs:
             git push origin $GITHUB_REF_NAME || echo "⚠️ Warning: Git push failed. Check permissions."
           fi
 
-
   # **STEP 2: Extract Changed IDs from JSON Diff**
   extract_ids:
     runs-on: ubuntu-latest
@@ -99,7 +100,18 @@ jobs:
       - name: Cleanup Before Pull
         run: |
           rm -f changes/id-output/changed_ids.txt
+          ls -l changes/id-output/
           echo "🧹 Old extracted IDs removed!"
+          git status
+
+      - name: Commit and push deletion of old changed_ids.txt
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add changes/id-output/changed_ids.txt
+          git commit -m "Remove outdated changed_ids.txt before generating new IDs" || echo "✅ No need to commit"
+          git push origin $GITHUB_REF_NAME || echo "⚠️ Git push failed, check permissions."
+          git pull --rebase origin $GITHUB_REF_NAME
 
       - name: Run Extract ID Script
         run: |
@@ -128,11 +140,21 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Cleanup Before Processing
+      - name: Cleanup Before Pull
         run: |
-          mkdir -p changes/change-only-jsons  # Ensure directory exists
           rm -rf changes/change-only-jsons/*.json
           echo "🧹 Old extracted JSONs removed!"
+          git status
+
+      - name: Commit and push deletion of old extracted JSONs
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git rm -rf changes/change-only-jsons/*.json || echo "✅ No files to remove"
+          git add -A  # Ensure deleted files are staged
+          git commit -m "Remove outdated extracted JSONs before generating new ones" || echo "✅ No need to commit"
+          git pull --rebase origin $GITHUB_REF_NAME || echo "⚠️ Git rebase failed, attempting force push..." 
+          git push origin $GITHUB_REF_NAME || (echo "⚠️ Warning: Push failed, retrying with force..." && git push origin $GITHUB_REF_NAME --force)
 
       - name: Run Extract Changes Script
         run: |
@@ -169,6 +191,13 @@ jobs:
         run: |
           rm -rf final-matrixify-export/*
           echo "🧹 Old Excel exports removed!"
+
+      - name: Pull Latest Changes After Cleanup
+        run: |
+          git fetch origin $GITHUB_REF_NAME
+          git reset --hard origin/$GITHUB_REF_NAME
+          git pull --rebase origin $GITHUB_REF_NAME
+          echo "✅ Latest extracted JSONs pulled!"
 
       - name: Install Python Dependencies
         run: |
