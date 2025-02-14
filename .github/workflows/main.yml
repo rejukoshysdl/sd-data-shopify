@@ -16,8 +16,7 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
-      
-      #  Ensures that the latest versions of both branches are available for comparison.
+
       - name: Fetch Latest Branches
         run: |
           git fetch --all
@@ -41,8 +40,6 @@ jobs:
             exit 1
           fi 
 
-          echo "✅ Push event detected. Base branch set to: $BASE_BRANCH"
-
       - name: Cleanup Before Processing
         run: |
           rm -f changes/git-diff/changes.diff
@@ -50,11 +47,8 @@ jobs:
 
       - name: Commit and Push Diff Deletion
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          git add -A  # ✅ Ensures deleted files are staged
-          git commit -m "Remove old changes.diff before generating new diff" || echo "✅ No need to commit"
-          git push origin $GITHUB_REF_NAME || echo "⚠️ Git push failed, check permissions."
+          git add -A  
+          ./utils/git_commit_push.sh "Remove old changes.diff before generating new diff"
 
       - name: Fetch Latest Branch
         run: |
@@ -68,23 +62,11 @@ jobs:
           if [ ! -s $DIFF_FILE ]; then
             echo "✅ No JSON files changed between $GITHUB_REF_NAME and ${{ env.BASE_BRANCH }}" > $DIFF_FILE
           fi
-          
-          cat $DIFF_FILE  # Show diff output for debugging
 
       - name: Commit and Push Diff File
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-
           git add ./changes/git-diff/changes.diff
-          git status
-          
-          if git diff --cached --quiet; then
-            echo "✅ No new changes detected. Skipping commit."
-          else
-            git commit -m "Update changes.diff with JSON file differences after merging into $GITHUB_REF_NAME"
-            git push origin $GITHUB_REF_NAME || echo "⚠️ Warning: Git push failed. Check permissions."
-          fi
+          ./utils/git_commit_push.sh "Update changes.diff with JSON file differences after merging into $GITHUB_REF_NAME"
 
   # **STEP 2: Extract Changed IDs from JSON Diff**
   extract_ids:
@@ -100,18 +82,12 @@ jobs:
       - name: Cleanup Before Pull
         run: |
           rm -f changes/id-output/changed_ids.txt
-          ls -l changes/id-output/
-          echo "🧹 Old extracted IDs removed!"
           git status
 
-      - name: Commit and push deletion of old changed_ids.txt
+      - name: Commit and Push Deletion of Old changed_ids.txt
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
           git add changes/id-output/changed_ids.txt
-          git commit -m "Remove outdated changed_ids.txt before generating new IDs" || echo "✅ No need to commit"
-          git push origin $GITHUB_REF_NAME || echo "⚠️ Git push failed, check permissions."
-          git pull --rebase origin $GITHUB_REF_NAME
+          ./utils/git_commit_push.sh "Remove outdated changed_ids.txt before generating new IDs"
 
       - name: Run Extract ID Script
         run: |
@@ -120,14 +96,7 @@ jobs:
       - name: Commit and Push Extracted ID File
         run: |
           git add changes/id-output/changed_ids.txt
-          git status
-
-          if git diff --cached --quiet; then
-            echo "✅ No new ID changes detected. Skipping commit."
-          else
-            git commit -m "Update changed_ids.txt with extracted IDs"
-            git push origin $GITHUB_REF_NAME || echo "⚠️ Warning: Git push failed. Check permissions."
-          fi
+          ./utils/git_commit_push.sh "Update changed_ids.txt with extracted IDs"
 
   # **STEP 3: Extract Changed JSON Blocks from IDs**
   extract_changes:
@@ -143,18 +112,13 @@ jobs:
       - name: Cleanup Before Pull
         run: |
           rm -rf changes/change-only-jsons/*.json
-          echo "🧹 Old extracted JSONs removed!"
           git status
 
-      - name: Commit and push deletion of old extracted JSONs
+      - name: Commit and Push Deletion of Old Extracted JSONs
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
           git rm -rf changes/change-only-jsons/*.json || echo "✅ No files to remove"
-          git add -A  # Ensure deleted files are staged
-          git commit -m "Remove outdated extracted JSONs before generating new ones" || echo "✅ No need to commit"
-          git pull --rebase origin $GITHUB_REF_NAME || echo "⚠️ Git rebase failed" 
-          git push origin $GITHUB_REF_NAME
+          git add -A
+          ./utils/git_commit_push.sh "Remove outdated extracted JSONs before generating new ones"
 
       - name: Run Extract Changes Script
         run: |
@@ -164,14 +128,7 @@ jobs:
         run: |
           if ls changes/change-only-jsons/*.json 1> /dev/null 2>&1; then
             git add changes/change-only-jsons/*.json
-            git status
-
-            if git diff --cached --quiet; then
-              echo "✅ No new extracted changes detected. Skipping commit."
-            else
-              git commit -m "Update change-only-jsons with extracted JSON changes"
-              git push origin $GITHUB_REF_NAME || echo "⚠️ Warning: Git push failed. Check permissions."
-            fi
+            ./utils/git_commit_push.sh "Update change-only-jsons with extracted JSON changes"
           else
             echo "✅ No JSON changes found, skipping commit step."
           fi
@@ -209,32 +166,10 @@ jobs:
 
       - name: Commit and Push Generated Excel Files
         run: |
-            git config --global user.name "github-actions"
-            git config --global user.email "github-actions@github.com"
-  
-            # ✅ Add Excel files if they exist
-            if ls final-matrixify-export/*.xlsx 1> /dev/null 2>&1 || ls changes/change-only-excel/*.xlsx 1> /dev/null 2>&1; then
-              git add final-matrixify-export/*.xlsx || echo "✅ No new Excel files in final-matrixify-export"
-              git add changes/change-only-excel/*.xlsx || echo "✅ No new Excel files in change-only-excel"
-              
-              git status
-  
-              # ✅ Prevent empty commits
-              if git diff --cached --quiet; then
-                echo "✅ No new Excel files detected. Skipping commit."
-              else
-                git commit -m "Add exported Excel files"
-              # Attempt rebase
-              if ! git pull --rebase origin $GITHUB_REF_NAME; then
-                  echo "❌ Git rebase failed. Please resolve conflicts manually."
-                  exit 1  # Stop execution if rebase fails
-              fi 
-              # Push after a successful rebase
-              git push origin $GITHUB_REF_NAME || (
-                  echo "⚠️ Push failed. Retrying after pulling latest changes..."
-                  git pull --rebase origin $GITHUB_REF_NAME && git push origin $GITHUB_REF_NAME
-              )
-              fi
-            else
-              echo "✅ No new Excel files to commit."
-            fi
+          if ls final-matrixify-export/*.xlsx 1> /dev/null 2>&1 || ls changes/change-only-excel/*.xlsx 1> /dev/null 2>&1; then
+            git add final-matrixify-export/*.xlsx || echo "✅ No new Excel files in final-matrixify-export"
+            git add changes/change-only-excel/*.xlsx || echo "✅ No new Excel files in change-only-excel"
+            ./utils/git_commit_push.sh "Add exported Excel files"
+          else
+            echo "✅ No new Excel files to commit."
+          fi
