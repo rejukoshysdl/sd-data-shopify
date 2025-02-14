@@ -29,15 +29,19 @@ jobs:
       - name: Set Branch Variables
         id: set_branch
         run: |
-          if [[ "${{ github.ref }}" == "refs/heads/int" ]]; then
+          # Extract branch name from github.ref
+          BRANCH_NAME="${GITHUB_REF#refs/heads/}"
+
+          if [[ "$BRANCH_NAME" == "int" ]]; then
             echo "BASE_BRANCH=staging" >> $GITHUB_ENV
-          elif [[ "${{ github.ref }}" == "refs/heads/staging" ]]; then
+          elif [[ "$BRANCH_NAME" == "staging" ]]; then
             echo "BASE_BRANCH=main" >> $GITHUB_ENV
           else
-            echo "❌ Unknown branch detected, exiting."
+            echo "❌ Unknown push branch detected: $BRANCH_NAME"
             exit 1
-          fi
-          echo "✅ Base branch set to $BASE_BRANCH"
+          fi 
+          echo "✅ Push event detected. Base branch set to $BASE_BRANCH"
+
 
       - name: Cleanup Before Processing
         run: |
