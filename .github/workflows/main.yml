@@ -4,10 +4,10 @@ on:
   push:
     branches:
       - int
-      - main
+      - staging
 
 jobs:
-  # **STEP 1: Compare `int` vs `main`**
+  # **STEP 1: Compare Branches**
   diff_check:
     runs-on: ubuntu-latest
     steps:
@@ -16,11 +16,32 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
-
+      
+      #  Ensures that the latest versions of both branches are available for comparison.
       - name: Fetch Latest Branches
         run: |
-          git fetch origin main
-          git fetch origin int
+          git fetch --all
+
+      - name: Detect Current Branch
+        run: |
+          BRANCH_NAME="${GITHUB_REF_NAME}"
+          echo "🔹 Detected branch: $BRANCH_NAME"
+
+          if [[ -z "$BRANCH_NAME" ]]; then
+            echo "❌ ERROR: GITHUB_REF_NAME is empty. Exiting."
+            exit 1
+          fi
+
+          if [[ "$BRANCH_NAME" == "int" ]]; then
+            echo "BASE_BRANCH=staging" >> $GITHUB_ENV
+          elif [[ "$BRANCH_NAME" == "staging" ]]; then
+            echo "BASE_BRANCH=main" >> $GITHUB_ENV
+          else
+            echo "❌ Unknown push branch detected: $BRANCH_NAME"
+            exit 1
+          fi 
+
+          echo "✅ Push event detected. Base branch set to: $BASE_BRANCH"
 
       - name: Cleanup Before Processing
         run: |
@@ -33,25 +54,24 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git add -A  # ✅ Ensures deleted files are staged
           git commit -m "Remove old changes.diff before generating new diff" || echo "✅ No need to commit"
-          git push origin int || echo "⚠️ Git push failed, check permissions."
+          git push origin $GITHUB_REF_NAME || echo "⚠️ Git push failed, check permissions."
 
-      - name: Fetch Latest Branches
+      - name: Fetch Latest Branch
         run: |
-          git fetch origin main
-          git fetch origin int 
+          git fetch origin $GITHUB_REF_NAME 
 
-      - name: Compare JSON Files in repo-shopify-data (int vs main)
+      - name: Compare JSON Files
         run: |
           DIFF_FILE="./changes/git-diff/changes.diff"
-          git diff origin/main..origin/int -- 'repo-shopify-data/*.json' > $DIFF_FILE
+          git diff origin/${{ env.BASE_BRANCH }}..origin/$GITHUB_REF_NAME -- 'repo-shopify-data/*.json' > $DIFF_FILE
           
           if [ ! -s $DIFF_FILE ]; then
-            echo "✅ No JSON files changed between `int` and `main`" > $DIFF_FILE
+            echo "✅ No JSON files changed between $GITHUB_REF_NAME and ${{ env.BASE_BRANCH }}" > $DIFF_FILE
           fi
           
           cat $DIFF_FILE  # Show diff output for debugging
 
-      - name: Commit and Push Diff File to `int`
+      - name: Commit and Push Diff File
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
@@ -62,8 +82,8 @@ jobs:
           if git diff --cached --quiet; then
             echo "✅ No new changes detected. Skipping commit."
           else
-            git commit -m "Update changes.diff with JSON file differences after merging into int"
-            git push origin int || echo "⚠️ Warning: Git push failed. Check permissions."
+            git commit -m "Update changes.diff with JSON file differences after merging into $GITHUB_REF_NAME"
+            git push origin $GITHUB_REF_NAME || echo "⚠️ Warning: Git push failed. Check permissions."
           fi
 
   # **STEP 2: Extract Changed IDs from JSON Diff**
@@ -90,16 +110,8 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git add changes/id-output/changed_ids.txt
           git commit -m "Remove outdated changed_ids.txt before generating new IDs" || echo "✅ No need to commit"
-          git push origin int || echo "⚠️ Git push failed, check permissions."
-          git pull --rebase origin int
-
-      - name: Pull Latest Changes After Cleanup
-        run: |
-          #git fetch origin int
-          #git reset --hard origin/int
-          #git pull --rebase origin int
-          echo "✅ Latest change diff file pulled!"
-           git status
+          git push origin $GITHUB_REF_NAME || echo "⚠️ Git push failed, check permissions."
+          git pull --rebase origin $GITHUB_REF_NAME
 
       - name: Run Extract ID Script
         run: |
@@ -114,7 +126,7 @@ jobs:
             echo "✅ No new ID changes detected. Skipping commit."
           else
             git commit -m "Update changed_ids.txt with extracted IDs"
-            git push origin int || echo "⚠️ Warning: Git push failed. Check permissions."
+            git push origin $GITHUB_REF_NAME || echo "⚠️ Warning: Git push failed. Check permissions."
           fi
 
   # **STEP 3: Extract Changed JSON Blocks from IDs**
@@ -130,7 +142,6 @@ jobs:
 
       - name: Cleanup Before Pull
         run: |
-        
           rm -rf changes/change-only-jsons/*.json
           echo "🧹 Old extracted JSONs removed!"
           git status
@@ -139,15 +150,11 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-
-           # Ensure git tracks the deletion of files
-          git rm -rf changes/change-only-jsons/*.json || echo "✅ No files to remove" 
-
+          git rm -rf changes/change-only-jsons/*.json || echo "✅ No files to remove"
           git add -A  # Ensure deleted files are staged
           git commit -m "Remove outdated extracted JSONs before generating new ones" || echo "✅ No need to commit"
-          git fetch origin int
-          git pull --rebase origin int || echo "⚠️ Git rebase failed, attempting force push..." 
-          git push origin int || (echo "⚠️ Warning: Push failed, retrying with force..." && git push origin int --force)
+          git pull --rebase origin $GITHUB_REF_NAME || echo "⚠️ Git rebase failed" 
+          git push origin $GITHUB_REF_NAME
 
       - name: Run Extract Changes Script
         run: |
@@ -163,7 +170,7 @@ jobs:
               echo "✅ No new extracted changes detected. Skipping commit."
             else
               git commit -m "Update change-only-jsons with extracted JSON changes"
-              git push origin int || echo "⚠️ Warning: Git push failed. Check permissions."
+              git push origin $GITHUB_REF_NAME || echo "⚠️ Warning: Git push failed. Check permissions."
             fi
           else
             echo "✅ No JSON changes found, skipping commit step."
@@ -187,9 +194,9 @@ jobs:
 
       - name: Pull Latest Changes After Cleanup
         run: |
-          git fetch origin int
-          git reset --hard origin/int
-          git pull --rebase origin int
+          git fetch origin $GITHUB_REF_NAME
+          git reset --hard origin/$GITHUB_REF_NAME
+          git pull --rebase origin $GITHUB_REF_NAME
           echo "✅ Latest extracted JSONs pulled!"
 
       - name: Install Python Dependencies
@@ -199,3 +206,35 @@ jobs:
       - name: Run convertJSONToExcel script
         run: |
           python3 ./utils/convertJSONToExcel_in_git.py || echo "✅ No Excel files created, continuing."
+
+      - name: Commit and Push Generated Excel Files
+        run: |
+            git config --global user.name "github-actions"
+            git config --global user.email "github-actions@github.com"
+  
+            # ✅ Add Excel files if they exist
+            if ls final-matrixify-export/*.xlsx 1> /dev/null 2>&1 || ls changes/change-only-excel/*.xlsx 1> /dev/null 2>&1; then
+              git add final-matrixify-export/*.xlsx || echo "✅ No new Excel files in final-matrixify-export"
+              git add changes/change-only-excel/*.xlsx || echo "✅ No new Excel files in change-only-excel"
+              
+              git status
+  
+              # ✅ Prevent empty commits
+              if git diff --cached --quiet; then
+                echo "✅ No new Excel files detected. Skipping commit."
+              else
+                git commit -m "Add exported Excel files"
+              # Attempt rebase
+              if ! git pull --rebase origin $GITHUB_REF_NAME; then
+                  echo "❌ Git rebase failed. Please resolve conflicts manually."
+                  exit 1  # Stop execution if rebase fails
+              fi 
+              # Push after a successful rebase
+              git push origin $GITHUB_REF_NAME || (
+                  echo "⚠️ Push failed. Retrying after pulling latest changes..."
+                  git pull --rebase origin $GITHUB_REF_NAME && git push origin $GITHUB_REF_NAME
+              )
+              fi
+            else
+              echo "✅ No new Excel files to commit."
+            fi

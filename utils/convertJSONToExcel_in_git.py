@@ -3,7 +3,6 @@ import os
 import glob
 import pandas as pd
 from datetime import datetime
-import subprocess
 
 # Function to convert JSON files from a directory into an Excel file
 def json_to_excel(json_dir, output_folder):
@@ -47,7 +46,7 @@ def json_to_excel(json_dir, output_folder):
 
     print(f"🎉 Excel file created: {output_excel_file}")
 
-    return output_excel_file  # Return the file path for GitHub push
+    return output_excel_file  # Return the file path for GitHub workflow commit
 
 # Define JSON directories and corresponding Excel export folders
 folder_mappings = {
@@ -55,47 +54,18 @@ folder_mappings = {
     "changes/change-only-jsons": "changes/change-only-excel"
 }
 
+# Generate Excel files
 generated_files = []
-
 for json_dir, output_dir in folder_mappings.items():
     print(f"\n🚀 Processing directory: {json_dir} → {output_dir}")
     excel_file = json_to_excel(json_dir, output_dir)
     if excel_file:
         generated_files.append(excel_file)
 
-# GitHub push logic
-github_token = os.getenv('GITHUB_TOKEN')
-branch_name = os.getenv('GITHUB_REF_NAME', 'int')  # ✅ Default branch is 'int'
+# ✅ Print generated file paths for workflow use
+if generated_files:
+    print("\n📂 Generated Excel files:")
+    for file in generated_files:
+        print(f" - {file}")
 
-print(f"\n🔹 Using GitHub branch: {branch_name}")
-
-try:
-    subprocess.run(['git', 'config', '--global', 'user.name', 'github-actions'], check=True)
-    subprocess.run(['git', 'config', '--global', 'user.email', 'github-actions@github.com'], check=True)
-
-    # ✅ Ensure we have the latest branch changes before pushing
-    subprocess.run(['git', 'fetch', 'origin', branch_name], check=True)
-    subprocess.run(['git', 'checkout', branch_name], check=True)
-    subprocess.run(['git', 'pull', '--rebase', 'origin', branch_name], check=True)
-
-    for file_path in generated_files:
-        subprocess.run(['git', 'add', file_path], check=True)
-        subprocess.run(['git', 'status'], check=True)
-
-        # ✅ Prevent empty commits
-        if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode == 0:
-            print("✅ No new changes detected. Skipping commit.")
-        else:
-            subprocess.run(['git', 'commit', '-m', f'Add Excel file {file_path}'], check=True)
-
-            # ✅ Attempt push, retry with force if needed
-            if subprocess.run(['git', 'push', 'origin', branch_name]).returncode != 0:
-                print("⚠️ Warning: Push failed. Retrying with force...")
-                subprocess.run(['git', 'push', 'origin', branch_name, '--force'], check=True)
-
-    print("✅ All Excel files pushed to GitHub successfully.")
-
-except subprocess.CalledProcessError as e:
-    print(f"❌ Error during Git operations: {e}")
-
-print("\n🎯 Script execution completed!")
+print("\n🎯 JSON to Excel conversion completed successfully!")
